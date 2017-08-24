@@ -1,0 +1,171 @@
+// This SCSS lib requires modernizr.
+
+
+// Partials
+@import './mixins.scss';
+@import './variables.scss';
+
+
+// Modules
+@import './typography.scss';
+
+
+// Globals
+
+@include layout-util((3, 8, 14, 20, 30));
+
+body {
+    font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
+    font-weight: 300;
+    color: $col-default;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*
+$col-default: rgba(53, 53, 49, 1);
+$col-danger: rgba(236, 78, 32, 1);
+$col-warning: rgba(255, 149, 5, 1);
+$col-primary: rgba(1, 111, 185, 1);
+$col-dark: rgba(0, 0, 0, 1);
+$col-info: rgba(71, 0, 36, 1);
+$col-secondary: rgba(110, 144, 117, 1);
+$col-background: rgba(250, 250, 250, 1);
+*/
+.text-primary {
+    color: rgba(1, 111, 185, 1);
+}
+
+/* Globals */
+
+
+* {
+    box-sizing: border-box;
+    transition: all 2s ease;
+}
+
+
+html {
+    background: #eee;
+    font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma;
+}
+
+body {
+    margin: 0;
+}
+
+#wrapper {
+    
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* Banner */
+
+#masthead {
+    background-color: rgba(255, 10, 10, 0.2);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 10, 10, 0.2)), to(rgba(10, 10, 255, 0.2)));
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));
+    background-image: -moz-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));
+    background-image: linear-gradient(to top, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));
+    padding: 120px 80px;
+}
+
+#masthead #profilepic {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#masthead #mastheadtitle {
+    margin-top: 0;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Poiret One', cursive;    
+}
+
+#nav {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+
+    font-family: 'Poiret One', cursive;    
+    font-size: 40px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+    #nav {
+        font-size: 30px;
+    }
+}
+
+#navbar {
+    display: block;
+    margin: 10px 20px;
+}
+
+#navbar #brand {
+    float: left;
+    width: 160px;
+}
+
+#navbar ul#nav-items {
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 161px);
+    float: right;
+    list-style: none;
+    
+}
+
+#navbar ul#nav-items li.nav-item {
+    float: right;
+    margin-left: 20px;
+}
+
+#navbar ul#nav-items li.nav-item a {
+    text-decoration: none;
+}
+
+#aboutme {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.bubble {
+    background: rgba($col-default, 0.3);
+    border-radius: 50%;
+}
+
+#techstackbubble {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#techstackbubble-content {
+    height: 200px;
+}
+
+#techstackbubble-content img {
+    display: block;
+    float: left;
+    height: 200px;
+}
