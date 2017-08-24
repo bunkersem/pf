@@ -1,0 +1,100 @@
+[
+    {
+        "cat": "programming",
+        "name": "D3",
+        "value": 30,
+        "icon": "public/media/technologies/images//d3.svg",
+        "desc": "\n\t\tD3.js (or just D3 for Data-Driven Documents) is a JavaScript library for\n\t\tproducing dynamic, interactive data visualizations in web browsers.\n\t\tIt makes use of the widely implemented SVG, HTML5, and CSS standards.<br>\n\t\tThis infographic you are viewing is made with D3.\n\t"
+    },
+    {
+        "cat": "programming",
+        "name": "Bootstrap CSS",
+        "value": 50,
+        "icon": "public/media/technologies/images//bootstrap.svg",
+        "desc": "\n\t\tBootstrap is a free and open-source front-end web framework for designing websites\n\t\tand web applications. It contains HTML-and CSS-based design templates for typography,\n\t\tforms, buttons, navigation and other interface components, as well as optional JavaScript extensions.\n\t"
+    },
+    {
+        "cat": "framework",
+        "name": "ExpressJS",
+        "value": 30,
+        "icon": "public/media/technologies/images//expressjs.png",
+        "desc": "\n\t\tExpress.js, or simply Express, is a JavaScript framework designed for building web applications and APIs.\n\t\tIt is the de facto server framework for Node.js.\n\t"
+    },
+    {
+        "cat": "tool",
+        "name": "Yeoman generator for Nau Workflow",
+        "value": 20,
+        "icon": "public/media/technologies/images//yeoman.png",
+        "desc": "\n\t\tYeoman is an open source, command-line interface set of tools mainly used to generate\n\t\tstructure and scaffolding for new projects, especially in JavaScript and Node.js.\n\t\tAt Nau, we have developed a Yeoman generator that help quickly set up new projects aligned with\n\t\tNau's conventions and standards.\n\t"
+    },
+    {
+        "cat": "programming",
+        "name": "MongoDB",
+        "value": 70,
+        "icon": "public/media/technologies/images//mongodb.png",
+        "desc": "\n\t\tThe de-facto Database solution for JavaScript and Node.js applications. It is a light weight,\n\t\thigh performance NoSQL database and can be used for small and large websites.\n\t"
+    },
+    {
+        "cat": "programming",
+        "name": "JavaScript",
+        "value": 100,
+        "icon": "public/media/technologies/images//javascript.png",
+        "desc": "\n\t\tJavaScript is the heart of modern Web front end development and essential element of any Single Page\n\t\tApplications. In Nau, we invest a good deal in training developers to have good control of this universal language\n\t\tand now caplable of developing full stack websites with only JavaScript.\n\t"
+    },
+    {
+        "cat": "programming",
+        "name": "SASS (SCSS flavor)",
+        "value": 70,
+        "icon": "public/media/technologies/images//sass.png",
+        "desc": "\n\t\tThis is our main CSS preprocessor language helping us lay structured foundation to CSS as well\n\t\tas assisting on writing more convenient BEM anotations.\n\t"
+    },
+    {
+        "cat": "programming",
+        "name": "TypeScript2",
+        "value": 5,
+        "icon": "public/media/technologies/images//typescript.png",
+        "desc": "\n\t\tThe strict-typing flavor of ECMAScript, always requires a compiler to compile to vanilla JavaScript\n\t\tbut the type checking and other syntactical sugar are exceptional. Right now, we only use it for\n\t\tAngular2 projects when needed.\n\t"
+    },
+    {
+        "cat": "tool",
+        "name": "BabelJS",
+        "value": 50,
+        "icon": "public/media/technologies/images//babel.png",
+        "desc": "\n\t\tThe de-facto tool to work with ECMAScript 6 and ReactJS nowadays.\n\t"
+    },
+    {
+        "cat": "tool",
+        "name": "ESLint",
+        "value": 20,
+        "icon": "public/media/technologies/images//eslint.svg",
+        "desc": "\n\t\tThe tool to check and validate JavaScript code when we develop and prevent potential issues with code.\n\t"
+    },
+    {
+        "cat": "tool",
+        "name": "GulpJS",
+        "value": 50,
+        "icon": "public/media/technologies/images//gulp.png",
+        "desc": "\n\t\tGulpJS is a task automation tools written for Node.js. It is among the most popular\n\t\tFront End and Node project automation tools nowadays\n\t"
+    },
+    {
+        "cat": "tool",
+        "name": "Webpack",
+        "value": 30,
+        "icon": "public/media/technologies/images//webpack.svg",
+        "desc": "\n\t\tA module bundler library that is becoming de-facto tool to use in ReactJS or SPA apps nowadays.\n\t"
+    },
+    {
+        "cat": "framework",
+        "name": "NodeJS",
+        "value": 80,
+        "icon": "public/media/technologies/images//nodejs.svg",
+        "desc": "\n\t\tNode.js is a cross-platform JavaScript runtime environment. \n\t\tNode.js allows creation of high performance and high concurrency websites with smaller footprint compared to\n\t\tother server-side solution. Node.js ecosystem is growing very fast and is trusted by a lot of big companies who\n\t\tare adopting it to enhance current products as well as for new ones.\n\t"
+    },
+    {
+        "cat": "programming",
+        "name": "jQuery",
+        "value": 50,
+        "icon": "public/media/technologies/images//jquery.png",
+        "desc": "\n\t\tDeprecated, because <a href='http://youmightnotneedjquery.com/' target='_blank'>youmightnotneedjquery.com</a>\n\t"
+    }
+]
