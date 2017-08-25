@@ -6,6 +6,8 @@ module.exports = {
         vendor: path.resolve(__dirname, './client/scripts/vendor.ts'),
         main: path.resolve(__dirname, './client/scripts/main.ts')
     },
+    cache: true,
+    devtool: 'source-map',
     resolve: {
         extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js'],
         alias: {
