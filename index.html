@@ -1,61 +1,92 @@
 <html>
-    <head>
-        <title>My Portfolio</title>
 
-        <script async defer src="./dist/vendor.bundle.js"></script>
-        <script async defer src="./dist/main.bundle.js"></script>
+<head>
+    <title>My Portfolio</title>
 
-        <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>static app</title>
+    <script async defer src="./dist/vendor.bundle.js"></script>
+    <script async defer src="./dist/main.bundle.js"></script>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Poiret+One|Roboto|Ubuntu" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>static app</title>
 
-    </head>
-    <body>
-        <!--[if IE]>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Poiret+One|Roboto|Ubuntu" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--[if IE]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <nav id="nav">
-        <div class="container">
-            <div id="navbar">
-                <div id="brand">Dev Blog</div>
-                <ul id="nav-items">
-                    <li class="nav-item"><a href="">Home</a></li>
-                    <li class="nav-item"><a href="">About</a></li>
-                    <li class="nav-item"><a href="">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
     <div id="wrapper">
-        <section id="masthead">
+        <nav id="nav" class="show">
             <div class="container">
-                <img id="profilepic" src="https://dvqlxo2m2q99q.cloudfront.net/000_clients/650367/page/650367gyDRWFfo.png" alt="Profile Picture">
-                <h1 id="mastheadtitle">Sem Postma</h1>
-            </div>
-        </section>
-        <section id="aboutme">
-            <div class="container">
-                <h2 class="text-primary">Who Are You?</h2>
-                <p class="text-default">Lorum Ipsum lalalal</p>
-                <p style="font-size: 50px; opacity: 0.4">.....</p>
-            </div>
-        </section>
-        <section id="whatido">
-            <div class="container">
-                <h2 class="text-primary">What I Do:</h2>
-                <p class="text-default">Lorum Ipsum lalalal</p>
-                <div id="techstackbubble" class="bubble">
-                    <div id="techstackbubble-content"></div>
+                <div id="navbar">
+                    <div id="brand">Dev Blog</div>
+                    <ul id="nav-items">
+                        <li class="nav-item"><a href="">Home</a></li>
+                        <li class="nav-item"><a href="">About</a></li>
+                        <li class="nav-item"><a href="">Contact</a></li>
+                    </ul>
                 </div>
-                <p style="font-size: 50px; opacity: 0.4">.....</p>
+            </div>
+        </nav>
+        <section id="masthead">
+            <div class="contentwrapper">
+                <div class="container">
+                    <img id="profilepic" src="https://dvqlxo2m2q99q.cloudfront.net/000_clients/650367/page/650367gyDRWFfo.png" alt="Profile Picture">
+                    <h1 id="mastheadtitle">Sem Postma</h1>
+                </div>
             </div>
         </section>
+        <div class="contentwrapper">
+            <section class="mesection" id="aboutme">
+                <div class="container">
+                    <h2 class="text-primary">Who Are You?</h2>
+                    <img src="./images/me200_256pic.png" alt="Me">
+                    <p class="text-default">Lorum Ipsum lalalal</p>
+                    <p style="font-size: 50px; opacity: 0.4">.....</p>
+                </div>
+            </section>
+            <section class="mesection" id="whatido">
+                <div class="container">
+                    <h2 class="text-primary">What I Do.</h2>
+                    <div id="techstackbubble" class="bubble">
+                        <div id="techstackbubble-content">
+                            <img src="./techs/images/babel.png" alt="">
+                            <img src="./techs/images/bootstrap.svg" alt="">
+                            <img src="./techs/images/d3.svg" alt="">
+                            <img src="./techs/images/docker.svg" alt="">
+                            <img src="./techs/images/eslint.svg" alt="">
+                            <img src="./techs/images/expressjs.png" alt="">
+                            <img src="./techs/images/gulp.png" alt="">
+                            <img src="./techs/images/javascript.png" alt="">
+                            <img src="./techs/images/jquery.png" alt="">
+                            <img src="./techs/images/mongodb.png" alt="">
+                            <img src="./techs/images/nodejs.svg" alt="">
+                            <img src="./techs/images/sass.png" alt="">
+                            <img src="./techs/images/typescript.png" alt="">
+                            <img src="./techs/images/webpack.svg" alt="">
+                            <img src="./techs/images/yeoman.png" alt="">
+                        </div>
+                    </div>
+                    <p class="text-default">Lorum Ipsum lalalal</p>
+                </div>
+            </section>
+            <section class="mesection" id="hireme">
+                <div class="container">
+                    <h2 class="text-primary">Hire Me?</h2>
+                    <p class="text-default">Lorum Ipsum lalalal</p>
+                </div>
+            </section>
+            <div class="btn">Hello</div>
+        </div>
     </div>
 
-    </body>
+</body>
+
 </html>
