@@ -63,11 +63,93 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -113,7 +195,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(1);
+var	fixUrls = __webpack_require__(2);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -426,7 +508,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports) {
 
 
@@ -521,15 +603,15 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 2 */,
 /* 3 */,
-/* 4 */
+/* 4 */,
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(6);
+var content = __webpack_require__(8);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -537,7 +619,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(0)(content, options);
+var update = __webpack_require__(1)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -554,21 +636,67 @@ if(false) {
 }
 
 /***/ }),
-/* 5 */,
 /* 6 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: \r\n$col-secondary: rgba(110, 144, 117, 1);\r\n                                      ^\r\n      Invalid CSS after \"..., 144, 117, 1);\": expected 1 selector or at-rule, was \"<<<<<<< HEAD\"\r\n      in C:\\Apps\\portofolio-v3\\client\\style\\variables.scss (line 8, column 40)");
+"use strict";
+
+window.addEventListener('load', function () {
+    (function _iffyNavbar() {
+        var nav = document.getElementById('nav');
+        var show = (nav && nav.classList.contains('show')) || false;
+        window.addEventListener('scroll', function (event) { return setTimeout(function () {
+            if (show && window.scrollY > 600 && nav !== null) {
+                nav.classList.remove('show');
+                show = false;
+            }
+            else if (!show && window.scrollY < 600 && nav !== null) {
+                nav.classList.add('show');
+                show = true;
+            }
+        }, 0); });
+    })();
+    (function _iffyWrapper() {
+        var contentwrappers = document.getElementsByClassName('contentwrapper');
+        if (contentwrappers.length < 1) {
+            console.log('cannot find contentwrapper');
+            return;
+        }
+        window.addEventListener('resize', function (event) { return setTimeout(function () {
+            for (var i = 0; i < contentwrappers.length; i++) {
+                contentwrappers[i].style.width = window.innerWidth + 'px';
+            }
+        }, 0); });
+    })();
+}, false);
+
 
 /***/ }),
 /* 7 */,
 /* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* RGB */\n.text-primary {\n  color: #016fb9; }\n\n.text-default {\n  color: #353531; }\n\n.text-danger {\n  color: #ec4e20; }\n\n.text-warning {\n  color: #ff9505; }\n\n.text-dark {\n  color: black; }\n\n.text-info {\n  color: #470024; }\n\n.text-secondary {\n  color: #6e9075; }\n\n.m-0 {\n  margin: 0; }\n\n.mt-0 {\n  margin-top: 0; }\n\n.mb-0 {\n  margin-bottom: 0; }\n\n.ml-0 {\n  margin-left: 0; }\n\n.mr-0 {\n  margin-right: 0; }\n\n.mx-0 {\n  margin-right: 0;\n  margin-left: 0; }\n\n.my-0 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.p-0 {\n  padding: 0; }\n\n.pt-0 {\n  padding-top: 0; }\n\n.pb-0 {\n  padding-bottom: 0; }\n\n.pl-0 {\n  padding-left: 0; }\n\n.pr-0 {\n  padding-right: 0; }\n\n.px-0 {\n  padding-right: 0;\n  padding-left: 0; }\n\n.py-0 {\n  padding-top: 0;\n  padding-bottom: 0; }\n\n.m-1 {\n  margin: 3; }\n\n.mt-1 {\n  margin-top: 3; }\n\n.mb-1 {\n  margin-bottom: 3; }\n\n.ml-1 {\n  margin-left: 3; }\n\n.mr-1 {\n  margin-right: 3; }\n\n.mx-1 {\n  margin-right: 3;\n  margin-left: 3; }\n\n.my-1 {\n  margin-top: 3;\n  margin-bottom: 3; }\n\n.p-1 {\n  padding: 3; }\n\n.pt-1 {\n  padding-top: 3; }\n\n.pb-1 {\n  padding-bottom: 3; }\n\n.pl-1 {\n  padding-left: 3; }\n\n.pr-1 {\n  padding-right: 3; }\n\n.px-1 {\n  padding-right: 3;\n  padding-left: 3; }\n\n.py-1 {\n  padding-top: 3;\n  padding-bottom: 3; }\n\n.m-2 {\n  margin: 8; }\n\n.mt-2 {\n  margin-top: 8; }\n\n.mb-2 {\n  margin-bottom: 8; }\n\n.ml-2 {\n  margin-left: 8; }\n\n.mr-2 {\n  margin-right: 8; }\n\n.mx-2 {\n  margin-right: 8;\n  margin-left: 8; }\n\n.my-2 {\n  margin-top: 8;\n  margin-bottom: 8; }\n\n.p-2 {\n  padding: 8; }\n\n.pt-2 {\n  padding-top: 8; }\n\n.pb-2 {\n  padding-bottom: 8; }\n\n.pl-2 {\n  padding-left: 8; }\n\n.pr-2 {\n  padding-right: 8; }\n\n.px-2 {\n  padding-right: 8;\n  padding-left: 8; }\n\n.py-2 {\n  padding-top: 8;\n  padding-bottom: 8; }\n\n.m-3 {\n  margin: 14; }\n\n.mt-3 {\n  margin-top: 14; }\n\n.mb-3 {\n  margin-bottom: 14; }\n\n.ml-3 {\n  margin-left: 14; }\n\n.mr-3 {\n  margin-right: 14; }\n\n.mx-3 {\n  margin-right: 14;\n  margin-left: 14; }\n\n.my-3 {\n  margin-top: 14;\n  margin-bottom: 14; }\n\n.p-3 {\n  padding: 14; }\n\n.pt-3 {\n  padding-top: 14; }\n\n.pb-3 {\n  padding-bottom: 14; }\n\n.pl-3 {\n  padding-left: 14; }\n\n.pr-3 {\n  padding-right: 14; }\n\n.px-3 {\n  padding-right: 14;\n  padding-left: 14; }\n\n.py-3 {\n  padding-top: 14;\n  padding-bottom: 14; }\n\n.m-4 {\n  margin: 20; }\n\n.mt-4 {\n  margin-top: 20; }\n\n.mb-4 {\n  margin-bottom: 20; }\n\n.ml-4 {\n  margin-left: 20; }\n\n.mr-4 {\n  margin-right: 20; }\n\n.mx-4 {\n  margin-right: 20;\n  margin-left: 20; }\n\n.my-4 {\n  margin-top: 20;\n  margin-bottom: 20; }\n\n.p-4 {\n  padding: 20; }\n\n.pt-4 {\n  padding-top: 20; }\n\n.pb-4 {\n  padding-bottom: 20; }\n\n.pl-4 {\n  padding-left: 20; }\n\n.pr-4 {\n  padding-right: 20; }\n\n.px-4 {\n  padding-right: 20;\n  padding-left: 20; }\n\n.py-4 {\n  padding-top: 20;\n  padding-bottom: 20; }\n\n.m-5 {\n  margin: 30; }\n\n.mt-5 {\n  margin-top: 30; }\n\n.mb-5 {\n  margin-bottom: 30; }\n\n.ml-5 {\n  margin-left: 30; }\n\n.mr-5 {\n  margin-right: 30; }\n\n.mx-5 {\n  margin-right: 30;\n  margin-left: 30; }\n\n.my-5 {\n  margin-top: 30;\n  margin-bottom: 30; }\n\n.p-5 {\n  padding: 30; }\n\n.pt-5 {\n  padding-top: 30; }\n\n.pb-5 {\n  padding-bottom: 30; }\n\n.pl-5 {\n  padding-left: 30; }\n\n.pr-5 {\n  padding-right: 30; }\n\n.px-5 {\n  padding-right: 30;\n  padding-left: 30; }\n\n.py-5 {\n  padding-top: 30;\n  padding-bottom: 30; }\n\nbody {\n  font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;\n  color: #353531; }\n\n* {\n  box-sizing: border-box; }\n\n.clearfix {\n  clear: both; }\n\n/*\r\n$col-default: rgba(53, 53, 49, 1);\r\n$col-danger: rgba(236, 78, 32, 1);\r\n$col-warning: rgba(255, 149, 5, 1);\r\n$col-primary: rgba(1, 111, 185, 1);\r\n$col-dark: rgba(0, 0, 0, 1);\r\n$col-info: rgba(71, 0, 36, 1);\r\n$col-secondary: rgba(110, 144, 117, 1);\r\n$col-background: rgba(250, 250, 250, 1);\r\n*/\n/* Globals */\n* {\n  box-sizing: border-box; }\n\nhtml {\n  background: white;\n  font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma; }\n\nbody {\n  margin: 0;\n  overflow-x: hidden; }\n\n.contentwrapper {\n  transition: width 500ms ease; }\n\n.container {\n  max-width: 1024px;\n  margin: auto; }\n\n/* Banner */\n#masthead {\n  width: 100vw;\n  background-color: rgba(255, 10, 10, 0.2);\n  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 10, 10, 0.2)), to(rgba(10, 10, 255, 0.2)));\n  background-image: -webkit-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  background-image: -moz-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  background-image: linear-gradient(to top, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  padding: 120px 0; }\n\n#masthead #profilepic {\n  display: block;\n  width: 180px;\n  max-width: 100%;\n  border-radius: 50%;\n  margin: auto; }\n\n#masthead #mastheadtitle {\n  margin-top: 0;\n  font-size: 80px;\n  text-align: center;\n  font-weight: 400;\n  font-family: 'Poiret One', cursive; }\n\n#nav {\n  position: fixed;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  left: 0;\n  top: -50px;\n  height: 50px;\n  transition: top 100ms ease-out;\n  font-family: 'Poiret One', cursive;\n  font-size: 40px; }\n\n#nav.show {\n  top: 0px; }\n\n@media screen and (max-width: 1200px) {\n  #nav {\n    font-size: 30px; } }\n\n#navbar {\n  display: block;\n  margin: 10px 20px; }\n\n#navbar #brand {\n  float: left;\n  width: 160px; }\n\n#navbar ul#nav-items {\n  margin: 0;\n  padding: 0;\n  width: calc(100% - 161px);\n  float: right;\n  list-style: none;\n  text-align: right; }\n\n#navbar ul#nav-items li.nav-item {\n  float: right;\n  margin-left: 20px; }\n  @media screen and (max-width: 600px) {\n    #navbar ul#nav-items li.nav-item {\n      float: none; } }\n\n.btn {\n  display: inline;\n  border-style: solid;\n  border-width: 5px;\n  border-color: #353531;\n  padding: 10px 30px;\n  background: none;\n  margin: 4px;\n  font-family: 'Roboto' sans-serif, Verdana, Geneva, Tahoma; }\n\n#navbar ul#nav-items li.nav-item a {\n  text-decoration: none; }\n\n.mesection {\n  margin-top: 80px;\n  text-align: center; }\n\n.bubble {\n  background: rgba(53, 53, 49, 0.3);\n  border-radius: 50%; }\n\n#techstackbubble {\n  width: 200px;\n  height: 200px;\n  max-width: 200px;\n  max-height: 200px;\n  margin: auto;\n  overflow: hidden; }\n\n#techstackbubble-content {\n  height: 200px;\n  width: 99999px;\n  margin-left: 200px;\n  animation: cycletechnologies 30s 0s linear infinite; }\n\n@keyframes cycletechnologies {\n  from {\n    margin-left: 200px; }\n  to {\n    margin-left: -2900px; } }\n\n#techstackbubble-content img {\n  display: block;\n  float: left;\n  margin: 40px;\n  max-height: 120px;\n  max-width: 120px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_main_scss__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_main_scss__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_main_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__style__);
+
 
 
 
