@@ -16,10 +16,6 @@
 
 body {
     font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
-<<<<<<< HEAD
-    font-weight: 300;
-=======
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
     color: $col-default;
 }
 
@@ -41,48 +37,27 @@ $col-info: rgba(71, 0, 36, 1);
 $col-secondary: rgba(110, 144, 117, 1);
 $col-background: rgba(250, 250, 250, 1);
 */
-<<<<<<< HEAD
-.text-primary {
-    color: rgba(1, 111, 185, 1);
-}
-=======
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
 
 /* Globals */
 
 
 * {
     box-sizing: border-box;
-<<<<<<< HEAD
-    transition: all 2s ease;
-=======
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
 }
 
 
 html {
-<<<<<<< HEAD
-    background: #eee;
-=======
     background: $col-background;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
     font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma;
 }
 
 body {
     margin: 0;
-<<<<<<< HEAD
-}
-
-#wrapper {
-    
-=======
     overflow-x: hidden;
 }
 
 .contentwrapper {
     transition: width 500ms ease;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
 }
 
 .container {
@@ -93,20 +68,13 @@ body {
 /* Banner */
 
 #masthead {
-<<<<<<< HEAD
-=======
     width: 100vw;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
     background-color: rgba(255, 10, 10, 0.2);
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 10, 10, 0.2)), to(rgba(10, 10, 255, 0.2)));
     background-image: -webkit-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));
     background-image: -moz-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));
     background-image: linear-gradient(to top, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));
-<<<<<<< HEAD
-    padding: 120px 80px;
-=======
     padding: 120px 0;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
 }
 
 #masthead #profilepic {
@@ -121,31 +89,16 @@ body {
     margin-top: 0;
     font-size: 80px;
     text-align: center;
-<<<<<<< HEAD
-    font-weight: 600;
-=======
     font-weight: 400;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
     font-family: 'Poiret One', cursive;    
 }
 
 #nav {
-<<<<<<< HEAD
-    position: absolute;
-=======
     position: fixed;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
     width: 100%;
     margin: 0;
     padding: 0;
     left: 0;
-<<<<<<< HEAD
-    top: 0;
-
-    font-family: 'Poiret One', cursive;    
-    font-size: 40px;
-    font-weight: 400;
-=======
     top: -50px;
     height: 50px;
     transition: top 100ms ease-out;
@@ -155,7 +108,6 @@ body {
 }
 #nav.show {
     top: 0px;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
 }
 
 @media screen and (max-width: 1200px) {
@@ -180,18 +132,12 @@ body {
     width: calc(100% - 161px);
     float: right;
     list-style: none;
-<<<<<<< HEAD
-    
-=======
     text-align: right;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
 }
 
 #navbar ul#nav-items li.nav-item {
     float: right;
     margin-left: 20px;
-<<<<<<< HEAD
-=======
     @media screen and (max-width: 600px) {
         float: none;
     }
@@ -206,20 +152,14 @@ body {
     background: none;
     margin: 4px;
     font-family: 'Roboto' sans-serif, Verdana, Geneva, Tahoma;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
 }
 
 #navbar ul#nav-items li.nav-item a {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-#aboutme {
-    padding-top: 80px;
-=======
 .mesection {
     margin-top: 80px;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
     text-align: center;
 }
 
@@ -233,17 +173,12 @@ body {
     height: 200px;
     max-width: 200px;
     max-height: 200px;
-<<<<<<< HEAD
-=======
     margin: auto;
     overflow: hidden;
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
 }
 
 #techstackbubble-content {
     height: 200px;
-<<<<<<< HEAD
-=======
     width: 99999px;
     margin-left: 200px;
     animation: cycletechnologies 30s 0s linear infinite;
@@ -251,16 +186,11 @@ body {
 @keyframes cycletechnologies {
     from { margin-left: 200px; }
     to { margin-left: -2900px; }
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
 }
 
 #techstackbubble-content img {
     display: block;
     float: left;
-<<<<<<< HEAD
-    height: 200px;
-}
-=======
     margin: 40px;
     max-height: 120px;
     max-width: 120px;
@@ -268,4 +198,3 @@ body {
 
 
 
->>>>>>> 8a9f99154edcbfe230e39f425b91e2ca7cf5b46c
