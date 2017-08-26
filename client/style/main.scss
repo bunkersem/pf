@@ -7,12 +7,16 @@
 
 
 // Modules
+@import './util.scss';
 @import './typography.scss';
+@import './buttons.scss';
+@import './navbar.scss';
+@import './forms.scss';
 
 
 // Globals
 
-@include layout-util((3, 8, 14, 20, 30));
+@include layout-util((6, 12, 28, 36, 60));
 
 body {
     font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
@@ -52,11 +56,17 @@ html {
 }
 
 body {
+    width: 100vw;
     margin: 0;
     overflow-x: hidden;
 }
 
+#wrapper {
+
+}
+
 .contentwrapper {
+    margin: 10px;
     transition: width 500ms ease;
 }
 
@@ -68,6 +78,7 @@ body {
 /* Banner */
 
 #masthead {
+    text-align: center;
     width: 100vw;
     background-color: rgba(255, 10, 10, 0.2);
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 10, 10, 0.2)), to(rgba(10, 10, 255, 0.2)));
@@ -88,74 +99,15 @@ body {
 #masthead #mastheadtitle {
     margin-top: 0;
     font-size: 80px;
-    text-align: center;
     font-weight: 400;
     font-family: 'Poiret One', cursive;    
 }
 
-#nav {
-    position: fixed;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: -50px;
-    height: 50px;
-    transition: top 100ms ease-out;
 
-    font-family: 'Poiret One', cursive;    
-    font-size: 40px;
-}
-#nav.show {
-    top: 0px;
-}
 
-@media screen and (max-width: 1200px) {
-    #nav {
-        font-size: 30px;
-    }
-}
-
-#navbar {
-    display: block;
-    margin: 10px 20px;
-}
-
-#navbar #brand {
-    float: left;
-    width: 160px;
-}
-
-#navbar ul#nav-items {
-    margin: 0;
-    padding: 0;
-    width: calc(100% - 161px);
-    float: right;
-    list-style: none;
-    text-align: right;
-}
-
-#navbar ul#nav-items li.nav-item {
-    float: right;
-    margin-left: 20px;
-    @media screen and (max-width: 600px) {
-        float: none;
-    }
-}
-
-.btn {
-    display: inline;
-    border-style: solid;
-    border-width: 5px;
-    border-color: $col-default;
-    padding: 10px 30px;
-    background: none;
-    margin: 4px;
-    font-family: 'Roboto' sans-serif, Verdana, Geneva, Tahoma;
-}
-
-#navbar ul#nav-items li.nav-item a {
+a {
     text-decoration: none;
+    color: $col-default;
 }
 
 .mesection {
@@ -175,6 +127,10 @@ body {
     max-height: 200px;
     margin: auto;
     overflow: hidden;
+}
+
+#screensizes {
+    max-width: 700px;
 }
 
 #techstackbubble-content {

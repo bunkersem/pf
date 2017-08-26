@@ -9,6 +9,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "quotes": ["error", "single"],
         "no-const-assign": "warn",
         "no-this-before-super": "warn",
         "no-undef": "warn",
