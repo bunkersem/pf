@@ -1,0 +1,56 @@
+.btn {
+    appearance: none;
+    position: relative;
+    user-select: none;
+    display: inline;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $col-primary;
+    padding: 18px 46px;
+    background: none;
+    margin: 4px;
+    z-index: 0;
+    font-family: 'Raleway', sans-serif, Verdana, Geneva, Tahoma;
+    color: $col-primary;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0ms 30ms linear;
+    overflow: hidden;
+    border-spacing: 1;
+    line-height: 1.42rem;
+}
+.btn::before {
+    
+    z-index: -1;
+    content: " ";
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    position: absolute;
+    transition: top 100ms ease-out;
+    background: $col-primary;
+}
+.btn:active, .btn:hover, .btn.active {
+    color: $col-white!important;
+}
+.btn:active::before, .btn:hover::before, .btn.active::before {
+    top: 0;
+}
+
+.btn.white:active, .btn.white:hover .btn.white.active {
+    color: #474c55!important; // Using important is important.
+}
+
+.btn-sm {
+    padding: 9px 23px;
+    margin: 2px;
+}
+
+.btn-xs {
+    padding: 2px 16px;
+    margin: 1px;
+}
+
+
+// #474c55

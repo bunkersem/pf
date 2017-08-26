@@ -1,0 +1,64 @@
+
+#nav {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: -60px;
+    height: 60px;
+    z-index: 4000;
+    
+    @media screen and (max-width: 600px) {
+        height: 124px;
+        top: -124px;
+    }
+    font-family: 'Poiret One', cursive;    
+    font-size: 40px;
+    background-color: rgba(255,255,255,0);
+    transition: top 100ms ease-out, background-color 1200ms ease-in-out;
+}
+#nav.show {
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 1200px) {
+    #nav {
+        font-size: 30px;
+    }
+}
+
+#navbar {
+    display: block;
+    margin: 10px 20px;
+}
+
+
+#navbar #brand {
+    float: left;
+    width: 160px;
+}
+
+#navbar #brand img {
+    height: 40px;
+}
+
+
+
+#navbar ul#nav-items {
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 161px);
+    float: right;
+    list-style: none;
+    text-align: right;
+}
+
+#navbar ul#nav-items li.nav-item {
+    float: right;
+    margin-left: 20px;
+    @media screen and (max-width: 600px) {
+        float: none;
+    }
+}
