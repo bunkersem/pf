@@ -33,9 +33,6 @@
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
 /******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
@@ -63,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -605,13 +602,32 @@ module.exports = function (css) {
 /***/ }),
 /* 3 */,
 /* 4 */,
-/* 5 */
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_main_scss__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_main_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__style__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng__ = __webpack_require__(12);
+
+
+
+
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(8);
+var content = __webpack_require__(10);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -636,7 +652,21 @@ if(false) {
 }
 
 /***/ }),
-/* 6 */
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* RGB */\n.primary {\n  color: #016fb9 !important;\n  border-color: #016fb9 !important; }\n\n.primary::before, .primary::after {\n  color: #016fb9 !important;\n  border-color: #016fb9 !important;\n  background: #016fb9 !important; }\n\n.default {\n  color: #353531 !important;\n  border-color: #353531 !important; }\n\n.default::before, .default::after {\n  color: #353531 !important;\n  border-color: #353531 !important;\n  background: #353531 !important; }\n\n.danger {\n  color: #ec4e20 !important;\n  border-color: #ec4e20 !important; }\n\n.danger::before, .danger::after {\n  color: #ec4e20 !important;\n  border-color: #ec4e20 !important;\n  background: #ec4e20 !important; }\n\n.warning {\n  color: #ff9505 !important;\n  border-color: #ff9505 !important; }\n\n.warning::before, .warning::after {\n  color: #ff9505 !important;\n  border-color: #ff9505 !important;\n  background: #ff9505 !important; }\n\n.dark {\n  color: black !important;\n  border-color: black !important; }\n\n.dark::before, .dark::after {\n  color: black !important;\n  border-color: black !important;\n  background: black !important; }\n\n.info {\n  color: #470024 !important;\n  border-color: #470024 !important; }\n\n.info::before, .info::after {\n  color: #470024 !important;\n  border-color: #470024 !important;\n  background: #470024 !important; }\n\n.secondary {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important; }\n\n.secondary::before, .secondary::after {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important;\n  background: #6e9075 !important; }\n\n.secondary {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important; }\n\n.secondary::before, .secondary::after {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important;\n  background: #6e9075 !important; }\n\n.white {\n  color: #fafafa !important;\n  border-color: #fafafa !important; }\n\n.white::before, .white::after {\n  color: #fafafa !important;\n  border-color: #fafafa !important;\n  background: #fafafa !important; }\n\n.text-primary {\n  color: #016fb9; }\n\n.text-default {\n  color: #353531; }\n\n.text-danger {\n  color: #ec4e20; }\n\n.text-warning {\n  color: #ff9505; }\n\n.text-dark {\n  color: black; }\n\n.text-info {\n  color: #470024; }\n\n.text-secondary {\n  color: #6e9075; }\n\n.text-white {\n  color: #fafafa; }\n\n.btn {\n  appearance: none;\n  position: relative;\n  user-select: none;\n  display: inline;\n  border-style: solid;\n  border-width: 3px;\n  border-color: #016fb9;\n  padding: 18px 46px;\n  background: none;\n  margin: 4px;\n  z-index: 0;\n  font-family: 'Raleway', sans-serif, Verdana, Geneva, Tahoma;\n  color: #016fb9;\n  cursor: pointer;\n  text-decoration: none;\n  transition: color 0ms 30ms linear;\n  overflow: hidden;\n  border-spacing: 1;\n  line-height: 1.42rem; }\n\n.btn::before {\n  z-index: -1;\n  content: \" \";\n  top: 100%;\n  left: 0;\n  right: 0;\n  bottom: -2px;\n  position: absolute;\n  transition: top 100ms ease-out;\n  background: #016fb9; }\n\n.btn:active, .btn:hover, .btn.active {\n  color: #fafafa !important; }\n\n.btn:active::before, .btn:hover::before, .btn.active::before {\n  top: 0; }\n\n.btn.white:active, .btn.white:hover .btn.white.active {\n  color: #474c55 !important; }\n\n.btn-sm {\n  padding: 9px 23px;\n  margin: 2px; }\n\n.btn-xs {\n  padding: 2px 16px;\n  margin: 1px; }\n\n#nav {\n  position: fixed;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  left: 0;\n  top: -60px;\n  height: 60px;\n  z-index: 4000;\n  font-family: 'Poiret One', cursive;\n  font-size: 40px;\n  background-color: rgba(255, 255, 255, 0);\n  transition: top 100ms ease-out, background-color 1200ms ease-in-out; }\n  @media screen and (max-width: 600px) {\n    #nav {\n      height: 124px;\n      top: -124px; } }\n\n#nav.show {\n  top: 0px;\n  background-color: rgba(255, 255, 255, 0.8); }\n\n@media screen and (max-width: 1200px) {\n  #nav {\n    font-size: 30px; } }\n\n#navbar {\n  display: block;\n  margin: 10px 20px; }\n\n#navbar #brand {\n  float: left;\n  width: 160px; }\n\n#navbar #brand img {\n  height: 40px; }\n\n#navbar ul#nav-items {\n  margin: 0;\n  padding: 0;\n  width: calc(100% - 161px);\n  float: right;\n  list-style: none;\n  text-align: right; }\n\n#navbar ul#nav-items li.nav-item {\n  float: right;\n  margin-left: 20px; }\n  @media screen and (max-width: 600px) {\n    #navbar ul#nav-items li.nav-item {\n      float: none; } }\n\ninput[type=text] {\n  padding: 18px 26px;\n  margin: 8px 4px;\n  box-sizing: border-box;\n  border: 2px solid rgba(0, 0, 0, 0.3);\n  border-radius: 4px;\n  font-family: 'Raleway';\n  width: 100%;\n  width: calc(100% - 4px); }\n\n.m-0 {\n  margin: 0; }\n\n.mt-0 {\n  margin-top: 0; }\n\n.mb-0 {\n  margin-bottom: 0; }\n\n.ml-0 {\n  margin-left: 0; }\n\n.mr-0 {\n  margin-right: 0; }\n\n.mx-0 {\n  margin-right: 0;\n  margin-left: 0; }\n\n.my-0 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.p-0 {\n  padding: 0; }\n\n.pt-0 {\n  padding-top: 0; }\n\n.pb-0 {\n  padding-bottom: 0; }\n\n.pl-0 {\n  padding-left: 0; }\n\n.pr-0 {\n  padding-right: 0; }\n\n.px-0 {\n  padding-right: 0;\n  padding-left: 0; }\n\n.py-0 {\n  padding-top: 0;\n  padding-bottom: 0; }\n\n.m-1 {\n  margin: 6; }\n\n.mt-1 {\n  margin-top: 6; }\n\n.mb-1 {\n  margin-bottom: 6; }\n\n.ml-1 {\n  margin-left: 6; }\n\n.mr-1 {\n  margin-right: 6; }\n\n.mx-1 {\n  margin-right: 6;\n  margin-left: 6; }\n\n.my-1 {\n  margin-top: 6;\n  margin-bottom: 6; }\n\n.p-1 {\n  padding: 6; }\n\n.pt-1 {\n  padding-top: 6; }\n\n.pb-1 {\n  padding-bottom: 6; }\n\n.pl-1 {\n  padding-left: 6; }\n\n.pr-1 {\n  padding-right: 6; }\n\n.px-1 {\n  padding-right: 6;\n  padding-left: 6; }\n\n.py-1 {\n  padding-top: 6;\n  padding-bottom: 6; }\n\n.m-2 {\n  margin: 12; }\n\n.mt-2 {\n  margin-top: 12; }\n\n.mb-2 {\n  margin-bottom: 12; }\n\n.ml-2 {\n  margin-left: 12; }\n\n.mr-2 {\n  margin-right: 12; }\n\n.mx-2 {\n  margin-right: 12;\n  margin-left: 12; }\n\n.my-2 {\n  margin-top: 12;\n  margin-bottom: 12; }\n\n.p-2 {\n  padding: 12; }\n\n.pt-2 {\n  padding-top: 12; }\n\n.pb-2 {\n  padding-bottom: 12; }\n\n.pl-2 {\n  padding-left: 12; }\n\n.pr-2 {\n  padding-right: 12; }\n\n.px-2 {\n  padding-right: 12;\n  padding-left: 12; }\n\n.py-2 {\n  padding-top: 12;\n  padding-bottom: 12; }\n\n.m-3 {\n  margin: 28; }\n\n.mt-3 {\n  margin-top: 28; }\n\n.mb-3 {\n  margin-bottom: 28; }\n\n.ml-3 {\n  margin-left: 28; }\n\n.mr-3 {\n  margin-right: 28; }\n\n.mx-3 {\n  margin-right: 28;\n  margin-left: 28; }\n\n.my-3 {\n  margin-top: 28;\n  margin-bottom: 28; }\n\n.p-3 {\n  padding: 28; }\n\n.pt-3 {\n  padding-top: 28; }\n\n.pb-3 {\n  padding-bottom: 28; }\n\n.pl-3 {\n  padding-left: 28; }\n\n.pr-3 {\n  padding-right: 28; }\n\n.px-3 {\n  padding-right: 28;\n  padding-left: 28; }\n\n.py-3 {\n  padding-top: 28;\n  padding-bottom: 28; }\n\n.m-4 {\n  margin: 36; }\n\n.mt-4 {\n  margin-top: 36; }\n\n.mb-4 {\n  margin-bottom: 36; }\n\n.ml-4 {\n  margin-left: 36; }\n\n.mr-4 {\n  margin-right: 36; }\n\n.mx-4 {\n  margin-right: 36;\n  margin-left: 36; }\n\n.my-4 {\n  margin-top: 36;\n  margin-bottom: 36; }\n\n.p-4 {\n  padding: 36; }\n\n.pt-4 {\n  padding-top: 36; }\n\n.pb-4 {\n  padding-bottom: 36; }\n\n.pl-4 {\n  padding-left: 36; }\n\n.pr-4 {\n  padding-right: 36; }\n\n.px-4 {\n  padding-right: 36;\n  padding-left: 36; }\n\n.py-4 {\n  padding-top: 36;\n  padding-bottom: 36; }\n\n.m-5 {\n  margin: 60; }\n\n.mt-5 {\n  margin-top: 60; }\n\n.mb-5 {\n  margin-bottom: 60; }\n\n.ml-5 {\n  margin-left: 60; }\n\n.mr-5 {\n  margin-right: 60; }\n\n.mx-5 {\n  margin-right: 60;\n  margin-left: 60; }\n\n.my-5 {\n  margin-top: 60;\n  margin-bottom: 60; }\n\n.p-5 {\n  padding: 60; }\n\n.pt-5 {\n  padding-top: 60; }\n\n.pb-5 {\n  padding-bottom: 60; }\n\n.pl-5 {\n  padding-left: 60; }\n\n.pr-5 {\n  padding-right: 60; }\n\n.px-5 {\n  padding-right: 60;\n  padding-left: 60; }\n\n.py-5 {\n  padding-top: 60;\n  padding-bottom: 60; }\n\nbody {\n  font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;\n  color: #353531; }\n\n* {\n  box-sizing: border-box; }\n\n.clearfix {\n  clear: both; }\n\n/*\r\n$col-default: rgba(53, 53, 49, 1);\r\n$col-danger: rgba(236, 78, 32, 1);\r\n$col-warning: rgba(255, 149, 5, 1);\r\n$col-primary: rgba(1, 111, 185, 1);\r\n$col-dark: rgba(0, 0, 0, 1);\r\n$col-info: rgba(71, 0, 36, 1);\r\n$col-secondary: rgba(110, 144, 117, 1);\r\n$col-background: rgba(250, 250, 250, 1);\r\n*/\n/* Globals */\n* {\n  box-sizing: border-box; }\n\nhtml {\n  background: white;\n  font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma; }\n\nbody {\n  width: 100vw;\n  margin: 0;\n  overflow-x: hidden; }\n\n.contentwrapper {\n  margin: 10px;\n  transition: width 500ms ease; }\n\n.container {\n  max-width: 1024px;\n  margin: auto; }\n\n/* Banner */\n#masthead {\n  text-align: center;\n  width: 100vw;\n  background-color: rgba(255, 10, 10, 0.2);\n  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 10, 10, 0.2)), to(rgba(10, 10, 255, 0.2)));\n  background-image: -webkit-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  background-image: -moz-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  background-image: linear-gradient(to top, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  padding: 120px 0; }\n\n#masthead #profilepic {\n  display: block;\n  width: 180px;\n  max-width: 100%;\n  border-radius: 50%;\n  margin: auto; }\n\n#masthead #mastheadtitle {\n  margin-top: 0;\n  font-size: 80px;\n  font-weight: 400;\n  font-family: 'Poiret One', cursive; }\n\na {\n  text-decoration: none;\n  color: #353531; }\n\n.mesection {\n  margin-top: 80px;\n  text-align: center; }\n\n.bubble {\n  background: rgba(53, 53, 49, 0.3);\n  border-radius: 50%; }\n\n#techstackbubble {\n  width: 200px;\n  height: 200px;\n  max-width: 200px;\n  max-height: 200px;\n  margin: auto;\n  overflow: hidden; }\n\n#screensizes {\n  max-width: 700px; }\n\n#techstackbubble-content {\n  height: 200px;\n  width: 99999px;\n  margin-left: 200px;\n  animation: cycletechnologies 30s 0s linear infinite; }\n\n@keyframes cycletechnologies {\n  from {\n    margin-left: 200px; }\n  to {\n    margin-left: -2900px; } }\n\n#techstackbubble-content img {\n  display: block;\n  float: left;\n  margin: 40px;\n  max-height: 120px;\n  max-width: 120px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -676,32 +706,76 @@ window.addEventListener('load', function () {
 
 
 /***/ }),
-/* 7 */,
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "/* RGB */\n.primary {\n  color: #016fb9 !important;\n  border-color: #016fb9 !important; }\n\n.primary::before, .primary::after {\n  color: #016fb9 !important;\n  border-color: #016fb9 !important;\n  background: #016fb9 !important; }\n\n.default {\n  color: #353531 !important;\n  border-color: #353531 !important; }\n\n.default::before, .default::after {\n  color: #353531 !important;\n  border-color: #353531 !important;\n  background: #353531 !important; }\n\n.danger {\n  color: #ec4e20 !important;\n  border-color: #ec4e20 !important; }\n\n.danger::before, .danger::after {\n  color: #ec4e20 !important;\n  border-color: #ec4e20 !important;\n  background: #ec4e20 !important; }\n\n.warning {\n  color: #ff9505 !important;\n  border-color: #ff9505 !important; }\n\n.warning::before, .warning::after {\n  color: #ff9505 !important;\n  border-color: #ff9505 !important;\n  background: #ff9505 !important; }\n\n.dark {\n  color: black !important;\n  border-color: black !important; }\n\n.dark::before, .dark::after {\n  color: black !important;\n  border-color: black !important;\n  background: black !important; }\n\n.info {\n  color: #470024 !important;\n  border-color: #470024 !important; }\n\n.info::before, .info::after {\n  color: #470024 !important;\n  border-color: #470024 !important;\n  background: #470024 !important; }\n\n.secondary {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important; }\n\n.secondary::before, .secondary::after {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important;\n  background: #6e9075 !important; }\n\n.secondary {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important; }\n\n.secondary::before, .secondary::after {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important;\n  background: #6e9075 !important; }\n\n.white {\n  color: #fafafa !important;\n  border-color: #fafafa !important; }\n\n.white::before, .white::after {\n  color: #fafafa !important;\n  border-color: #fafafa !important;\n  background: #fafafa !important; }\n\n.text-primary {\n  color: #016fb9; }\n\n.text-default {\n  color: #353531; }\n\n.text-danger {\n  color: #ec4e20; }\n\n.text-warning {\n  color: #ff9505; }\n\n.text-dark {\n  color: black; }\n\n.text-info {\n  color: #470024; }\n\n.text-secondary {\n  color: #6e9075; }\n\n.text-white {\n  color: #fafafa; }\n\n.btn {\n  appearance: none;\n  position: relative;\n  user-select: none;\n  display: inline;\n  border-style: solid;\n  border-width: 3px;\n  border-color: #016fb9;\n  padding: 18px 46px;\n  background: none;\n  margin: 4px;\n  z-index: 0;\n  font-family: 'Raleway', sans-serif, Verdana, Geneva, Tahoma;\n  color: #016fb9;\n  cursor: pointer;\n  text-decoration: none;\n  transition: color 0ms 30ms linear;\n  overflow: hidden;\n  border-spacing: 1;\n  line-height: 1.42rem; }\n\n.btn::before {\n  z-index: -1;\n  content: \" \";\n  top: 100%;\n  left: 0;\n  right: 0;\n  bottom: -2px;\n  position: absolute;\n  transition: top 100ms ease-out;\n  background: #016fb9; }\n\n.btn:active, .btn:hover, .btn.active {\n  color: #fafafa !important; }\n\n.btn:active::before, .btn:hover::before, .btn.active::before {\n  top: 0; }\n\n.btn.white:active, .btn.white:hover .btn.white.active {\n  color: #474c55 !important; }\n\n.btn-sm {\n  padding: 9px 23px;\n  margin: 2px; }\n\n.btn-xs {\n  padding: 2px 16px;\n  margin: 1px; }\n\n#nav {\n  position: fixed;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  left: 0;\n  top: -60px;\n  height: 60px;\n  z-index: 4000;\n  font-family: 'Poiret One', cursive;\n  font-size: 40px;\n  background-color: rgba(255, 255, 255, 0);\n  transition: top 100ms ease-out, background-color 1200ms ease-in-out; }\n  @media screen and (max-width: 600px) {\n    #nav {\n      height: 124px;\n      top: -124px; } }\n\n#nav.show {\n  top: 0px;\n  background-color: rgba(255, 255, 255, 0.8); }\n\n@media screen and (max-width: 1200px) {\n  #nav {\n    font-size: 30px; } }\n\n#navbar {\n  display: block;\n  margin: 10px 20px; }\n\n#navbar #brand {\n  float: left;\n  width: 160px; }\n\n#navbar #brand img {\n  height: 40px; }\n\n#navbar ul#nav-items {\n  margin: 0;\n  padding: 0;\n  width: calc(100% - 161px);\n  float: right;\n  list-style: none;\n  text-align: right; }\n\n#navbar ul#nav-items li.nav-item {\n  float: right;\n  margin-left: 20px; }\n  @media screen and (max-width: 600px) {\n    #navbar ul#nav-items li.nav-item {\n      float: none; } }\n\ninput[type=text] {\n  padding: 18px 26px;\n  margin: 8px 4px;\n  box-sizing: border-box;\n  border: 2px solid rgba(0, 0, 0, 0.3);\n  border-radius: 4px;\n  font-family: 'Raleway';\n  width: 100%;\n  width: calc(100% - 4px); }\n\n.m-0 {\n  margin: 0; }\n\n.mt-0 {\n  margin-top: 0; }\n\n.mb-0 {\n  margin-bottom: 0; }\n\n.ml-0 {\n  margin-left: 0; }\n\n.mr-0 {\n  margin-right: 0; }\n\n.mx-0 {\n  margin-right: 0;\n  margin-left: 0; }\n\n.my-0 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.p-0 {\n  padding: 0; }\n\n.pt-0 {\n  padding-top: 0; }\n\n.pb-0 {\n  padding-bottom: 0; }\n\n.pl-0 {\n  padding-left: 0; }\n\n.pr-0 {\n  padding-right: 0; }\n\n.px-0 {\n  padding-right: 0;\n  padding-left: 0; }\n\n.py-0 {\n  padding-top: 0;\n  padding-bottom: 0; }\n\n.m-1 {\n  margin: 6; }\n\n.mt-1 {\n  margin-top: 6; }\n\n.mb-1 {\n  margin-bottom: 6; }\n\n.ml-1 {\n  margin-left: 6; }\n\n.mr-1 {\n  margin-right: 6; }\n\n.mx-1 {\n  margin-right: 6;\n  margin-left: 6; }\n\n.my-1 {\n  margin-top: 6;\n  margin-bottom: 6; }\n\n.p-1 {\n  padding: 6; }\n\n.pt-1 {\n  padding-top: 6; }\n\n.pb-1 {\n  padding-bottom: 6; }\n\n.pl-1 {\n  padding-left: 6; }\n\n.pr-1 {\n  padding-right: 6; }\n\n.px-1 {\n  padding-right: 6;\n  padding-left: 6; }\n\n.py-1 {\n  padding-top: 6;\n  padding-bottom: 6; }\n\n.m-2 {\n  margin: 12; }\n\n.mt-2 {\n  margin-top: 12; }\n\n.mb-2 {\n  margin-bottom: 12; }\n\n.ml-2 {\n  margin-left: 12; }\n\n.mr-2 {\n  margin-right: 12; }\n\n.mx-2 {\n  margin-right: 12;\n  margin-left: 12; }\n\n.my-2 {\n  margin-top: 12;\n  margin-bottom: 12; }\n\n.p-2 {\n  padding: 12; }\n\n.pt-2 {\n  padding-top: 12; }\n\n.pb-2 {\n  padding-bottom: 12; }\n\n.pl-2 {\n  padding-left: 12; }\n\n.pr-2 {\n  padding-right: 12; }\n\n.px-2 {\n  padding-right: 12;\n  padding-left: 12; }\n\n.py-2 {\n  padding-top: 12;\n  padding-bottom: 12; }\n\n.m-3 {\n  margin: 28; }\n\n.mt-3 {\n  margin-top: 28; }\n\n.mb-3 {\n  margin-bottom: 28; }\n\n.ml-3 {\n  margin-left: 28; }\n\n.mr-3 {\n  margin-right: 28; }\n\n.mx-3 {\n  margin-right: 28;\n  margin-left: 28; }\n\n.my-3 {\n  margin-top: 28;\n  margin-bottom: 28; }\n\n.p-3 {\n  padding: 28; }\n\n.pt-3 {\n  padding-top: 28; }\n\n.pb-3 {\n  padding-bottom: 28; }\n\n.pl-3 {\n  padding-left: 28; }\n\n.pr-3 {\n  padding-right: 28; }\n\n.px-3 {\n  padding-right: 28;\n  padding-left: 28; }\n\n.py-3 {\n  padding-top: 28;\n  padding-bottom: 28; }\n\n.m-4 {\n  margin: 36; }\n\n.mt-4 {\n  margin-top: 36; }\n\n.mb-4 {\n  margin-bottom: 36; }\n\n.ml-4 {\n  margin-left: 36; }\n\n.mr-4 {\n  margin-right: 36; }\n\n.mx-4 {\n  margin-right: 36;\n  margin-left: 36; }\n\n.my-4 {\n  margin-top: 36;\n  margin-bottom: 36; }\n\n.p-4 {\n  padding: 36; }\n\n.pt-4 {\n  padding-top: 36; }\n\n.pb-4 {\n  padding-bottom: 36; }\n\n.pl-4 {\n  padding-left: 36; }\n\n.pr-4 {\n  padding-right: 36; }\n\n.px-4 {\n  padding-right: 36;\n  padding-left: 36; }\n\n.py-4 {\n  padding-top: 36;\n  padding-bottom: 36; }\n\n.m-5 {\n  margin: 60; }\n\n.mt-5 {\n  margin-top: 60; }\n\n.mb-5 {\n  margin-bottom: 60; }\n\n.ml-5 {\n  margin-left: 60; }\n\n.mr-5 {\n  margin-right: 60; }\n\n.mx-5 {\n  margin-right: 60;\n  margin-left: 60; }\n\n.my-5 {\n  margin-top: 60;\n  margin-bottom: 60; }\n\n.p-5 {\n  padding: 60; }\n\n.pt-5 {\n  padding-top: 60; }\n\n.pb-5 {\n  padding-bottom: 60; }\n\n.pl-5 {\n  padding-left: 60; }\n\n.pr-5 {\n  padding-right: 60; }\n\n.px-5 {\n  padding-right: 60;\n  padding-left: 60; }\n\n.py-5 {\n  padding-top: 60;\n  padding-bottom: 60; }\n\nbody {\n  font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;\n  color: #353531; }\n\n* {\n  box-sizing: border-box; }\n\n.clearfix {\n  clear: both; }\n\n/*\r\n$col-default: rgba(53, 53, 49, 1);\r\n$col-danger: rgba(236, 78, 32, 1);\r\n$col-warning: rgba(255, 149, 5, 1);\r\n$col-primary: rgba(1, 111, 185, 1);\r\n$col-dark: rgba(0, 0, 0, 1);\r\n$col-info: rgba(71, 0, 36, 1);\r\n$col-secondary: rgba(110, 144, 117, 1);\r\n$col-background: rgba(250, 250, 250, 1);\r\n*/\n/* Globals */\n* {\n  box-sizing: border-box; }\n\nhtml {\n  background: white;\n  font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma; }\n\nbody {\n  width: 100vw;\n  margin: 0;\n  overflow-x: hidden; }\n\n.contentwrapper {\n  margin: 10px;\n  transition: width 500ms ease; }\n\n.container {\n  max-width: 1024px;\n  margin: auto; }\n\n/* Banner */\n#masthead {\n  text-align: center;\n  width: 100vw;\n  background-color: rgba(255, 10, 10, 0.2);\n  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 10, 10, 0.2)), to(rgba(10, 10, 255, 0.2)));\n  background-image: -webkit-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  background-image: -moz-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  background-image: linear-gradient(to top, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  padding: 120px 0; }\n\n#masthead #profilepic {\n  display: block;\n  width: 180px;\n  max-width: 100%;\n  border-radius: 50%;\n  margin: auto; }\n\n#masthead #mastheadtitle {\n  margin-top: 0;\n  font-size: 80px;\n  font-weight: 400;\n  font-family: 'Poiret One', cursive; }\n\na {\n  text-decoration: none;\n  color: #353531; }\n\n.mesection {\n  margin-top: 80px;\n  text-align: center; }\n\n.bubble {\n  background: rgba(53, 53, 49, 0.3);\n  border-radius: 50%; }\n\n#techstackbubble {\n  width: 200px;\n  height: 200px;\n  max-width: 200px;\n  max-height: 200px;\n  margin: auto;\n  overflow: hidden; }\n\n#screensizes {\n  max-width: 700px; }\n\n#techstackbubble-content {\n  height: 200px;\n  width: 99999px;\n  margin-left: 200px;\n  animation: cycletechnologies 30s 0s linear infinite; }\n\n@keyframes cycletechnologies {\n  from {\n    margin-left: 200px; }\n  to {\n    margin-left: -2900px; } }\n\n#techstackbubble-content img {\n  display: block;\n  float: left;\n  margin: 40px;\n  max-height: 120px;\n  max-width: 120px; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 9 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_main_scss__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_main_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__style__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_project_component_project_component__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_projects_list_component_projects_list_component__ = __webpack_require__(14);
 
 
+var angular = window.angular;
+angular.module('portfolio', ['ngSanitize'])
+    .service('projectsService', function ($http) {
+    this.getProjects = function () {
+        return $http.get('./projects.json');
+    };
+});
+Object(__WEBPACK_IMPORTED_MODULE_1__components_projects_list_component_projects_list_component__["a" /* projectsListComponent */])(angular);
+Object(__WEBPACK_IMPORTED_MODULE_0__components_project_component_project_component__["a" /* projectComponent */])(angular);
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = projectComponent;
+function projectComponent(angular) {
+    angular.module('portfolio')
+        .component('project', {
+        templateUrl: './scripts/components/project-component/project-component.html',
+        bindings: {
+            project: '<',
+        },
+        controller: function () {
+            var $ctrl = this;
+            $ctrl.$onInit = function () {
+                $ctrl.project = $ctrl.project;
+                console.log($ctrl.project);
+            };
+            $ctrl.title = 'project';
+            $ctrl.keyword = 'lalala, llala, laala',
+                $ctrl.isWebApp = true;
+            $ctrl.isDesktopApp = true;
+            $ctrl.isMobileApp = true;
+            $ctrl.isUtil = false;
+            $ctrl.content = '<li><b>Hello</b> World this is my content and why does this even matter i dont know.</li>';
+        }
+    });
+}
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = projectsListComponent;
+function projectsListComponent(angular) {
+    angular.module('portfolio')
+        .component('projectslist', {
+        templateUrl: './scripts/components/projects-list-component/projects-list-component.html',
+        controller: function (projectsService) {
+            var $ctrl = this;
+            projectsService.getProjects()
+                .then(function (projects) {
+                console.log(projects.data);
+                $ctrl.projects = projects.data;
+            });
+        }
+    });
+}
 
 
 /***/ })
