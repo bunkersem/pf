@@ -1,0 +1,23 @@
+<!--
+$scope.title = 'project';
+$scope.keyword = 'lalala, llala, laala',
+$scope.isWebApp = true;
+$scope.isDesktopApp = true;
+$scope.isMobileApp = true;
+$scope.isUtil = false;
+$scope.content = 'Hello World this is my content and why does this even matter i dont know.'
+-->
+
+<article class="project" data-keywords="{{keywords}}" 
+    data-webapp="{{isWebApp}}" 
+    data-desktopapp="{{isDesktopApp}}" 
+    data-mobile="{{isMobileApp}}"
+    data-util="{{isUtil}}">
+    <h1 class="title">{{title}}</h1>
+    <p ng-bind-html="content"></p>
+</article>
+
+
+
+
+

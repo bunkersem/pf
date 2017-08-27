@@ -12,6 +12,7 @@ module.exports = {
         extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js'],
         alias: {
             angular: path.resolve(__dirname, './node_modules/angular/angular.min.js'),
+            sanitize: path.resolve(__dirname, './node_modules/angular-sanitize/angular-sanitize.min.js'),
             normalizecss: path.resolve(__dirname, './node_modules/normalize.css/normalize.css')
         }
     },
@@ -29,5 +30,10 @@ module.exports = {
         path: path.resolve(__dirname, './client/dist' ),
         filename: '[name].bundle.js',
         chunkFilename: '[id].chunk.js'
+    },
+    devServer: {
+        contentBase: path.join(__dirname, "client"),
+        compress: true,
+        port: 9000
     }
 }
