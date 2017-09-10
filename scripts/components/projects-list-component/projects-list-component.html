@@ -1,4 +1,16 @@
-<project project="proj" ng-repeat="proj in projects">
-</project>
-<project project="'hello'"></project>
+<form>
+    <h1>My Work</h1>
+    <p>Checkout my work here:</p>
+    <button ng-click="$ctrl.removeFilter()" ng-class="$ctrl.isFiltersEmpty() && 'active'" class="btn primary">All</button>
+    <button ng-click="$ctrl.filter('webApp')" ng-class="$ctrl.filters['webApp'] && 'active'" class="btn warning">Web Apps</button>
+    <button ng-click="$ctrl.filter('mobileApp')" ng-class="$ctrl.filters['mobileApp'] && 'active'" class="btn danger">Mobile Apps</button>
+    <button ng-click="$ctrl.filter('util')" ng-class="$ctrl.filters['util'] && 'active'" class="btn info">Utilities</button>
+    <button ng-click="$ctrl.filter('desktopApp')" ng-class="$ctrl.filters['desktopApp'] && 'active'" class="btn secondary">Desktop Apps</button>
+    <input id="projname" type="text" ng-model="$ctrl.searchStr" ng-change="$ctrl.search()" name="project name" placeholder="project name">
+</form>
+<div id="myprojects">
 
+    <project project="proj" ng-repeat="proj in $ctrl.filteredProjects">
+    </project>
+
+</div>

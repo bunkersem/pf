@@ -3,11 +3,10 @@
 <head>
     <title>My Portfolio</title>
 
-
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Projects</title>
+    <title>static app</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Poiret+One|Roboto|Ubuntu|Raleway" rel="stylesheet">
@@ -15,34 +14,31 @@
 </head>
 
 <body>
-    <!--[if IE]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-
     <div id="wrapper">
         <nav id="nav" class="show">
             <div id="navbar">
                 <div id="brand"><img src="./images/echosierrastudio_sm.png" alt=""></div>
                 <ul id="nav-items">
-                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
-                    <li class="nav-item"><b><a href="">Projects</a></b></li>
+                    <li class="nav-item"><b><a href="">Contact</a></b></li>
+                    <li class="nav-item"><a href="./projects.html">Projects</a></li>
                     <li class="nav-item"><a href="./index.html">About</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="mt-5"></div>
         <div class="contentwrapper">
-            <div class="container">
-                <projects-list></projects-list>
+            <!--[if IE]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+            <div class="container p-5">
+                <section id="mailme">
+                    <contact></contact>
+                </section>
             </div>
         </div>
     </div>
-    </div>
     <script src="./dist/vendor.bundle.js"></script>
     <script src="./dist/main.bundle.js"></script>
-
-
 </body>
 
 </html>
