@@ -1,0 +1,13 @@
+<h1 class="text-primary"><i class="material-icons">email</i> Contact Me!</h1>
+<form>
+    <input style="display: none;" ng-model="$ctrl.honeycomb" type="text" name="honeycomb" id="honeycomb">
+    <label id="namelabel" for="name">Your Name:</label>
+    <input ng-model="$ctrl.name" required type="text" name="name" id="name" placeholder="Your Name" aria-describedby="namelabel">
+    <label id="emaillabel" for="email">Your Email:</label>
+    <input  ng-model="$ctrl.email" required type="email" name="email" id="email" placeholder="Your Email" aria-describedby="emaillabel">
+    <label id="msglabel" for="msg">Your Message:</label>
+    <input ng-model="$ctrl.msg" required type="text" name="msg" id="msg" placeholder="Your Message" aria-describedby="msglabel">
+    <button style="padding-top: 12px;" ng-click="$ctrl.send()" type="submit" class="btn">
+        <i class="material-icons" style="position: relative; top: 6px;">send</i> Send!
+    </button>
+</form>

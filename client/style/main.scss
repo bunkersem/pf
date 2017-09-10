@@ -62,7 +62,9 @@ body {
 }
 
 #wrapper {
-
+    // Add padding to bottom
+    padding-bottom: 200px;
+    min-height: 100vh;
 }
 
 .contentwrapper {
@@ -156,15 +158,42 @@ a {
 
 // Projects
 
+
 #myprojects {
 
 }
 
+.project-article {
 
+    .title {
+        margin-bottom: 5px;
+    }
 
+    .proj-type-colors .proj-type-color {
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        float: left;
+    }
 
+    .proj-type-colors .proj-type-color.webapp {
+        background-color: $col-warning;
+    }
 
+    .proj-type-colors .proj-type-color.desktopapp {
+        background-color: $col-secondary;
+    }
 
+    .proj-type-colors .proj-type-color.mobileapp {
+        background-color: $col-danger;
+    }
+
+    .proj-type-colors .proj-type-color.util {
+        background-color: $col-info;
+    }
+
+}
 
 
 

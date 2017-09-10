@@ -38,7 +38,7 @@
     top: 0;
 }
 
-.btn.white:active, .btn.white:hover .btn.white.active {
+.btn.white:active, .btn.white:hover, .btn.white.active {
     color: #474c55!important; // Using important is important.
 }
 

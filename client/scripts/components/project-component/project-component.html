@@ -1,23 +1,17 @@
-<!--
-$scope.title = 'project';
-$scope.keyword = 'lalala, llala, laala',
-$scope.isWebApp = true;
-$scope.isDesktopApp = true;
-$scope.isMobileApp = true;
-$scope.isUtil = false;
-$scope.content = 'Hello World this is my content and why does this even matter i dont know.'
--->
 
-<article class="project" data-keywords="{{keywords}}" 
-    data-webapp="{{isWebApp}}" 
-    data-desktopapp="{{isDesktopApp}}" 
-    data-mobile="{{isMobileApp}}"
-    data-util="{{isUtil}}">
-    <h1 class="title">{{title}}</h1>
-    <p ng-bind-html="content"></p>
+
+<article class="project-article" keywords="{{$ctrl.project.keywords.join(', ')}}" 
+    webapp="{{$ctrl.project.webApp}}" 
+    desktopapp="{{$ctrl.project.desktopApp}}" 
+    mobile="{{$ctrl.project.mobileApp}}"
+    util="{{$ctrl.project.util}}">
+    <h1 class="title">{{$ctrl.project.title}}</h1>
+    <div class="proj-type-colors">
+        <div class="proj-type-color webapp" ng-if="$ctrl.project.webApp"></div>
+        <div class="proj-type-color desktopapp" ng-if="$ctrl.project.desktopApp"></div>
+        <div class="proj-type-color mobileapp" ng-if="$ctrl.project.mobileApp"></div>
+        <div class="proj-type-color util" ng-if="$ctrl.project.util"></div>
+        <div class="clearfix"></div>
+    </div>
+    <p ng-bind-html="$ctrl.project.content"></p>
 </article>
-
-
-
-
-
