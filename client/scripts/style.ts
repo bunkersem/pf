@@ -31,7 +31,7 @@ window.addEventListener('load', () => {
     // use SetTimeout to not relief the UI/Browser rendering.
     window.addEventListener('resize', (event) => setTimeout(function() {
         for (var i = 0; i < contentwrappers.length; i++) {
-            (<any>contentwrappers[i]).style.width = window.innerWidth + 'px';
+            (<any>contentwrappers[i]).style.width = (window.innerWidth - 35) + 'px';
         }
     }, 0));
 })();

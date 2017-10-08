@@ -27,13 +27,14 @@ module.exports = {
         ]
     },
     output: {
+        publicPath: '/dist/',
         path: path.resolve(__dirname, './client/dist' ),
         filename: '[name].bundle.js',
         chunkFilename: '[id].chunk.js'
     },
     devServer: {
-        contentBase: path.join(__dirname, "client"),
+        contentBase: path.join(__dirname, 'client'),
         compress: true,
-        port: 9000
+        port: 3000
     }
 }
