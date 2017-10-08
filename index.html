@@ -1,17 +1,20 @@
 <html ng-app="portfolio">
 
 <head>
-    <title>My Portfolio</title>
+    <title>My Portfolio :: Welcome</title>
 
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>static app</title>
+
+    <script src="./dist/vendor.bundle.js"></script>
+    <script src="./dist/main.bundle.js"></script>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Poiret+One|Roboto|Ubuntu|Raleway" rel="stylesheet">
 
 </head>
+
 <body>
     <!--[if IE]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -21,7 +24,7 @@
     <div id="wrapper">
         <nav id="nav" class="show">
             <div id="navbar">
-                <div id="brand" ><img src="./images/echosierrastudio_sm.png" alt=""></div>
+                <div id="brand"><img src="./images/echosierrastudio_sm.png" alt=""></div>
                 <ul id="nav-items">
                     <li class="nav-item"><a href="./contact.html">Contact</a></li>
                     <li class="nav-item"><a href="./projects.html">Projects</a></li>
@@ -34,7 +37,7 @@
                 <div class="container">
                     <img id="profilepic" src="./images/echosierrastudio_md.png" alt="Profile Picture">
                     <h1 id="mastheadtitle">Sem Postma</h1>
-                    <a href="https://github.com/bunkersem" target="_blank" class="btn white">Github</a> 
+                    <a href="https://github.com/bunkersem" target="_blank" class="btn white">Github</a>
                 </div>
             </div>
         </section>
@@ -51,8 +54,9 @@
                 <div class="container">
                     <h2 class="text-primary">What I Do.</h2>
                     <div id="techstackbubble" class="bubble">
-                        <div id="techstackbubble-content">
-                            <img src="./images/techs/babel.png" alt="">
+                        <div id="techstackbubble-inner">
+                            <techstack-list id="techstackbubble-content">
+                                <!-- <img src="./images/techs/babel.png" alt="">
                             <img src="./images/techs/bootstrap.svg" alt="">
                             <img src="./images/techs/d3.svg" alt="">
                             <img src="./images/techs/docker.svg" alt="">
@@ -66,7 +70,8 @@
                             <img src="./images/techs/sass.png" alt="">
                             <img src="./images/techs/typescript.png" alt="">
                             <img src="./images/techs/webpack.svg" alt="">
-                            <img src="./images/techs/yeoman.png" alt="">
+                            <img src="./images/techs/yeoman.png" alt=""> -->
+                            </techstack-list>
                         </div>
                     </div>
                     <p class="text-default">Lorum Ipsum </p>
@@ -80,14 +85,18 @@
                     <h2 class="text-primary">Hire Me?</h2>
                     <p class="text-default">Lorum Ipsum </p>
                     <p class="mt-4"><a href="./contact.html" class="btn">Mail Me</a></p>
-                    
+
                 </div>
             </section>
         </div>
+        <footer>
+                <ul id="footer-links">
+                    <li><a href="/robots.txt">robots.txt</a></li>
+                    <li><a href="/humans.txt">humans.txt</a></li>
+                </ul>
+            </footer>
     </div>
 
-    <script src="./dist/vendor.bundle.js"></script>
-    <script src="./dist/main.bundle.js"></script>
-
 </body>
+
 </html>

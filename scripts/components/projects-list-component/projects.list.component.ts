@@ -1,31 +1,32 @@
 import { Project } from '../../models';
 
-export default function projectsListComponent(angular: any) {
+export default function ProjectsListComponent(angular: any) {
     angular.module('portfolio')
         .component('projectsList', {
-            templateUrl: './scripts/components/projects-list-component/projects-list-component.html',
+            templateUrl: './scripts/components/projects-list-component/projects.list.component.html',
             
-            controller: function (projectsService: any) {
+            controller: ['projectsService', function (projectsService: any) {
                 const $ctrl = this;
                 $ctrl.filters = {};
                 projectsService.getProjects()
                     .then((projects: any) => {
-                        $ctrl.projects = projects.data;
+                        $ctrl.projects = <Project[]>projects.data;
                         $ctrl.filteredProjects = $ctrl.projects;
                     });
                 $ctrl.isFiltersEmpty = function() {
                     return Object.keys($ctrl.filters).length < 1;
                 }
                 function escapeRegExp(str: string) {
-                    return (str || '').replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+                    return (str || '').replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&');
                 }
                 function applyFilter() {
+                    console.log('herer')
                     const searchRegex = new RegExp(escapeRegExp($ctrl.searchStr), 'i');
                     $ctrl.filteredProjects = $ctrl.projects.filter((p: Project) => {
-                        return (p.webpApp == ($ctrl.filters['webApp'] || p.webpApp))
-                        && (p.mobileApp == ($ctrl.filters['mobileApp'] || p.mobileApp))
-                        && (p.desktopApp == ($ctrl.filters['desktopApp'] || p.desktopApp))
-                        && (p.util == ($ctrl.filters['util'] || p.util))
+                        return (p.webApp === ($ctrl.filters['webApp'] || p.webApp))
+                        && (p.mobileApp === ($ctrl.filters['mobileApp'] || p.mobileApp))
+                        && (p.desktopApp === ($ctrl.filters['desktopApp'] || p.desktopApp))
+                        && (p.util === ($ctrl.filters['util'] || p.util))
                         && searchRegex.test(p.title)
                             // || searchRegex.test(p.keywords.join(' '))
                             // || searchRegex.test(p.content)
@@ -42,6 +43,6 @@ export default function projectsListComponent(angular: any) {
                     $ctrl.filters = {};
                     applyFilter();
                 }
-            }   
+            }]  
         });
 }

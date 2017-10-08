@@ -12,6 +12,8 @@
 @import './buttons.scss';
 @import './navbar.scss';
 @import './forms.scss';
+@import './console.scss';
+@import './alert.scss';
 
 
 // Globals
@@ -29,6 +31,12 @@ body {
 
 .clearfix {
     clear: both;
+}
+
+iframe {
+    margin: 10px 0;
+    border: 0;
+    display: block;
 }
 
 /*
@@ -56,20 +64,30 @@ html {
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     overflow-x: hidden;
+
+}
+
+.console {
+    margin-top: 10px;
 }
 
 #wrapper {
-    // Add padding to bottom
-    padding-bottom: 200px;
-    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .contentwrapper {
+    user-select: contain;
     margin: 10px;
     transition: width 500ms ease;
+    min-height: 100vh;
+    min-height: calc(100vh - 232px);
+    margin-bottom: 200px;
 }
 
 .container {
@@ -109,7 +127,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $col-default;
+    color: $col-primary;
 }
 
 .mesection {
@@ -134,24 +152,30 @@ a {
 #screensizes {
     max-width: 700px;
 }
+#techstackbubble-inner {
+    overflow: visible;
+    display: inline-block;
+}
 
 #techstackbubble-content {
+    margin: 40px 0;
     height: 200px;
-    width: 99999px;
-    margin-left: 200px;
-    animation: cycletechnologies 30s 0s linear infinite;
+    animation: cycletechnologies 10s 0s linear infinite;
+    white-space: nowrap;
+    overflow: visible;
+    display: block;
 }
 @keyframes cycletechnologies {
-    from { margin-left: 200px; }
-    to { margin-left: -2900px; }
+    from { transform: translateX(200px); }
+    to { transform: translateX(calc(-600px - 100%)); }
 }
 
 #techstackbubble-content img {
-    display: block;
-    float: left;
-    margin: 40px;
+    display: inline-block;
     max-height: 120px;
-    max-width: 120px;
+    max-width: 180px;
+    padding-left: 60px;
+
 }
 
 
@@ -164,18 +188,50 @@ a {
 }
 
 .project-article {
-
-    .title {
-        margin-bottom: 5px;
+    margin-top: 60px;
+    box-shadow: 0 0 8px 1px rgba(0,0,0, 0.14), 0 0 40px 20px rgba(0,0,0,0.05);
+    padding: 20px;
+    h1.title {
+        margin-top: 7px;
     }
 
-    .proj-type-colors .proj-type-color {
+    .proj-type-colors, .proj-techs {
+        display: block;
+        float: left;
+    }
+
+    .proj-techs {
+        margin-left: 20px;
+    }
+
+    .proj-type-colors .proj-type-color, .proj-techs .proj-tech {
         margin-left: 5px;
         width: 30px;
         height: 30px;
         border-radius: 50%;
         float: left;
     }
+
+    .proj-techs .proj-tech {
+        background: rgba($col-secondary, 0.5);
+        text-align: center;
+        overflow: hidden;
+        background-position: center center;
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+    // .proj-techs .proj-tech .img {
+    //     background-position: center center;
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    // }
+    // .proj-techs .proj-tech .imgbefore {
+    //     display: inline-block;
+    //     height: 100%;
+    //     vertical-align: middle;
+    //     width: 0;
+    //     margin-right: -4px; // I dont know why this works but it does.
+    // }
 
     .proj-type-colors .proj-type-color.webapp {
         background-color: $col-warning;
@@ -193,7 +249,38 @@ a {
         background-color: $col-info;
     }
 
+    .images {
+        float: left;
+        width: 90vw;
+        max-width: 1000px;
+    }
+
+    .images img {
+        height: 160px;
+        display: block;
+        float: left;
+        margin: 10px;
+    }
 }
 
+footer {
+    user-select: contain;
+}
+ul#footer-links {
+    list-style: none;
+    margin: 3px;
+    text-align: right;
+}
+ul#footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+ul#footer-links li::before {
+    font-family: Arial, Helvetica, sans-serif;
+    content: " \2022 ";
+}
 
-
+.project-article iframe {
+    width: 100%;
+    height: 600px;
+}

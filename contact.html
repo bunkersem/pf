@@ -1,12 +1,11 @@
 <html ng-app="portfolio">
 
 <head>
-    <title>My Portfolio</title>
+    <title>My Portfolio :: Contact</title>
 
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>static app</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Poiret+One|Roboto|Ubuntu|Raleway" rel="stylesheet">
@@ -32,13 +31,68 @@
 
             <div class="container p-5">
                 <section id="mailme">
-                    <contact></contact>
+                    <h1 class="text-primary"><i class="material-icons">email</i> Contact Me!</h1>
+                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzmhkgKwT38yN2jG4QHO5iwgPz3R5auKeCT-WPBx1HY5q8MSl0G/exec">
+                        <input style="display: none;" name="subject" id="subject" value="Portfolio Contact">
+                        <input style="display: none;" type="text" name="honeycomb" id="honeycomb">
+                        <label id="namelabel" for="name">Name:</label>
+                        <input required type="text" name="name" id="name" placeholder="Your Name" aria-describedby="namelabel">
+
+                        <label id="emaillabel" for="email">Email:</label>
+                        <input required type="email" name="email" id="email" placeholder="Your Email" aria-describedby="emaillabel">
+
+                        <label id="msglabel" for="msg">Message:</label>
+                        <textarea required type="text" name="message" rows="8" id="msg" placeholder="Your Message" aria-describedby="msglabel"></textarea>
+
+                        <button style="padding-top: 12px;" type="submit" class="btn">
+                            <i class="material-icons" style="position: relative; top: 6px;">send</i> Mail Me!
+                        </button>
+                    </form>
+                    <div id="thankyou_message" style="display: none">
+                        <div class="alert alert-primary">
+                            <h2><i class="material-icons">announcement</i> Thank You!</h2>
+                            <p>I will try to get back to you soon.</p>
+                        </div>
+                    </div>
+                    
                 </section>
             </div>
         </div>
+        <footer>
+            <ul id="footer-links">
+                <li><a href="/robots.txt">robots.txt</a></li>
+                <li><a href="/humans.txt">humans.txt</a></li>
+            </ul>
+        </footer>
     </div>
     <script src="./dist/vendor.bundle.js"></script>
     <script src="./dist/main.bundle.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    <script>
+        document.addEventListener('keyup', checkValidity);
+        document.querySelectorAll('[type=submit]').forEach(function(sb) {
+                sb.addEventListener('mousedown', function() {
+                var inputs = document.getElementsByTagName('INPUT');
+                var textareas = document.getElementsByTagName('TEXTAREA');
+                var formElemsList = Array.prototype.slice.call(inputs).concat(Array.prototype.slice.call(textareas));
+                formElemsList.forEach(function(e) {
+                    checkValidity({target: e});
+                });
+            }, true);
+        });
+        function checkValidity(e) {
+            if(['input', 'textarea'].includes(e.target.tagName.toLowerCase()) == false)
+                 return;
+            if (e.target.validity.valid) {
+                e.target.classList.remove('invalid');
+                e.target.closest('form').classList.remove('invalid')
+            } else { //Remove the lines below if you don't want to automatically add
+                // classes when they're invalid.
+                e.target.classList.add('invalid');
+                e.target.closest('form').classList.add('invalid');
+            }
+        }
+        </script>
 </body>
 
 </html>

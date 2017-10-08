@@ -9,7 +9,7 @@
     Language: Dutch
     Standards: HTML5, CSS3, ES6
     Components: JQuery, Bootstrap, Bootswatch-United
-    Software: Node, Npm, Express, Passport, Pg(PostgreSQL), Gulp, Babel, Sass, Pug
+    Software: Node, Npm, Webpack, Github Pages, Babel, Sass, AngularJS
     Doctype: HTML
     IDE: VSCode, Git-Bash, Git, Gimp, Photoshop
     
