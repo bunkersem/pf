@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const technologies = require('./technologies.json');
+const technologies = require('./client/technologies.json');
 const projects = 
 [
     {
@@ -206,6 +206,6 @@ projects.forEach(p => {
         return technologyLowerCaseMap[t.toLowerCase()];
     });
 });
-fs.writeFileSync(path.join(__dirname, 'projects.json'), JSON.stringify(projects, null, 2));
+fs.writeFileSync(path.join(__dirname, './client/projects.json'), JSON.stringify(projects, null, 2));
 
 
