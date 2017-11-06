@@ -16,7 +16,10 @@
       "ASPDOTNET",
       "C#",
       "DOTNET",
-      "DOTNETCORE"
+      "DOTNETCore",
+      "NDepend",
+      "Git",
+      "GitHub"
     ],
     "console": {
       "name": "ETL",
@@ -40,7 +43,22 @@
   {
     "title": "Webshop",
     "keywords": [],
-    "technologies": [],
+    "technologies": [
+      "ExpressJS",
+      "Bootstrap",
+      "Passport",
+      "JavaScript",
+      "SCSS",
+      "BabelJS",
+      "ESLint",
+      "GulpJS",
+      "NodeJS",
+      "jQuery",
+      "CSS",
+      "HTML5",
+      "Git",
+      "GitHub"
+    ],
     "content": {
       "text": "\n            <a href=\"https://github.com/bunkersem/project-tango\">View on Github</a><br />\n            <a href=\"http://spelletjeskast.herokuapp.com/\">View on Heroku</a>",
       "images": [
@@ -64,16 +82,12 @@
       "Public Transport"
     ],
     "technologies": [
-      "ExpressJS",
-      "Bootstrap",
-      "Passport",
-      "Javascript",
-      "SCSS",
-      "BabelJS",
-      "ESLint",
-      "GulpJS",
-      "NodeJS",
-      "JQuery"
+      "HTML5",
+      "Cordova",
+      "OnsenUI",
+      "jQuery",
+      "CSS",
+      "JavaScript"
     ],
     "content": {
       "text": "\n            Ov Fiets App is an which helps you easily monitor the amount of bikes at a rental location.\n            <a href=\"https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Ov_Fiets_App\">View on Google Play</a><br />\n            ",
@@ -154,7 +168,10 @@
     "technologies": [
       "Electron",
       "NodeJS",
-      "JQuery"
+      "jQuery",
+      "CSS",
+      "HTML5",
+      "JavaScript"
     ],
     "content": {
       "text": "\n            An easy to use cross-platform application which helps in creating mind maps & simple diagrams.\n            Download <a href=\"https://www.dropbox.com/s/i7y8044r36n05ln/MindMap-windows.zip?dl=0\">Here</a><br />\n            ",
@@ -203,17 +220,58 @@
       "Periodic",
       "Table",
       "React",
+      "Component",
+      "CSS",
+      "HTML5"
+    ],
+    "technologies": [
+      "React",
+      "NodeJS",
+      "BabelJS",
+      "JavaScript",
+      "HTML5",
+      "CSS",
+      "Git",
+      "GitHub"
+    ],
+    "content": {
+      "text": "\n            A Periodic Table Template which is easily customizable.\n            <iframe src=\"https://bunkersem.github.io/periodic-table/\"></iframe>"
+    },
+    "webApp": true,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": false
+  },
+  {
+    "title": "This Website",
+    "keywords": [
+      "Periodic",
+      "Table",
+      "React",
       "Component"
     ],
     "technologies": [
-      "React"
+      "AngularJS",
+      "Webpack",
+      "NodeJS",
+      "SCSS",
+      "ASPDOTNET",
+      "Heroku",
+      "Webpack",
+      "JavaScript",
+      "CSS",
+      "HTML5",
+      "ESLint",
+      "TSLint",
+      "Git",
+      "GitHub"
     ],
     "content": {
-      "text": "\n            A Command line tool to quickly change hex colors and get rgb values.\n            <iframe src=\"https://bunkersem.github.io/periodic-table/\"></iframe>"
+      "text": "\n            This Porfolio Website"
     },
-    "webApp": false,
+    "webApp": true,
     "desktopApp": false,
-    "util": true,
+    "util": false,
     "mobileApp": false
   }
 ]

@@ -1,10 +1,11 @@
 import { Technology } from '../models';
 
-export default function ProjectsService(angular: any) {
+export default function TechnologiesService(angular: any) {
     angular.module('portfolio')
         .service('technologiesService', function($http: any) {
+            const technologiesPromise = $http.get('./technologies.json');
             this.getTechnologies = function (): Technology[] {
-                return $http.get('./technologies.json');
+                return technologiesPromise;
             }
         });
 }

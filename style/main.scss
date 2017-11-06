@@ -160,14 +160,14 @@ a {
 #techstackbubble-content {
     margin: 40px 0;
     height: 200px;
-    animation: cycletechnologies 10s 0s linear infinite;
+    animation: cycletechnologies 40s 0s linear infinite;
     white-space: nowrap;
     overflow: visible;
     display: block;
 }
 @keyframes cycletechnologies {
     from { transform: translateX(200px); }
-    to { transform: translateX(calc(-600px - 100%)); }
+    to { transform: translateX(calc(-900px - 100%)); }
 }
 
 #techstackbubble-content img {
@@ -175,7 +175,6 @@ a {
     max-height: 120px;
     max-width: 180px;
     padding-left: 60px;
-
 }
 
 

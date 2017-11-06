@@ -9,7 +9,7 @@
             <div class="proj-type-color util" title="Utility" ng-if="$ctrl.project.util"></div>
         </div>
         <div class="proj-techs">
-            <div class="proj-tech"  ng-repeat="tech in $ctrl.technologies" id="tech-{{$index}}"
+            <div class="proj-tech" title="{{tech.name}}" ng-repeat="tech in $ctrl.technologies" id="tech-{{$index}}"
             ng-attr-style="background-image: url('./images/techs/{{tech.icon}}');">
                 <!-- <div class="imgbefore"></div>
                 <div class="img" alt="{{tech.name}}" title="{{tech.name}}:&#13;&#10;{{tech.desc}}"> -->
