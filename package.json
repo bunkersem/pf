@@ -7,15 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run dev",
     "dev": "webpack-dev-server",
-    "deploy": "npm run push && npm run build && npm run gh-pages",
-    "push": "git push origin master",
-    "gh-pages": "git subtree push --prefix dist origin gh-pages",
-
-    "build": "webpack && npm run build-file-copy",    
-    "build-file-copy": "npm run cpy-root-files && npm run cpy-bundle && npm run cpy-images",
-    "cpy-root-files": "\"node_modules\\.bin\\copy\" ./client/* ./dist",
-    "cpy-bundle": "\"node_modules\\.bin\\copy\" ./client/bundle/**/* ./dist/bundle",
-    "cpy-images": "\"node_modules\\.bin\\copy\" ./client/images/**/* ./dist/images"
+    "push": "npm run build && npm run push",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
