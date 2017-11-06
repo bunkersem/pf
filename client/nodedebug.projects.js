@@ -7,7 +7,7 @@ const projects =
     {
         title: 'Embedded Testing Language(ETL) for C#',
         keywords: ['ASP', 'NET', 'CORE', '2.0', 'ETL', 'C#', 'Embedded', 'Testing', 'Language'],
-        technologies: ['ASPDOTNET', 'C#', 'DOTNET', 'DOTNETCORE'],
+        technologies: ['ASPDOTNET', 'C#', 'DOTNET', 'DOTNETCORE', 'NDepend', 'Git', 'Github'],
         console: {
             name: 'ETL',
             testConnection: {
@@ -32,7 +32,7 @@ const projects =
     {
         title: 'Webshop',
         keywords: [],
-        technologies: [],
+        technologies: ['ExpressJS', 'Bootstrap', 'Passport', 'Javascript', 'SCSS', 'BabelJS', 'ESLint', 'GulpJS', 'NodeJS', 'JQuery', 'CSS', 'HTML5', 'Git', 'Github'],
         content: {
             text: `
             <a href="https://github.com/bunkersem/project-tango">View on Github</a><br />
@@ -52,7 +52,7 @@ const projects =
     {
         title: 'OV Fiets App',
         keywords: ['OV', 'Fiets', 'Bike', 'Public Transport'],
-        technologies: ['ExpressJS', 'Bootstrap', 'Passport', 'Javascript', 'SCSS', 'BabelJS', 'ESLint', 'GulpJS', 'NodeJS', 'JQuery'],
+        technologies: ['HTML5', 'Cordova', 'OnsenUI', 'JQuery', 'CSS', 'Javascript'],
         content: {
             text: `
             Ov Fiets App is an which helps you easily monitor the amount of bikes at a rental location.
@@ -118,7 +118,7 @@ const projects =
     {
         title: 'Mind Viewer',
         keywords: ['Javascript', 'Mind', 'Viewer', 'Mapper'],
-        technologies: ['Electron', 'NodeJS', 'JQuery'],
+        technologies: ['Electron', 'NodeJS', 'JQuery', 'CSS', 'HTML5', 'JavaScript'],
         content: {
             text: `
             An easy to use cross-platform application which helps in creating mind maps & simple diagrams.
@@ -159,16 +159,29 @@ const projects =
     },
     {
         title: 'Periodic Table',
-        keywords: ['Periodic', 'Table', 'React', 'Component'],
-        technologies: ['React'],
+        keywords: ['Periodic', 'Table', 'React', 'Component', 'CSS', 'HTML5'],
+        technologies: ['React', 'NodeJS', 'BabelJS', 'Javascript', 'HTML5', 'CSS', 'Git', 'Github'],
         content: {
             text: `
-            A Command line tool to quickly change hex colors and get rgb values.
+            A Periodic Table Template which is easily customizable.
             <iframe src="https://bunkersem.github.io/periodic-table/"></iframe>`
         },
-        webApp: false,
+        webApp: true,
         desktopApp: false,
-        util: true,
+        util: false,
+        mobileApp: false,
+    },
+    {
+        title: 'This Website',
+        keywords: ['Periodic', 'Table', 'React', 'Component'],
+        technologies: ['AngularJS', 'Webpack', 'NodeJS', 'SCSS', 'ASPDOTNET', 'Heroku', 'Webpack', 'Javascript', 'CSS', 'HTML5', 'ESLint', 'TSLint', 'Git', 'Github'],
+        content: {
+            text: `
+            This Porfolio Website`,
+        },
+        webApp: true,
+        desktopApp: false,
+        util: false,
         mobileApp: false,
     },
 
@@ -177,12 +190,20 @@ const projects =
 
 
 const technologieNames = technologies.map(p => p.name);
+const technologyLowerCaseMap = (function() {
+    var obj = {};
+    technologieNames.forEach(n => {
+        obj[n.toLowerCase()] = n;
+    });
+    return obj;
+})();
 projects.forEach(p => {
-    p.technologies.forEach(t => {
+    p.technologies = p.technologies.map(t => {
         if (technologieNames.some(tn => tn.toLowerCase() === t.toLowerCase()) === false) {
-            throw Error(`${t} does not exist
-(Allowed Values: ${technologieNames.join(', ')})`);
+            console.error(`${t} does not exist\n(Allowed Values: ${technologieNames.sort().join(', ')})`);
+            process.exit(1);
         }
+        return technologyLowerCaseMap[t.toLowerCase()];
     });
 });
 fs.writeFileSync(path.join(__dirname, 'projects.json'), JSON.stringify(projects, null, 2));
