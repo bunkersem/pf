@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run dev",
     "dev": "webpack-dev-server",
-    "deploy": "npm run build && git push origin master",
+    "deploy": "npm run build && git push origin master && npm run gh-pages",
+    "gh-pages": "git subtree push --prefix client origin gh-pages",
     "build": "webpack"
   },
   "author": "",
