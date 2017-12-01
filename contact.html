@@ -8,12 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <script src="https://bunkersem.github.io/static_files/js/loader.js"></script>
+    <script src="./bundle/modernizr-bundle.js"></script>
     <script src="./bundle/vendor.bundle.js"></script>
     <script src="./bundle/main.bundle.js"></script>
-    <script src="./bundle/modernizr-bundle.js"></script>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Poiret+One|Roboto|Ubuntu|Raleway" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
 
 </head>
 
@@ -21,71 +41,89 @@
     <div id="wrapper">
         <nav id="nav" class="show">
             <div id="navbar">
-                <div id="brand"><img src="./images/echosierrastudio_sm.png" alt=""></div>
+                <div id="brand">
+                    <img src="./images/echosierrastudio_sm.png" alt="">
+                </div>
                 <ul id="nav-items">
-                    <li class="nav-item"><b><a href="">Contact</a></b></li>
-                    <li class="nav-item"><a href="./projects.html">Projects</a></li>
-                    <li class="nav-item"><a href="./index.html">About</a></li>
+                    <li class="nav-item">
+                        <b>
+                            <a href="">Contact</a>
+                        </b>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html">About</a>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <div class="contentwrapper">
-            <!--[if IE]>
+        <main>
+            <div class="contentwrapper">
+                <!--[if IE]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-            <div class="container p-5">
-                <section id="mailme">
-                    <h1 class="text-primary"><i class="material-icons">email</i> Contact Me!</h1>
-                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzmhkgKwT38yN2jG4QHO5iwgPz3R5auKeCT-WPBx1HY5q8MSl0G/exec">
-                        <input style="display: none;" name="subject" id="subject" value="Portfolio Contact">
-                        <input style="display: none;" type="text" name="honeycomb" id="honeycomb">
-                        <label id="namelabel" for="name">Name:</label>
-                        <input required type="text" name="name" id="name" placeholder="Your Name" aria-describedby="namelabel">
+                <div class="container p-5">
+                    <section id="mailme">
+                        <h1 class="text-primary">
+                            <i class="material-icons">email</i> Contact Me!</h1>
+                        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzmhkgKwT38yN2jG4QHO5iwgPz3R5auKeCT-WPBx1HY5q8MSl0G/exec">
+                            <input style="display: none;" name="subject" id="subject" value="Portfolio Contact">
+                            <input style="display: none;" type="text" name="honeycomb" id="honeycomb">
+                            <label id="namelabel" for="name">Name:</label>
+                            <input required type="text" name="name" id="name" placeholder="Your Name" aria-describedby="namelabel">
 
-                        <label id="emaillabel" for="email">Email:</label>
-                        <input required type="email" name="email" id="email" placeholder="Your Email" aria-describedby="emaillabel">
+                            <label id="emaillabel" for="email">Email:</label>
+                            <input required type="email" name="email" id="email" placeholder="Your Email" aria-describedby="emaillabel">
 
-                        <label id="msglabel" for="msg">Message:</label>
-                        <textarea required type="text" name="message" rows="8" id="msg" placeholder="Your Message" aria-describedby="msglabel"></textarea>
+                            <label id="msglabel" for="msg">Message:</label>
+                            <textarea required type="text" name="message" rows="8" id="msg" placeholder="Your Message" aria-describedby="msglabel"></textarea>
 
-                        <button style="padding-top: 12px;" type="submit" class="btn">
-                            <i class="material-icons" style="position: relative; top: 6px;">send</i> Mail Me!
-                        </button>
-                    </form>
-                    <div id="thankyou_message" style="display: none">
-                        <div class="alert alert-primary">
-                            <h2><i class="material-icons">announcement</i> Thank You!</h2>
-                            <p>I will try to get back to you soon.</p>
+                            <button style="padding-top: 12px;" type="submit" class="btn">
+                                <i class="material-icons" style="position: relative; top: 6px;">send</i> Mail Me!
+                            </button>
+                        </form>
+                        <div id="thankyou_message" style="display: none">
+                            <div class="alert alert-primary">
+                                <h2>
+                                    <i class="material-icons">announcement</i> Thank You!</h2>
+                                <p>I will try to get back to you soon.</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                </section>
+
+                    </section>
+                </div>
             </div>
-        </div>
+        </main>
         <footer>
             <ul id="footer-links">
-                <li><a href="/robots.txt">robots.txt</a></li>
-                <li><a href="/humans.txt">humans.txt</a></li>
+                <li>
+                    <a href="/robots.txt">robots.txt</a>
+                </li>
+                <li>
+                    <a href="/humans.txt">humans.txt</a>
+                </li>
             </ul>
         </footer>
     </div>
     <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
     <script>
         document.addEventListener('keyup', checkValidity);
-        document.querySelectorAll('[type=submit]').forEach(function(sb) {
-                sb.addEventListener('mousedown', function() {
+        document.querySelectorAll('[type=submit]').forEach(function (sb) {
+            sb.addEventListener('mousedown', function () {
                 var inputs = document.getElementsByTagName('INPUT');
                 var textareas = document.getElementsByTagName('TEXTAREA');
                 var formElemsList = Array.prototype.slice.call(inputs).concat(Array.prototype.slice.call(textareas));
-                formElemsList.forEach(function(e) {
-                    checkValidity({target: e});
+                formElemsList.forEach(function (e) {
+                    checkValidity({ target: e });
                 });
             }, true);
         });
         function checkValidity(e) {
-            if(['input', 'textarea'].includes(e.target.tagName.toLowerCase()) == false)
-                 return;
+            if (['input', 'textarea'].includes(e.target.tagName.toLowerCase()) == false)
+                return;
             if (e.target.validity.valid) {
                 e.target.classList.remove('invalid');
                 e.target.closest('form').classList.remove('invalid')
@@ -95,7 +133,7 @@
                 e.target.closest('form').classList.add('invalid');
             }
         }
-        </script>
+    </script>
 </body>
 
 </html>

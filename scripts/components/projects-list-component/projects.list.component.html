@@ -1,6 +1,4 @@
 <form>
-    <h1>My Work</h1>
-    <p>Checkout my work here:</p>
     <button ng-mousedown="$ctrl.removeFilter()" ng-class="$ctrl.isFiltersEmpty() && 'active'" class="btn primary">All</button>
     <button ng-mousedown="$ctrl.filter('webApp')" ng-class="$ctrl.filters['webApp'] && 'active'" class="btn warning">Web Apps</button>
     <button ng-mousedown="$ctrl.filter('mobileApp')" ng-class="$ctrl.filters['mobileApp'] && 'active'" class="btn danger">Mobile Apps</button>
@@ -10,7 +8,7 @@
 </form>
 <div id="myprojects">
 
-    <project project="proj" ng-repeat="proj in $ctrl.filteredProjects">
+    <project project="proj" ng-repeat="proj in $ctrl.filteredProjects track by $index">
     </project>
 
 </div>

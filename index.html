@@ -1,4 +1,5 @@
 <html ng-app="portfolio">
+
 <head>
     <title>My Portfolio :: Welcome</title>
 
@@ -7,12 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <script src="https://bunkersem.github.io/static_files/js/loader.js"></script>
+    <script src="./bundle/modernizr-bundle.js"></script>
     <script src="./bundle/vendor.bundle.js"></script>
     <script src="./bundle/main.bundle.js"></script>
-    <script src="./bundle/modernizr-bundle.js"></script>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Poiret+One|Roboto|Ubuntu|Raleway" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
 
 </head>
 
@@ -25,77 +46,90 @@
     <div id="wrapper">
         <nav id="nav" class="show">
             <div id="navbar">
-                <div id="brand"><img src="./images/echosierrastudio_sm.png" alt=""></div>
+                <div id="brand">
+                    <img src="./images/echosierrastudio_sm.png" alt="">
+                </div>
                 <ul id="nav-items">
-                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
-                    <li class="nav-item"><a href="./projects.html">Projects</a></li>
-                    <li class="nav-item"><b><a href="">About</a></b></li>
+                    <li class="nav-item">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <b>
+                            <a href="">About</a>
+                        </b>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <section id="masthead">
-            <div class="contentwrapper">
-                <div class="container">
-                    <img id="profilepic" src="./images/echosierrastudio_md.png" alt="Profile Picture">
-                    <h1 id="mastheadtitle">Sem Postma</h1>
-                    <a href="https://github.com/bunkersem" target="_blank" class="btn white">Github</a>
-                </div>
-            </div>
-        </section>
-        <div class="contentwrapper">
-            <section class="mesection" id="aboutme">
-                <div class="container">
-                    <h2 class="text-primary">Who Are You?</h2>
-                    <img src="./images/me200_256pic.png" alt="Me">
-                    <p class="text-default">Lorum Ipsum </p>
-                    <p style="font-size: 50px; opacity: 0.4">.....</p>
-                </div>
-            </section>
-            <section class="mesection" id="whatido">
-                <div class="container">
-                    <h2 class="text-primary">What I Do.</h2>
-                    <div id="techstackbubble" class="bubble">
-                        <div id="techstackbubble-inner">
-                            <techstack-list id="techstackbubble-content">
-                                <!-- <img src="./images/techs/babel.png" alt="">
-                            <img src="./images/techs/bootstrap.svg" alt="">
-                            <img src="./images/techs/d3.svg" alt="">
-                            <img src="./images/techs/docker.svg" alt="">
-                            <img src="./images/techs/eslint.svg" alt="">
-                            <img src="./images/techs/expressjs.png" alt="">
-                            <img src="./images/techs/gulp.png" alt="">
-                            <img src="./images/techs/javascript.png" alt="">
-                            <img src="./images/techs/jquery.png" alt="">
-                            <img src="./images/techs/mongodb.png" alt="">
-                            <img src="./images/techs/nodejs.svg" alt="">
-                            <img src="./images/techs/sass.png" alt="">
-                            <img src="./images/techs/typescript.png" alt="">
-                            <img src="./images/techs/webpack.svg" alt="">
-                            <img src="./images/techs/yeoman.png" alt=""> -->
-                            </techstack-list>
-                        </div>
+        <header>
+            <section id="masthead">
+                <div class="contentwrapper">
+                    <div class="container">
+                        <figure>
+                            <img id="profilepic" src="./images/echosierrastudio_md.png" alt="Profile Picture">
+                        </figure>
+                        <h1 id="mastheadtitle">Sem Postma</h1>
+                        <a href="https://github.com/bunkersem" target="_blank" class="btn white" style="line-height: 8rem;">Github</a>
                     </div>
-                    <p class="text-default">Lorum Ipsum </p>
-                    <img id="screensizes" src="./images/screensizes/screensizes.svg" alt="">
-                    <p class="text-default">Lorum Ipsum </p>
-                    <p style="font-size: 50px; opacity: 0.4"><i style="font-size: 50px;" class="material-icons">code</i></p>
                 </div>
             </section>
-            <section class="mesection" id="hireme">
-                <div class="container">
-                    <h2 class="text-primary">Hire Me?</h2>
-                    <p class="text-default">Lorum Ipsum </p>
-                    <p class="mt-4"><a href="./contact.html" class="btn">Mail Me</a></p>
+        </header>
+        <main>
 
-                </div>
-            </section>
-        </div>
+            <div class="contentwrapper">
+                <section class="mesection" id="aboutme">
+                    <div class="container">
+                        <h2 class="text-primary">Who Are You?</h2>
+                        <figure>
+                            <img src="./images/me200_256pic.png" alt="Me">
+                        </figure>
+                        <p class="text-default">Lorum Ipsum </p>
+                        <p style="font-size: 50px; opacity: 0.4">.....</p>
+                    </div>
+                </section>
+                <section class="mesection" id="whatido">
+                    <div class="container">
+                        <h2 class="text-primary">What I Do.</h2>
+                        <div id="techstackbubble" class="bubble">
+                            <div id="techstackbubble-inner">
+                                <techstack-list id="techstackbubble-content"></techstack-list>
+                            </div>
+                        </div>
+                        <p class="text-default">Lorum Ipsum </p>
+                        <figure>
+                            <img id="screensizes" src="./images/screensizes/screensizes.svg" alt="">
+                        </figure>
+                        <p class="text-default">Lorum Ipsum </p>
+                        <p style="font-size: 50px; opacity: 0.4">
+                            <i style="font-size: 50px;" class="material-icons">code</i>
+                        </p>
+                    </div>
+                </section>
+                <section class="mesection" id="hireme">
+                    <div class="container">
+                        <h2 class="text-primary">Contact Me?</h2>
+                        <p class="text-default">Lorum Ipsum </p>
+                        <p class="mt-4">
+                            <a href="./contact.html" class="btn">Mail Me</a>
+                        </p>
+
+                    </div>
+                </section>
+            </div>
+        </main>
         <footer>
-                <ul id="footer-links">
-                    <li><a href="/robots.txt">robots.txt</a></li>
-                    <li><a href="/humans.txt">humans.txt</a></li>
-                </ul>
-            </footer>
+            <ul id="footer-links">
+                <li>
+                    <a href="/robots.txt">robots.txt</a>
+                </li>
+                <li>
+                    <a href="/humans.txt">humans.txt</a>
+                </li>
+            </ul>
+        </footer>
     </div>
 
 </body>
