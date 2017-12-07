@@ -1,3 +1,4 @@
+/* http://humanstxt.org/ */
 /* TEAM */
     Developer: Sem Postma
     From: Oosterhout, Noord Brabant, The Netherlands
@@ -5,10 +6,9 @@
 
 
 /* SITE */
-    Last update: 2017/08
+    Last update: 2017/12
     Language: Dutch
     Standards: HTML5, CSS3, ES6
-    Components: JQuery, Bootstrap, Bootswatch-United
     Software: Node, Npm, Webpack, Github Pages, Babel, Sass, AngularJS
     Doctype: HTML
     IDE: VSCode, Git-Bash, Git, Gimp, Photoshop

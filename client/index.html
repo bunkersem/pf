@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://bunkersem.github.io/static_files/js/loader.js"></script>
     <script src="./bundle/modernizr-bundle.js"></script>
     <script src="./bundle/vendor.bundle.js"></script>
@@ -43,8 +44,8 @@
         <![endif]-->
 
 
-    <div id="wrapper">
-        <nav id="nav" class="show">
+    <div id="wrapper" class="shownav">
+        <nav id="nav">
             <div id="navbar">
                 <div id="brand">
                     <img src="./images/echosierrastudio_sm.png" alt="">
@@ -64,7 +65,9 @@
                 </ul>
             </div>
         </nav>
-        <header>
+        <header id="masthead-header">
+            <div id="particles-js"></div>
+
             <section id="masthead">
                 <div class="contentwrapper">
                     <div class="container">
@@ -123,10 +126,10 @@
         <footer>
             <ul id="footer-links">
                 <li>
-                    <a href="/robots.txt">robots.txt</a>
+                    <a href="./robots.txt">robots.txt</a>
                 </li>
                 <li>
-                    <a href="/humans.txt">humans.txt</a>
+                    <a href="./humans.txt">humans.txt</a>
                 </li>
             </ul>
         </footer>
