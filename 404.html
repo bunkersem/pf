@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://bunkersem.github.io/static_files/js/loader.js"></script>
     <script src="./bundle/modernizr-bundle.js"></script>
     <script src="./bundle/vendor.bundle.js"></script>
@@ -40,21 +41,45 @@
 </head>
 
 <body>
-    <noscript>
-        <div style="border: 1px solid purple; padding: 10px">
-            <span style="color:red">JavaScript is not enabled!</span>
-        </div>
-    </noscript>
-    <!--[if IE]>
-                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-                <![endif]-->
+    <div id="wrapper" class="shownav">
+        <nav id="nav">
+            <div id="navbar">
+                <div id="brand">
+                    <img src="./images/echosierrastudio_sm.png" alt="">
+                </div>
+                <ul id="nav-items">
+                    <li class="nav-item">
+                        <b>
+                            <a href="">Contact</a>
+                        </b>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="container text-center contentwrapper pt-5" style="font-size: 24px;">
+            <h1 class="text-danger mt-5">&#x2757;&nbsp;404</h1>
+            <p>Not found</p>
+            <button class="btn primary" onclick="history.back()">Back to Safety &#x1F448;</button>
+            <a href="./" class="btn primary" style="line-height: 8rem;">Home</a>
+        </main>
 
-    <main class="container text-center" style="font-size: 24px;">
-        <h1 class="text-danger">&#x2757;&nbsp;404</h1>
-        <p>Not found</p>
-        <button class="btn primary" onclick="history.back()">Back to Safety &#x1F448;</button>
-        <a href="./" class="btn primary" style="line-height: 8rem;">Home</a>
-    </main>
+    </div>
+    <footer>
+        <ul id="footer-links">
+            <li>
+                <a href="./robots.txt">robots.txt</a>
+            </li>
+            <li>
+                <a href="./humans.txt">humans.txt</a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>

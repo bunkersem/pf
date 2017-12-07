@@ -17,6 +17,7 @@ export default function ConsoleComponent (angular: any) {
                         url: $ctrl.console.testConnection.url
                     }).then(function(response: any) {
                         $ctrl.oldContent = '';
+                        $ctrl.content = $ctrl.content || $ctrl.console.hint || '';
                     }, function(error: any) {
                         $ctrl.oldContent = ($ctrl.oldContent + '\nfailed to connect to server').trim();
                     })

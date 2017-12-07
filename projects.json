@@ -30,7 +30,8 @@
       "connection": {
         "url": "https://afirusportfolio-api.herokuapp.com/api/ETL",
         "method": "POST"
-      }
+      },
+      "hint": "ASSERT 2 * 6 / (1 + 3) == 3"
     },
     "content": {
       "text": "ETL is a work in progress testing language that is written in and is meant for C#.<br />\n            It is build upon the ASP .Net Core 2.0 Framework.<br />\n            <a href=\"https://github.com/bunkersem/ETL\">View on Github</a>"
@@ -120,11 +121,11 @@
     "content": {
       "text": "\n            Reorganize our solar system, adjust orbits and edit planets with an easy to use interface. You can use this application to learn about orbital mechanics, physics and the solar system. The game is a sandbox type game. When you start playing the solar system will initialize to its real world state using an external API. This means that the game and the real world locations and rotations, etc, of all the planets in our solar system will be synchronized when you start the game.\n            <a href=\"https://play.google.com/store/apps/details?id=com.EchoSierraStudio.NewtonianSimulation3D\">View on Google Play</a><br />\n            ",
       "images": [
-        "https://lh3.googleusercontent.com/Dzzq99or6a2PCYFhtmsUweOPx6uUJIQzrQsw4ha_51RArt-SdiGo8XERUQiuEm65UssI=h900-rw",
-        "https://lh3.googleusercontent.com/OdrDVjNnnoSY72L-WJu56gHCo__seDE447QlyAnD4MDRZgU6Wy2LDr4IaXWPku7JHVw=h900-rw",
-        "https://lh3.googleusercontent.com/uU9rF5RTP5dEJ8wpE0pL-rVqizuklD5fe5uFsF9LfuQB2VM_ZkhQveI4X-GgzfaUqA=h900-rw",
-        "https://lh3.googleusercontent.com/PMRJifATlLeiDwfzihTHxKcribCmUboggbXEYQmqZgRBspjqrFJoXrK_BxndKREgOuu5=h900-rw",
-        "https://lh3.googleusercontent.com/nvB5CGt4T6f4jHpHNUNhFznmKQNz-TdaeKXxf9FwH2SCBS4nD6WUsAyF0fKeXy3Bog=h900-rw"
+        "https://imgur.com/Ew5OyYO.jpg",
+        "https://imgur.com/qw4OBXe.jpg",
+        "https://imgur.com/8HnFWxp.jpg",
+        "https://imgur.com/pTWcyVp.jpg",
+        "https://imgur.com/vTdY8fo.jpg"
       ]
     },
     "webApp": false,
@@ -146,11 +147,11 @@
     "content": {
       "text": "\n            Top Down Defence is a top down - tower defense game, made with the beautiful game asset pack provided by Kenny NL. It has infinite leveling but i doubt you will get further than lvl100. Vindicta features a great variety of enemy types such as the \"low health, very fast and difficult to hit\" enemies, and the \"hard to kill but slow\" enemies. The turrets have extensive upgrading capabilities so even in late game stages the game is still hard to beat.\n            <a href=\"https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Vindicta\">View on Google Play</a><br />\n            ",
       "images": [
-        "https://lh3.googleusercontent.com/9T74xOm45GcBoNQT1Qsa4PUf5qBNHaX_8N-1NNFxY_Hne5aYF6uhxBLg5pGspd_-7Lk=h900-rw",
-        "https://lh3.googleusercontent.com/JsuqKTuDuLAffU5ObsrX--qJm3aCgEZRZ0wLTyODUGO3oI35aptk51gonOSEjt6OrRQ=h900-rw",
-        "https://lh3.googleusercontent.com/LB8RGK0P0552m3EE-6lleyXhriM0kkQDBH6Ja0mPUWb05r9Ydqbz4NQoDm2ncQE0Uw=h900-rw",
-        "https://lh3.googleusercontent.com/dyRlRn0m8a-FDPM9sS-MnomdcOSBC1c6EtJrd5N9joSSrJYRc5I1oQxq0phMFfgN5Qk=h900-rw",
-        "https://lh3.googleusercontent.com/k6ub_FFE5BJ30xcBV_iNVuRPw7KiVycgCAPj2IALMUPOiqDKOqyt8q4e5-1_GdUwF_QI=h900-rw"
+        "https://imgur.com/7rvH4Hq.jpg",
+        "https://imgur.com/XoPOtV1.jpg",
+        "https://imgur.com/edFeFLw.jpg",
+        "https://imgur.com/QWh6yu7.jpg",
+        "https://imgur.com/RJqsP0I.jpg"
       ]
     },
     "webApp": false,

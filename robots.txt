@@ -1,4 +1,5 @@
-# robotstxt.org/
+# robots.txt for https://bunkersem.github.io/portfolio/
+# info about robots.txt: http://www.robotstxt.org/robotstxt.html
 
 User-agent: * 
 Disallow:

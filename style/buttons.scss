@@ -5,6 +5,7 @@
     display: inline;
     border-style: solid;
     border-color: $col-primary;
+    border-width: 2px;
     padding: 18px 46px;
     background: none;
     margin: 4px;
@@ -14,7 +15,6 @@
     cursor: pointer;
     text-decoration: none;
     transition: color 0ms 30ms linear;
-    overflow: hidden;
     border-spacing: 1;
     line-height: 1.42rem;
     outline: none;
@@ -66,7 +66,7 @@
     color: $col-warning!important; // Using important is important.;
 }
 .btn.white:focus:hover:not(.active) {
-    color: $col-white;
+    color: $col-white!important;
 }
 .btn:focus:hover:not(.active)::before {
     top: 100%;
