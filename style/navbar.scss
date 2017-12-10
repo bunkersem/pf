@@ -16,12 +16,19 @@
     }
     font-family: 'Poiret One', cursive;    
     font-size: 30px;
-    background-color: rgba(255,255,255,0);
-    transition: top 100ms ease-out, background-color 1200ms ease-in-out;
+    transition: top 100ms ease-out, background-color 800ms ease-in-out;
+    background-color: rgba(255, 255, 255, 0);    
+
+    a:hover {
+        opacity: 0.8;
+    }
+    a:active {
+        opacity: 0.5;
+    }
 }
 #wrapper.shownav #nav {
     top: 0px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);    
 }
 
 #navbar {

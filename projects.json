@@ -557,5 +557,37 @@
     "desktopApp": false,
     "util": false,
     "mobileApp": true
+  },
+  {
+    "title": "Forum Example",
+    "keywords": [
+      "Forum",
+      "Example",
+      "Posts",
+      "Account"
+    ],
+    "technologies": [
+      "ExpressJS",
+      "Bootstrap",
+      "JavaScript",
+      "SCSS",
+      "BabelJS",
+      "ESLint",
+      "GulpJS",
+      "NodeJS",
+      "jQuery",
+      "CSS",
+      "HTML5",
+      "Git",
+      "GitHub",
+      "Firebase"
+    ],
+    "content": {
+      "text": "\n                A Simple Forum Example\n                <iframe src=\"https://bunkersem.github.io/forum_example/\"></iframe><br />\n                "
+    },
+    "webApp": true,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": false
   }
 ]
