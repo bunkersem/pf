@@ -275,5 +275,287 @@
     "desktopApp": false,
     "util": false,
     "mobileApp": false
+  },
+  {
+    "title": "Json Gui",
+    "keywords": [
+      "JSON",
+      "Gui",
+      "Angular",
+      "Component"
+    ],
+    "technologies": [
+      "Angular",
+      "Webpack",
+      "NodeJS",
+      "SCSS",
+      "JavaScript",
+      "TypeScript2",
+      "HTML5",
+      "ESLint",
+      "TSLint",
+      "Git",
+      "GitHub",
+      "Electron"
+    ],
+    "content": {
+      "text": "\n            JSON GUI\n            JsonGui is a simple program for visually editing json content. It uses a schema to generate the gui. \n            The schema can be created in two different ways. \n            You can get it from an external source (file or plain text) or you can generate it from existing json content.<br />\n            Made With: <a href=\"https://github.com/maximegris/angular-electron\">Angular-Electron</a>\n            <iframe src=\"https://bunkersem.github.io/jsongui/\"></iframe>\n            View on <a href=\"https://github.com/bunkersem/jsongui/tree/master\">Github</a><br />\n            "
+    },
+    "webApp": true,
+    "desktopApp": true,
+    "util": true,
+    "mobileApp": false
+  },
+  {
+    "title": "Mars Rover Explorer",
+    "keywords": [
+      "Mars",
+      "Rover",
+      "Explorer",
+      "Rusty Rover",
+      "Rusty"
+    ],
+    "technologies": [
+      "Unity3D",
+      "C#"
+    ],
+    "content": {
+      "text": "\n                Mars Rover Explorer (Rusty Rover) is a game where you can spawn a (<a href=\"https://en.wikipedia.org/wiki/Opportunity_(rover)\">opportunity</a> like) rover anywhere on mars.\n                You can explore the surface, do missions, or slace around. All of this in a number of settings like Daytime, Morning, Evening, Night (the rover has lights), Dust Storm and Clear Skies.\n                View on <a href=\"https://afirus.itch.io/mars-rover-explorer\">Itch.io</a><br />\n                ",
+      "images": [
+        "https://imgur.com/xmsG52W.jpg",
+        "https://imgur.com/2mFeRxC.jpg",
+        "https://imgur.com/EjAExvk.jpg",
+        "https://imgur.com/1kAbY6C.jpg",
+        "https://imgur.com/vcFvG3S.jpg",
+        "https://imgur.com/aLnf1nO.jpg",
+        "https://imgur.com/lrqpJCE.jpg",
+        "https://imgur.com/7KWWIUU.jpg",
+        "https://imgur.com/E4UvBV6.jpg"
+      ]
+    },
+    "webApp": false,
+    "desktopApp": true,
+    "util": false,
+    "mobileApp": true
+  },
+  {
+    "title": "Air Control Madness",
+    "keywords": [
+      "Air",
+      "Control",
+      "Maddness",
+      "Airport",
+      "Planes",
+      "ATC"
+    ],
+    "technologies": [
+      "Unity3D",
+      "C#"
+    ],
+    "content": {
+      "text": "\n                Air Control Madness is one of the first games i made. The goal of the game is guide an ever increasing amount of traffic safely to the runway.\n                View on <a href=\"https://play.google.com/store/apps/details?id=com.EchoSierraStudio.AirControlMadness\">Goole Play &#x2708;</a><br />\n                ",
+      "images": [
+        "https://imgur.com/CJOMFHB.jpg",
+        "https://imgur.com/DPwDZ1D.jpg",
+        "https://imgur.com/15bvnPf.jpg",
+        "https://imgur.com/Bv095Iw.jpg",
+        "https://imgur.com/0PJeNh6.jpg",
+        "https://imgur.com/zY5xGp5.jpg",
+        "https://imgur.com/ygqSPVm.jpg",
+        "https://imgur.com/nEofl3m.jpg"
+      ]
+    },
+    "webApp": false,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": true
+  },
+  {
+    "title": "Newtonian Sim 2D",
+    "keywords": [
+      "Newtonian",
+      "2D",
+      "Sim",
+      "Solar",
+      "System"
+    ],
+    "technologies": [
+      "Unity3D",
+      "C#"
+    ],
+    "content": {
+      "text": "\n            A simple 2d sandbox game in which swiping across the screen creates small orbiting bodies.\n            <a href=\"https://play.google.com/store/apps/details?id=com.EchoSierraStudio.NewtonianSimulation2D\">View on Google Play</a><br />\n            ",
+      "images": [
+        "https://imgur.com/1PYBr5x.jpg",
+        "https://imgur.com/N5NfdVY.jpg",
+        "https://imgur.com/3UGSWfF.jpg",
+        "https://imgur.com/ftbhYnI.jpg",
+        "https://imgur.com/lYx4lkb.jpg",
+        "https://imgur.com/ve7VJLi.jpg"
+      ]
+    },
+    "webApp": false,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": true
+  },
+  {
+    "title": "Base Converter",
+    "keywords": [
+      "Base",
+      "Converter",
+      "Hex",
+      "Octal",
+      "Numeric",
+      "Decimal"
+    ],
+    "technologies": [
+      "HTML5",
+      "Cordova",
+      "OnsenUI",
+      "jQuery",
+      "CSS",
+      "JavaScript"
+    ],
+    "content": {
+      "text": "\n                This app lets you represent a number in another base. The application provides four default output numbers (hexadecimal, octal, binary and decimal). You can change the input base to a limit of 36. Which is the largest amount of characters you have, to represent a number (0-9 + A-Z).\n                <a href=\"https://play.google.com/store/apps/details?id=com.EchoSierraStudio.NumericCalculator\">View on Google Play</a><br />\n            ",
+      "images": [
+        "https://imgur.com/9IyIYVr.png",
+        "https://imgur.com/w4Hau6x.png",
+        "https://imgur.com/1mGVcGA.png",
+        "https://imgur.com/6bTwZeo.png",
+        "https://imgur.com/JO1q5Mw.png",
+        "https://imgur.com/eoDQJZn.png"
+      ]
+    },
+    "webApp": false,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": true
+  },
+  {
+    "title": "Tappy Plane",
+    "keywords": [
+      "Tappy",
+      "Plane",
+      "Tappy Bird"
+    ],
+    "technologies": [
+      "Unity3D",
+      "C#"
+    ],
+    "content": {
+      "text": "\n                A Tappy bird like game.\n                <a href=\"https://play.google.com/store/apps/details?id=com.EchoSierraStudio.TappyPlane\">View on Google Play</a><br />\n            ",
+      "images": [
+        "https://imgur.com/b9RDswR.jpg",
+        "https://imgur.com/S3Fn5TM.jpg",
+        "https://imgur.com/M3BKlld.jpg",
+        "https://imgur.com/aprqEZX.jpg",
+        "https://imgur.com/vVxL2YE.jpg"
+      ]
+    },
+    "webApp": false,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": true
+  },
+  {
+    "title": "Tappy Turbulance",
+    "keywords": [
+      "Tappy",
+      "Plane",
+      "Tappy Bird"
+    ],
+    "technologies": [
+      "Unity3D",
+      "C#"
+    ],
+    "content": {
+      "text": "\n                Another Tappy bird&#x1F426; like game.\n                <a href=\"https://play.google.com/store/apps/details?id=com.EchoSierraStudio.TappyTurbulance\">View on Google Play</a><br />\n            ",
+      "images": [
+        "https://imgur.com/LadocfB.jpg",
+        "https://imgur.com/4L60M1N.jpg",
+        "https://imgur.com/PUnayBc.jpg",
+        "https://imgur.com/TGgGLdf.jpg",
+        "https://imgur.com/IB3HKzL.jpg",
+        "https://imgur.com/uRlfBJN.jpg",
+        "https://imgur.com/8j9yhRE.jpg",
+        "https://imgur.com/1SOxbd4.jpg"
+      ]
+    },
+    "webApp": false,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": true
+  },
+  {
+    "title": "ATC Manager",
+    "keywords": [
+      "ATC",
+      "Plane",
+      "Airplanes",
+      "Air Traffic Control",
+      "Air",
+      "Traffic",
+      "Control"
+    ],
+    "technologies": [
+      "Unity3D",
+      "C#"
+    ],
+    "content": {
+      "text": "\n                ATC Manager is a realistic ATC Control manager which features a variety of real world airlines and aircraft all with their own specifications, dynamic runway use, infinite flights, different speed settings, a pause menu, an easy to use interface.\n                <a href=\"https://play.google.com/store/apps/details?id=com.EchoSierraStudio.ATCManager\">View on Google Play</a><br />\n            ",
+      "images": [
+        "https://imgur.com/MkXjBJs.png",
+        "https://imgur.com/rnN1jbZ.png",
+        "https://imgur.com/4KV4m2D.png",
+        "https://imgur.com/NLz1aw1.png",
+        "https://imgur.com/B6NTdj3.png",
+        "https://imgur.com/YK5m7Gu.png",
+        "https://imgur.com/crLpSku.png",
+        "https://imgur.com/fiEXjhX.png",
+        "https://imgur.com/I3dvRKL.png"
+      ]
+    },
+    "webApp": false,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": true
+  },
+  {
+    "title": "Universe Creator",
+    "keywords": [
+      "Atom",
+      "Molecule",
+      "Universe",
+      "Creator",
+      "Crane"
+    ],
+    "technologies": [
+      "Unity3D",
+      "C#"
+    ],
+    "content": {
+      "text": "\n                In this game you need to combine your skills and knowledge to reacreate molecules. \n                <a href=\"https://play.google.com/store/apps/details?id=com.EchoSierraStudio.UniverseCreator\">View on Google Play</a><br />\n            ",
+      "images": [
+        "https://imgur.com/D4Dsdk2.jpg",
+        "https://imgur.com/Tfjm8lS.jpg",
+        "https://imgur.com/vtMU6mg.jpg",
+        "https://imgur.com/7JLmc5V.jpg",
+        "https://imgur.com/iDKUzHb.jpg",
+        "https://imgur.com/MyDxY6c.jpg",
+        "https://imgur.com/YoMPFGI.jpg",
+        "https://imgur.com/NjFUrYz.jpg",
+        "https://imgur.com/iBkx8fu.jpg",
+        "https://imgur.com/AMsuzDn.jpg",
+        "https://imgur.com/jMq5PPv.jpg",
+        "https://imgur.com/FKXAUVN.jpg",
+        "https://imgur.com/4iToy9f.jpg"
+      ]
+    },
+    "webApp": false,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": true
   }
 ]
