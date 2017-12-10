@@ -15,6 +15,10 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Poiret+One|Roboto|Ubuntu|Raleway" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.4/d3.js" integrity="sha256-T9kqMOI1/xyTd99UNzG2DfAhlV2luNGwDJTeCCDLlFs="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.0/d3-legend.min.js" integrity="sha256-H4CXotFkAa5NxP/5qePANSRBCtwIkK21wPLys2/x3xA="
+        crossorigin="anonymous"></script>
 
     <!-- icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
@@ -89,7 +93,7 @@
                         <figure>
                             <img src="./images/me200_256pic.png" alt="Me">
                         </figure>
-                        <p class="text-default">Lorum Ipsum </p>
+                        <p class="text-default">I'm a student developer interested in Web, Systems, Game and Full-Stack Development.</p>
                         <p style="font-size: 50px; opacity: 0.4">.....</p>
                     </div>
                 </section>
@@ -101,34 +105,63 @@
                                 <techstack-list id="techstackbubble-content"></techstack-list>
                             </div>
                         </div>
-                        <p class="text-default">Lorum Ipsum </p>
-                        <!-- What im interrested in: 
-                            ASPNETCORE 
-                            Design Patterns 
-                            Software Development Methodologies 
-                            Ionic 2+ 
-                            Blockchain 
-                            ML 
-                            Concurrency
-                            Parallelism
-                            Reactive Programming -->
+                        <p class="text-default">
+                            My primary development skill is coding/programming in languages like C#, Javascript, Typescript, HTML and CSS. I'm also skilled
+                            in 2D and 3D art (mostly using Gimp and Blender).
+                            <h2 class="text-primary mt-5">Skill Chart</h2>
+                            <svg id="teck-stack-svg" style="margin-top: 20px; margin-bottom: 20px;" width="100%" height="700" font-family="sans-serif"
+                                font-size="10" text-anchor="middle"></svg>
 
-                        <!-- What im using:
-                                ExpressJS
-                                Webpack
-                                Babel
-                                Node
-                                TypeScript
-                                AngularJs (1.x)
-                                Angular 2+
-                                React -->
-                        <figure>
-                            <img id="screensizes" src="./images/screensizes/screensizes.svg" alt="">
-                        </figure>
-                        <p class="text-default">Lorum Ipsum </p>
-                        <p style="font-size: 50px; opacity: 0.4">
-                            <i style="font-size: 50px;" class="material-icons">code</i>
-                        </p>
+                            <h2 class="text-primary mt-5">Interests</h2>
+                            <h4 class="text-default">Programming Interests / things I would like to learn</h4>
+                            <ul>
+                                <li>Python</li>
+                                <li>C/C++</li>
+                                <li>Assembly</li>
+                                <li>More on Software Development Methodologies</li>
+                                <li>Ionic 2+</li>
+                                <li>(ASP) .NET Core</li>
+                                <li>PHP</li>
+                            </ul>
+                            <h4 class="text-default">Development Interests</h4>
+                            <ul>
+                                <li>Design Patterns (
+                                    <a href="https://www.exceptionnotfound.net/downloads/dailydesignpattern.pdf">Daily Design Patterns</a>)</li>
+                                <li>Software Development Methodologies like
+                                    <abbr title="Aspect-oriented programming">AOP</abbr>,
+                                    <abbr title="Aspect-oriented programming">AOP</abbr>,
+                                    <abbr title="Test-driven development">TDD</abbr>, Agile,
+                                    <abbr title="System Development Methodology">SDM</abbr>,
+                                    <abbr title="Unified Process">UP</abbr>
+                                </li>
+                                <li>Concurrency</li>
+                                <li>Parallelism</li>
+                                <li>Reactive Programming</li>
+                            </ul>
+                            <h4 class="text-default">Other Personal Interests</h4>
+                            <ul>
+                                <li>The Blockchain</li>
+                                <li>
+                                    <abbr title="Machine Learning">ML</abbr>
+                                </li>
+                            </ul>
+                            <h2 class="text-primary mt-5 mb-0">Web Development</h2>
+                            <figure>
+                                <img id="screensizes" src="./images/screensizes/screensizes.svg" alt="">
+                            </figure>
+                            <div class="card">
+                                <p class="text-default">
+                                    My Main focus when I'm writing a web-app, is to make the web-app responsive, 
+                                    learn about new tools and trying to use new techniques.
+                                    <abbr title="Single Page Application">SPA</abbr>'s, 
+                                    Build tools and other front-end tools are things i would like to learn
+                                    more about. I mostly end up using some sort of combination of Node js tools to build
+                                    the front-end of a web-app.
+                                </p>
+                            </div>
+                            <p style="font-size: 50px; opacity: 0.4">
+                                <i style="font-size: 50px;" class="material-icons">code</i>
+                            </p>
                     </div>
                 </section>
                 <section class="mesection" id="hireme">
@@ -180,6 +213,7 @@
             </div>
         </noscript>
     </div>
+    <script>initD3TechStackBubble()</script>
 
 </body>
 

@@ -448,7 +448,21 @@ const projects =
             util: false,
             mobileApp: true,
         },
-
+        {
+            title: 'Forum Example',
+            keywords: ['Forum', 'Example', 'Posts', 'Account'],
+            technologies: ['ExpressJS', 'Bootstrap', 'Javascript', 'SCSS', 'BabelJS', 'ESLint', 'GulpJS', 'NodeJS', 'JQuery', 'CSS', 'HTML5', 'Git', 'Github', 'Firebase'],
+            content: {
+                text: `
+                A Simple Forum Example
+                <iframe src="https://bunkersem.github.io/forum_example/"></iframe><br />
+                `,
+            },
+            webApp: true,
+            desktopApp: false,
+            util: false,
+            mobileApp: false,
+        },
 
     ]
 
