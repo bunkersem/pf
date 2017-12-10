@@ -630,6 +630,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__particles_effect__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__particles_effect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__particles_effect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__d3_techs_bubblechart__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__d3_techs_bubblechart___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__d3_techs_bubblechart__);
+
 
 
 
@@ -676,7 +679,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "/* RGB */\n.primary {\n  color: #016fb9 !important;\n  border-color: #016fb9 !important; }\n\n.primary::before, .primary::after {\n  color: #016fb9 !important;\n  border-color: #016fb9 !important;\n  background: #016fb9 !important; }\n\n.default {\n  color: #353531 !important;\n  border-color: #353531 !important; }\n\n.default::before, .default::after {\n  color: #353531 !important;\n  border-color: #353531 !important;\n  background: #353531 !important; }\n\n.danger {\n  color: #ec4e20 !important;\n  border-color: #ec4e20 !important; }\n\n.danger::before, .danger::after {\n  color: #ec4e20 !important;\n  border-color: #ec4e20 !important;\n  background: #ec4e20 !important; }\n\n.warning {\n  color: #ff9505 !important;\n  border-color: #ff9505 !important; }\n\n.warning::before, .warning::after {\n  color: #ff9505 !important;\n  border-color: #ff9505 !important;\n  background: #ff9505 !important; }\n\n.dark {\n  color: black !important;\n  border-color: black !important; }\n\n.dark::before, .dark::after {\n  color: black !important;\n  border-color: black !important;\n  background: black !important; }\n\n.info {\n  color: #470024 !important;\n  border-color: #470024 !important; }\n\n.info::before, .info::after {\n  color: #470024 !important;\n  border-color: #470024 !important;\n  background: #470024 !important; }\n\n.secondary {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important; }\n\n.secondary::before, .secondary::after {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important;\n  background: #6e9075 !important; }\n\n.secondary {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important; }\n\n.secondary::before, .secondary::after {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important;\n  background: #6e9075 !important; }\n\n.white {\n  color: #fafafa !important;\n  border-color: #fafafa !important; }\n\n.white::before, .white::after {\n  color: #fafafa !important;\n  border-color: #fafafa !important;\n  background: #fafafa !important; }\n\n.container {\n  max-width: 1024px;\n  margin: auto; }\n\n.text-primary {\n  color: #016fb9; }\n\n.text-default {\n  color: #353531; }\n\n.text-danger {\n  color: #ec4e20; }\n\n.text-warning {\n  color: #ff9505; }\n\n.text-dark {\n  color: black; }\n\n.text-info {\n  color: #470024; }\n\n.text-secondary {\n  color: #6e9075; }\n\n.text-white {\n  color: #fafafa; }\n\n.text-center {\n  text-align: center; }\n\n.text-left {\n  text-align: left; }\n\n.text-right {\n  text-align: right; }\n\n.btn {\n  appearance: none;\n  position: relative;\n  user-select: none;\n  display: inline;\n  border-style: solid;\n  border-color: #016fb9;\n  border-width: 2px;\n  padding: 18px 46px;\n  background: none;\n  margin: 4px;\n  z-index: 0;\n  font-family: 'Raleway', sans-serif, Verdana, Geneva, Tahoma;\n  color: #016fb9;\n  cursor: pointer;\n  text-decoration: none;\n  transition: color 0ms 30ms linear;\n  border-spacing: 1;\n  line-height: 1.42rem;\n  outline: none; }\n\n.btn::before {\n  z-index: -1;\n  content: \" \";\n  top: 100%;\n  left: -1px;\n  right: -1px;\n  bottom: -1px;\n  position: absolute;\n  transition: top 100ms ease-out;\n  background: #016fb9; }\n\n.btn:active, .btn:hover, .btn.active {\n  color: #fafafa !important; }\n\n.btn:active::before, .btn:hover::before, .btn.active::before {\n  top: -1px; }\n\n.btn.white:active, .btn.white:hover, .btn.white.active {\n  color: #474c55 !important; }\n\n.btn:focus:hover:not(.active) {\n  color: #016fb9 !important; }\n\n.btn.secondary:hover:focus:not(.active) {\n  color: #6e9075 !important; }\n\n.btn.dark:focus:hover:not(.active) {\n  color: black !important; }\n\n.btn.danger:focus:hover:not(.active) {\n  color: #ec4e20 !important; }\n\n.btn.default:focus:hover:not(.active) {\n  color: #353531 !important; }\n\n.btn.info:focus:hover:not(.active) {\n  color: #470024 !important; }\n\n.btn.warning:focus:hover:not(.active) {\n  color: #ff9505 !important; }\n\n.btn.white:focus:hover:not(.active) {\n  color: #fafafa !important; }\n\n.btn:focus:hover:not(.active)::before {\n  top: 100%; }\n\n.btn-sm {\n  padding: 9px 23px;\n  margin: 2px; }\n\n.btn-xs {\n  padding: 2px 16px;\n  margin: 1px; }\n\n#nav {\n  position: fixed;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  left: 0;\n  top: -60px;\n  height: 60px;\n  z-index: 4000;\n  user-select: none;\n  font-family: 'Poiret One', cursive;\n  font-size: 30px;\n  background-color: rgba(255, 255, 255, 0);\n  transition: top 100ms ease-out, background-color 1200ms ease-in-out; }\n  @media screen and (max-width: 600px) {\n    #nav {\n      height: 124px;\n      top: -124px; } }\n\n#wrapper.shownav #nav {\n  top: 0px;\n  background-color: rgba(255, 255, 255, 0.8); }\n\n#navbar {\n  display: block;\n  margin: 10px 20px; }\n\n#navbar #brand {\n  float: left;\n  width: 160px; }\n\n#navbar #brand img {\n  height: 40px; }\n\n#navbar ul#nav-items {\n  margin: 0;\n  padding: 0;\n  width: calc(100% - 161px);\n  float: right;\n  list-style: none;\n  text-align: right; }\n\n#navbar ul#nav-items li.nav-item {\n  float: right;\n  margin-left: 20px; }\n  @media screen and (max-width: 600px) {\n    #navbar ul#nav-items li.nav-item {\n      float: none; } }\n\ninput[type=text], input[type=email], textarea {\n  padding: 18px 26px;\n  margin: 8px 4px;\n  box-sizing: border-box;\n  border: 2px solid rgba(0, 0, 0, 0.3);\n  border-radius: 4px;\n  font-family: 'Raleway';\n  width: 100%;\n  width: calc(100% - 4px);\n  resize: none; }\n\ninput[type=text].invalid, input[type=email].invalid, textarea.invalid {\n  border-color: #ec4e20; }\n\n.window * {\n  box-sizing: border-box; }\n\n.window {\n  box-shadow: 0 15px 40px 10px rgba(0, 0, 10, 0.2), 0 10px 10px -5px rgba(0, 0, 10, 0.5);\n  background-color: #28283c;\n  border-radius: 7px;\n  overflow: hidden;\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  max-width: 100%;\n  width: 600px;\n  height: 280px;\n  position: absolute;\n  font-family: 'Roboto', sans-serif;\n  font-weight: bold;\n  position: relative;\n  margin-top: 10px; }\n\n.window .bar {\n  background: #aaa;\n  height: 32px;\n  overflow: hidden;\n  padding: 8px;\n  user-select: none;\n  cursor: pointer; }\n\n.window .bar .icon-container {\n  position: absolute;\n  left: 8px; }\n\n.window .bar .icon-container .icon {\n  margin-right: 4px;\n  height: 16px;\n  width: 16px;\n  border-radius: 8px;\n  display: inline-block;\n  user-select: none;\n  cursor: not-allowed; }\n\n.window .bar .icon-container .icon-red {\n  background-color: red; }\n\n.window .bar .icon-container .icon-orange {\n  background-color: orangered; }\n\n.window .bar .icon-container .icon-green {\n  background-color: #50ff50; }\n\n.window .bar .title {\n  text-align: center;\n  float: unset;\n  user-select: none; }\n\n.window .bar .title .title-label {\n  cursor: text; }\n\n.window .bar .title:focus {\n  outline: none; }\n\n.window .content {\n  margin: 0;\n  width: 100%;\n  height: 248px;\n  user-select: none;\n  overflow: hidden;\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  cursor: text; }\n\n.window .content .innerContent {\n  padding: 8px;\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  min-height: 100%; }\n\n.window .content pre, .window .content .writable {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  color: white;\n  font-family: 'Roboto', sans-serif;\n  font-size: 14px;\n  font-weight: 600;\n  overflow: hidden;\n  border: none;\n  outline: none;\n  background: transparent; }\n\n.window .content .writable:focus {\n  outline: none; }\n\n.alert {\n  background: rgba(53, 53, 49, 0.8);\n  color: #fafafa;\n  padding: 20px 30px;\n  border-radius: 3px; }\n\n.alert.alert-primary {\n  background: rgba(1, 111, 185, 0.8); }\n\n.alert.alert-warning {\n  background: rgba(255, 149, 5, 0.8); }\n\n.alert.alert-danger {\n  background: rgba(236, 78, 32, 0.8); }\n\n.alert.alert-dark {\n  background: rgba(0, 0, 0, 0.8); }\n\n.alert.alert-info {\n  background: rgba(71, 0, 36, 0.8); }\n\n.alert.alert-secondary {\n  background: rgba(110, 144, 117, 0.8); }\n\n/* Style the Image Used to Trigger the Modal */\n.modal-image {\n  cursor: pointer;\n  transition: 0.3s; }\n\n.modal-image:hover {\n  opacity: 0.7; }\n\n/* The Modal (background) */\n.modal {\n  position: fixed;\n  /* Stay in place */\n  z-index: 1000;\n  /* Sit on top */\n  padding-top: 100px;\n  /* Location of the box */\n  left: 0;\n  top: 0;\n  width: 100%;\n  /* Full width */\n  height: 100%;\n  /* Full height */\n  overflow: auto;\n  /* Enable scroll if needed */\n  background-color: black;\n  /* Fallback color */\n  background-color: rgba(0, 0, 0, 0.9);\n  /* Black w/ opacity */\n  transition: padding-top 100ms ease-out; }\n\n.modal#imgmodal {\n  display: none;\n  /* Hidden by default */ }\n\n#wrapper.shownav .modal {\n  padding-top: 160px; }\n\n.modal-content {\n  margin: auto;\n  display: block;\n  width: 80%;\n  max-width: 700px;\n  padding: 40px;\n  background: white; }\n\n/* Modal Content (Image) */\nimg.modal-content {\n  padding: 0;\n  background: transparent; }\n\n/* Caption of Modal Image (Image Text) - Same Width as the Image */\n#modal-caption {\n  margin: auto;\n  display: block;\n  width: 80%;\n  max-width: 700px;\n  text-align: center;\n  color: #ccc;\n  padding: 10px 0; }\n\n/* Add Animation - Zoom in the Modal */\n#imgmodal #modal-img, #modal-caption {\n  -webkit-animation-name: zoom;\n  -webkit-animation-duration: 0.6s;\n  animation-name: zoom;\n  animation-duration: 0.6s; }\n\n@-webkit-keyframes zoom {\n  from {\n    -webkit-transform: scale(0); }\n  to {\n    -webkit-transform: scale(1); } }\n\n@keyframes zoom {\n  from {\n    transform: scale(0); }\n  to {\n    transform: scale(1); } }\n\n/* The Close Button */\n#imgmodal .close {\n  position: absolute;\n  top: 15px;\n  right: 35px;\n  color: #f1f1f1;\n  font-size: 40px;\n  font-weight: bold;\n  transition: 0.3s;\n  transition: top 100ms ease-out; }\n\n#wrapper.shownav #imgmodal .close {\n  top: 75px; }\n\n#imgmodal .close:hover,\n#imgmodal .close:focus {\n  color: #bbb;\n  text-decoration: none;\n  cursor: pointer; }\n\n/* 100% Image Width on Smaller Screens */\n@media only screen and (max-width: 700px) {\n  #modal-img {\n    width: 100%; } }\n\n@media only screen and (max-width: 600px) {\n  #wrapper.shownav .modal {\n    padding-top: 224px; }\n  #wrapper.shownav #imgmodal .close {\n    top: 139px; } }\n\n.m-0 {\n  margin: 0; }\n\n.mt-0 {\n  margin-top: 0; }\n\n.mb-0 {\n  margin-bottom: 0; }\n\n.ml-0 {\n  margin-left: 0; }\n\n.mr-0 {\n  margin-right: 0; }\n\n.mx-0 {\n  margin-right: 0;\n  margin-left: 0; }\n\n.my-0 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.p-0 {\n  padding: 0; }\n\n.pt-0 {\n  padding-top: 0; }\n\n.pb-0 {\n  padding-bottom: 0; }\n\n.pl-0 {\n  padding-left: 0; }\n\n.pr-0 {\n  padding-right: 0; }\n\n.px-0 {\n  padding-right: 0;\n  padding-left: 0; }\n\n.py-0 {\n  padding-top: 0;\n  padding-bottom: 0; }\n\n.m-1 {\n  margin: 6; }\n\n.mt-1 {\n  margin-top: 6; }\n\n.mb-1 {\n  margin-bottom: 6; }\n\n.ml-1 {\n  margin-left: 6; }\n\n.mr-1 {\n  margin-right: 6; }\n\n.mx-1 {\n  margin-right: 6;\n  margin-left: 6; }\n\n.my-1 {\n  margin-top: 6;\n  margin-bottom: 6; }\n\n.p-1 {\n  padding: 6; }\n\n.pt-1 {\n  padding-top: 6; }\n\n.pb-1 {\n  padding-bottom: 6; }\n\n.pl-1 {\n  padding-left: 6; }\n\n.pr-1 {\n  padding-right: 6; }\n\n.px-1 {\n  padding-right: 6;\n  padding-left: 6; }\n\n.py-1 {\n  padding-top: 6;\n  padding-bottom: 6; }\n\n.m-2 {\n  margin: 12; }\n\n.mt-2 {\n  margin-top: 12; }\n\n.mb-2 {\n  margin-bottom: 12; }\n\n.ml-2 {\n  margin-left: 12; }\n\n.mr-2 {\n  margin-right: 12; }\n\n.mx-2 {\n  margin-right: 12;\n  margin-left: 12; }\n\n.my-2 {\n  margin-top: 12;\n  margin-bottom: 12; }\n\n.p-2 {\n  padding: 12; }\n\n.pt-2 {\n  padding-top: 12; }\n\n.pb-2 {\n  padding-bottom: 12; }\n\n.pl-2 {\n  padding-left: 12; }\n\n.pr-2 {\n  padding-right: 12; }\n\n.px-2 {\n  padding-right: 12;\n  padding-left: 12; }\n\n.py-2 {\n  padding-top: 12;\n  padding-bottom: 12; }\n\n.m-3 {\n  margin: 28; }\n\n.mt-3 {\n  margin-top: 28; }\n\n.mb-3 {\n  margin-bottom: 28; }\n\n.ml-3 {\n  margin-left: 28; }\n\n.mr-3 {\n  margin-right: 28; }\n\n.mx-3 {\n  margin-right: 28;\n  margin-left: 28; }\n\n.my-3 {\n  margin-top: 28;\n  margin-bottom: 28; }\n\n.p-3 {\n  padding: 28; }\n\n.pt-3 {\n  padding-top: 28; }\n\n.pb-3 {\n  padding-bottom: 28; }\n\n.pl-3 {\n  padding-left: 28; }\n\n.pr-3 {\n  padding-right: 28; }\n\n.px-3 {\n  padding-right: 28;\n  padding-left: 28; }\n\n.py-3 {\n  padding-top: 28;\n  padding-bottom: 28; }\n\n.m-4 {\n  margin: 36; }\n\n.mt-4 {\n  margin-top: 36; }\n\n.mb-4 {\n  margin-bottom: 36; }\n\n.ml-4 {\n  margin-left: 36; }\n\n.mr-4 {\n  margin-right: 36; }\n\n.mx-4 {\n  margin-right: 36;\n  margin-left: 36; }\n\n.my-4 {\n  margin-top: 36;\n  margin-bottom: 36; }\n\n.p-4 {\n  padding: 36; }\n\n.pt-4 {\n  padding-top: 36; }\n\n.pb-4 {\n  padding-bottom: 36; }\n\n.pl-4 {\n  padding-left: 36; }\n\n.pr-4 {\n  padding-right: 36; }\n\n.px-4 {\n  padding-right: 36;\n  padding-left: 36; }\n\n.py-4 {\n  padding-top: 36;\n  padding-bottom: 36; }\n\n.m-5 {\n  margin: 60; }\n\n.mt-5 {\n  margin-top: 60; }\n\n.mb-5 {\n  margin-bottom: 60; }\n\n.ml-5 {\n  margin-left: 60; }\n\n.mr-5 {\n  margin-right: 60; }\n\n.mx-5 {\n  margin-right: 60;\n  margin-left: 60; }\n\n.my-5 {\n  margin-top: 60;\n  margin-bottom: 60; }\n\n.p-5 {\n  padding: 60; }\n\n.pt-5 {\n  padding-top: 60; }\n\n.pb-5 {\n  padding-bottom: 60; }\n\n.pl-5 {\n  padding-left: 60; }\n\n.pr-5 {\n  padding-right: 60; }\n\n.px-5 {\n  padding-right: 60;\n  padding-left: 60; }\n\n.py-5 {\n  padding-top: 60;\n  padding-bottom: 60; }\n\nbody {\n  font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;\n  color: #353531; }\n\nfigure {\n  margin: 0; }\n\n* {\n  box-sizing: border-box; }\n\n.clearfix {\n  clear: both; }\n\niframe {\n  margin: 10px 0;\n  border: 0;\n  display: block; }\n\n/*\r\n$col-default: rgba(53, 53, 49, 1);\r\n$col-danger: rgba(236, 78, 32, 1);\r\n$col-warning: rgba(255, 149, 5, 1);\r\n$col-primary: rgba(1, 111, 185, 1);\r\n$col-dark: rgba(0, 0, 0, 1);\r\n$col-info: rgba(71, 0, 36, 1);\r\n$col-secondary: rgba(110, 144, 117, 1);\r\n$col-background: rgba(250, 250, 250, 1);\r\n*/\n/* Globals */\n* {\n  box-sizing: border-box; }\n\nhtml {\n  background: white;\n  font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma; }\n\nbody {\n  width: 100%;\n  margin: 0;\n  overflow-x: hidden; }\n\n.console {\n  margin-top: 10px; }\n\n#wrapper {\n  min-height: 100vh;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0; }\n\n.contentwrapper {\n  user-select: contain;\n  margin: 10px;\n  transition: width 500ms ease;\n  min-height: 100vh;\n  min-height: calc(100vh - 232px);\n  margin-bottom: 200px; }\n\n/* Banner */\n#masthead {\n  text-align: center;\n  width: 100vw;\n  background-color: rgba(255, 10, 10, 0.2);\n  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 10, 10, 0.2)), to(rgba(10, 10, 255, 0.2)));\n  background-image: -webkit-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  background-image: -moz-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  background-image: linear-gradient(to top, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  padding: 120px 0; }\n\n#masthead #profilepic {\n  display: block;\n  width: 180px;\n  max-width: 100%;\n  border-radius: 50%;\n  margin: auto; }\n\n#masthead #mastheadtitle {\n  margin-top: 0;\n  font-size: 80px;\n  font-weight: 400;\n  font-family: 'Poiret One', cursive; }\n\na {\n  text-decoration: none;\n  color: #016fb9; }\n\n.mesection {\n  margin-top: 80px;\n  text-align: center; }\n\n.bubble {\n  background: rgba(53, 53, 49, 0.3);\n  border-radius: 50%; }\n\n#techstackbubble {\n  width: 200px;\n  height: 200px;\n  max-width: 200px;\n  max-height: 200px;\n  margin: auto;\n  overflow: hidden; }\n\n#screensizes {\n  max-width: 700px; }\n\n#techstackbubble-inner {\n  overflow: visible;\n  display: inline-block; }\n\n#techstackbubble-content {\n  margin: 40px 0;\n  height: 200px;\n  animation: cycletechnologies 40s 0s linear infinite;\n  white-space: nowrap;\n  overflow: visible;\n  display: block; }\n\n@keyframes cycletechnologies {\n  from {\n    transform: translateX(200px); }\n  to {\n    transform: translateX(calc(-1000px - 100%)); } }\n\n#techstackbubble-content img {\n  display: inline-block;\n  max-height: 120px;\n  max-width: 180px;\n  padding-left: 60px; }\n\n#rocket-text {\n  font-size: 160px;\n  position: absolute;\n  top: 40%;\n  top: calc(50% - 160px);\n  left: 0;\n  right: 0;\n  z-index: 200;\n  text-shadow: 0 0 3px black;\n  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7); }\n\n#rocket-masthead {\n  width: 100vw;\n  position: relative; }\n  #rocket-masthead img {\n    width: 100vw; }\n\n.project-article {\n  margin-top: 60px;\n  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.14), 0 0 40px 20px rgba(0, 0, 0, 0.05);\n  padding: 20px; }\n  .project-article h1.title {\n    margin-top: 7px; }\n  .project-article .proj-type-colors, .project-article .proj-techs {\n    display: block;\n    float: left; }\n  .project-article .proj-techs {\n    margin-left: 20px; }\n  .project-article .proj-type-colors .proj-type-color, .project-article .proj-techs .proj-tech {\n    margin-left: 5px;\n    width: 30px;\n    height: 30px;\n    border-radius: 50%;\n    float: left; }\n  .project-article .proj-techs .proj-tech {\n    background: rgba(110, 144, 117, 0.5);\n    text-align: center;\n    overflow: hidden;\n    background-position: center center;\n    background-size: 70%;\n    background-repeat: no-repeat; }\n  .project-article .proj-type-colors .proj-type-color.webapp {\n    background-color: #ff9505; }\n  .project-article .proj-type-colors .proj-type-color.desktopapp {\n    background-color: #6e9075; }\n  .project-article .proj-type-colors .proj-type-color.mobileapp {\n    background-color: #ec4e20; }\n  .project-article .proj-type-colors .proj-type-color.util {\n    background-color: #470024; }\n  .project-article .images {\n    float: left;\n    width: 90vw;\n    max-width: 1000px; }\n  .project-article .images img {\n    height: 160px;\n    display: block;\n    float: left;\n    margin: 10px; }\n\nfooter {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  user-select: contain; }\n\nul#footer-links {\n  list-style: none;\n  margin: 3px;\n  text-align: right; }\n\nul#footer-links li {\n  display: inline-block;\n  margin-right: 10px; }\n\nul#footer-links li::before {\n  font-family: Arial, Helvetica, sans-serif;\n  content: \" \\2022   \"; }\n\n.project-article iframe {\n  width: 100%;\n  height: 600px; }\n\n#particles-js {\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute; }\n\n#masthead-header {\n  position: relative; }\n", ""]);
+exports.push([module.i, "/* RGB */\n.primary {\n  color: #016fb9 !important;\n  border-color: #016fb9 !important; }\n\n.primary::before, .primary::after {\n  color: #016fb9 !important;\n  border-color: #016fb9 !important;\n  background: #016fb9 !important; }\n\n.default {\n  color: #353531 !important;\n  border-color: #353531 !important; }\n\n.default::before, .default::after {\n  color: #353531 !important;\n  border-color: #353531 !important;\n  background: #353531 !important; }\n\n.danger {\n  color: #ec4e20 !important;\n  border-color: #ec4e20 !important; }\n\n.danger::before, .danger::after {\n  color: #ec4e20 !important;\n  border-color: #ec4e20 !important;\n  background: #ec4e20 !important; }\n\n.warning {\n  color: #ff9505 !important;\n  border-color: #ff9505 !important; }\n\n.warning::before, .warning::after {\n  color: #ff9505 !important;\n  border-color: #ff9505 !important;\n  background: #ff9505 !important; }\n\n.dark {\n  color: black !important;\n  border-color: black !important; }\n\n.dark::before, .dark::after {\n  color: black !important;\n  border-color: black !important;\n  background: black !important; }\n\n.info {\n  color: #470024 !important;\n  border-color: #470024 !important; }\n\n.info::before, .info::after {\n  color: #470024 !important;\n  border-color: #470024 !important;\n  background: #470024 !important; }\n\n.secondary {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important; }\n\n.secondary::before, .secondary::after {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important;\n  background: #6e9075 !important; }\n\n.secondary {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important; }\n\n.secondary::before, .secondary::after {\n  color: #6e9075 !important;\n  border-color: #6e9075 !important;\n  background: #6e9075 !important; }\n\n.white {\n  color: #fafafa !important;\n  border-color: #fafafa !important; }\n\n.white::before, .white::after {\n  color: #fafafa !important;\n  border-color: #fafafa !important;\n  background: #fafafa !important; }\n\n.container {\n  max-width: 1024px;\n  margin: auto; }\n\n.text-primary {\n  color: #016fb9; }\n\n.text-default {\n  color: #353531; }\n\n.text-danger {\n  color: #ec4e20; }\n\n.text-warning {\n  color: #ff9505; }\n\n.text-dark {\n  color: black; }\n\n.text-info {\n  color: #470024; }\n\n.text-secondary {\n  color: #6e9075; }\n\n.text-white {\n  color: #fafafa; }\n\n.text-center {\n  text-align: center; }\n\n.text-left {\n  text-align: left; }\n\n.text-right {\n  text-align: right; }\n\n.btn {\n  appearance: none;\n  position: relative;\n  user-select: none;\n  display: inline;\n  border-style: solid;\n  border-color: #016fb9;\n  border-width: 2px;\n  padding: 18px 46px;\n  background: none;\n  margin: 4px;\n  z-index: 0;\n  font-family: 'Raleway', sans-serif, Verdana, Geneva, Tahoma;\n  color: #016fb9;\n  cursor: pointer;\n  text-decoration: none;\n  transition: color 0ms 30ms linear;\n  border-spacing: 1;\n  line-height: 1.42rem;\n  outline: none; }\n\n.btn::before {\n  z-index: -1;\n  content: \" \";\n  top: 100%;\n  left: -1px;\n  right: -1px;\n  bottom: -1px;\n  position: absolute;\n  transition: top 100ms ease-out;\n  background: #016fb9; }\n\n.btn:active, .btn:hover, .btn.active {\n  color: #fafafa !important; }\n\n.btn:active::before, .btn:hover::before, .btn.active::before {\n  top: -1px; }\n\n.btn.white:active, .btn.white:hover, .btn.white.active {\n  color: #474c55 !important; }\n\n.btn:focus:hover:not(.active) {\n  color: #016fb9 !important; }\n\n.btn.secondary:hover:focus:not(.active) {\n  color: #6e9075 !important; }\n\n.btn.dark:focus:hover:not(.active) {\n  color: black !important; }\n\n.btn.danger:focus:hover:not(.active) {\n  color: #ec4e20 !important; }\n\n.btn.default:focus:hover:not(.active) {\n  color: #353531 !important; }\n\n.btn.info:focus:hover:not(.active) {\n  color: #470024 !important; }\n\n.btn.warning:focus:hover:not(.active) {\n  color: #ff9505 !important; }\n\n.btn.white:focus:hover:not(.active) {\n  color: #fafafa !important; }\n\n.btn:focus:hover:not(.active)::before {\n  top: 100%; }\n\n.btn-sm {\n  padding: 9px 23px;\n  margin: 2px; }\n\n.btn-xs {\n  padding: 2px 16px;\n  margin: 1px; }\n\n#nav {\n  position: fixed;\n  width: 100%;\n  margin: 0;\n  padding: 0;\n  left: 0;\n  top: -60px;\n  height: 60px;\n  z-index: 4000;\n  user-select: none;\n  font-family: 'Poiret One', cursive;\n  font-size: 30px;\n  transition: top 100ms ease-out, background-color 800ms ease-in-out;\n  background-color: rgba(255, 255, 255, 0); }\n  @media screen and (max-width: 600px) {\n    #nav {\n      height: 124px;\n      top: -124px; } }\n  #nav a:hover {\n    opacity: 0.8; }\n  #nav a:active {\n    opacity: 0.5; }\n\n#wrapper.shownav #nav {\n  top: 0px;\n  background-color: rgba(255, 255, 255, 0.5); }\n\n#navbar {\n  display: block;\n  margin: 10px 20px; }\n\n#navbar #brand {\n  float: left;\n  width: 160px; }\n\n#navbar #brand img {\n  height: 40px; }\n\n#navbar ul#nav-items {\n  margin: 0;\n  padding: 0;\n  width: calc(100% - 161px);\n  float: right;\n  list-style: none;\n  text-align: right; }\n\n#navbar ul#nav-items li.nav-item {\n  float: right;\n  margin-left: 20px; }\n  @media screen and (max-width: 600px) {\n    #navbar ul#nav-items li.nav-item {\n      float: none; } }\n\ninput[type=text], input[type=email], textarea {\n  padding: 18px 26px;\n  margin: 8px 4px;\n  box-sizing: border-box;\n  border: 2px solid rgba(0, 0, 0, 0.3);\n  border-radius: 4px;\n  font-family: 'Raleway';\n  width: 100%;\n  width: calc(100% - 4px);\n  resize: none; }\n\ninput[type=text].invalid, input[type=email].invalid, textarea.invalid {\n  border-color: #ec4e20; }\n\n.window * {\n  box-sizing: border-box; }\n\n.window {\n  box-shadow: 0 15px 40px 10px rgba(0, 0, 10, 0.2), 0 10px 10px -5px rgba(0, 0, 10, 0.5);\n  background-color: #28283c;\n  border-radius: 7px;\n  overflow: hidden;\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  max-width: 100%;\n  width: 600px;\n  height: 280px;\n  position: absolute;\n  font-family: 'Roboto', sans-serif;\n  font-weight: bold;\n  position: relative;\n  margin-top: 10px; }\n\n.window .bar {\n  background: #aaa;\n  height: 32px;\n  overflow: hidden;\n  padding: 8px;\n  user-select: none;\n  cursor: pointer; }\n\n.window .bar .icon-container {\n  position: absolute;\n  left: 8px; }\n\n.window .bar .icon-container .icon {\n  margin-right: 4px;\n  height: 16px;\n  width: 16px;\n  border-radius: 8px;\n  display: inline-block;\n  user-select: none;\n  cursor: not-allowed; }\n\n.window .bar .icon-container .icon-red {\n  background-color: red; }\n\n.window .bar .icon-container .icon-orange {\n  background-color: orangered; }\n\n.window .bar .icon-container .icon-green {\n  background-color: #50ff50; }\n\n.window .bar .title {\n  text-align: center;\n  float: unset;\n  user-select: none; }\n\n.window .bar .title .title-label {\n  cursor: text; }\n\n.window .bar .title:focus {\n  outline: none; }\n\n.window .content {\n  margin: 0;\n  width: 100%;\n  height: 248px;\n  user-select: none;\n  overflow: hidden;\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  cursor: text; }\n\n.window .content .innerContent {\n  padding: 8px;\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  min-height: 100%; }\n\n.window .content pre, .window .content .writable {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  color: white;\n  font-family: 'Roboto', sans-serif;\n  font-size: 14px;\n  font-weight: 600;\n  overflow: hidden;\n  border: none;\n  outline: none;\n  background: transparent; }\n\n.window .content .writable:focus {\n  outline: none; }\n\n.alert {\n  background: rgba(53, 53, 49, 0.8);\n  color: #fafafa;\n  padding: 20px 30px;\n  border-radius: 3px; }\n\n.alert.alert-primary {\n  background: rgba(1, 111, 185, 0.8); }\n\n.alert.alert-warning {\n  background: rgba(255, 149, 5, 0.8); }\n\n.alert.alert-danger {\n  background: rgba(236, 78, 32, 0.8); }\n\n.alert.alert-dark {\n  background: rgba(0, 0, 0, 0.8); }\n\n.alert.alert-info {\n  background: rgba(71, 0, 36, 0.8); }\n\n.alert.alert-secondary {\n  background: rgba(110, 144, 117, 0.8); }\n\n/* Style the Image Used to Trigger the Modal */\n.modal-image {\n  cursor: pointer;\n  transition: 0.3s; }\n\n.modal-image:hover {\n  opacity: 0.7; }\n\n/* The Modal (background) */\n.modal {\n  position: fixed;\n  /* Stay in place */\n  z-index: 1000;\n  /* Sit on top */\n  padding-top: 100px;\n  /* Location of the box */\n  left: 0;\n  top: 0;\n  width: 100%;\n  /* Full width */\n  height: 100%;\n  /* Full height */\n  overflow: auto;\n  /* Enable scroll if needed */\n  background-color: black;\n  /* Fallback color */\n  background-color: rgba(0, 0, 0, 0.9);\n  /* Black w/ opacity */\n  transition: padding-top 100ms ease-out; }\n\n.modal#imgmodal {\n  display: none;\n  /* Hidden by default */ }\n\n#wrapper.shownav .modal {\n  padding-top: 160px; }\n\n.modal-content {\n  margin: auto;\n  display: block;\n  width: 80%;\n  max-width: 700px;\n  padding: 40px;\n  background: white; }\n\n/* Modal Content (Image) */\nimg.modal-content {\n  padding: 0;\n  background: transparent; }\n\n/* Caption of Modal Image (Image Text) - Same Width as the Image */\n#modal-caption {\n  margin: auto;\n  display: block;\n  width: 80%;\n  max-width: 700px;\n  text-align: center;\n  color: #ccc;\n  padding: 10px 0; }\n\n/* Add Animation - Zoom in the Modal */\n#imgmodal #modal-img, #modal-caption {\n  -webkit-animation-name: zoom;\n  -webkit-animation-duration: 0.6s;\n  animation-name: zoom;\n  animation-duration: 0.6s; }\n\n@-webkit-keyframes zoom {\n  from {\n    -webkit-transform: scale(0); }\n  to {\n    -webkit-transform: scale(1); } }\n\n@keyframes zoom {\n  from {\n    transform: scale(0); }\n  to {\n    transform: scale(1); } }\n\n/* The Close Button */\n#imgmodal .close {\n  position: absolute;\n  top: 15px;\n  right: 35px;\n  color: #f1f1f1;\n  font-size: 40px;\n  font-weight: bold;\n  transition: 0.3s;\n  transition: top 100ms ease-out; }\n\n#wrapper.shownav #imgmodal .close {\n  top: 75px; }\n\n#imgmodal .close:hover,\n#imgmodal .close:focus {\n  color: #bbb;\n  text-decoration: none;\n  cursor: pointer; }\n\n/* 100% Image Width on Smaller Screens */\n@media only screen and (max-width: 700px) {\n  #modal-img {\n    width: 100%; } }\n\n@media only screen and (max-width: 600px) {\n  #wrapper.shownav .modal {\n    padding-top: 224px; }\n  #wrapper.shownav #imgmodal .close {\n    top: 139px; } }\n\n.m-0 {\n  margin: 0; }\n\n.mt-0 {\n  margin-top: 0; }\n\n.mb-0 {\n  margin-bottom: 0; }\n\n.ml-0 {\n  margin-left: 0; }\n\n.mr-0 {\n  margin-right: 0; }\n\n.mx-0 {\n  margin-right: 0;\n  margin-left: 0; }\n\n.my-0 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.p-0 {\n  padding: 0; }\n\n.pt-0 {\n  padding-top: 0; }\n\n.pb-0 {\n  padding-bottom: 0; }\n\n.pl-0 {\n  padding-left: 0; }\n\n.pr-0 {\n  padding-right: 0; }\n\n.px-0 {\n  padding-right: 0;\n  padding-left: 0; }\n\n.py-0 {\n  padding-top: 0;\n  padding-bottom: 0; }\n\n.m-1 {\n  margin: 6; }\n\n.mt-1 {\n  margin-top: 6; }\n\n.mb-1 {\n  margin-bottom: 6; }\n\n.ml-1 {\n  margin-left: 6; }\n\n.mr-1 {\n  margin-right: 6; }\n\n.mx-1 {\n  margin-right: 6;\n  margin-left: 6; }\n\n.my-1 {\n  margin-top: 6;\n  margin-bottom: 6; }\n\n.p-1 {\n  padding: 6; }\n\n.pt-1 {\n  padding-top: 6; }\n\n.pb-1 {\n  padding-bottom: 6; }\n\n.pl-1 {\n  padding-left: 6; }\n\n.pr-1 {\n  padding-right: 6; }\n\n.px-1 {\n  padding-right: 6;\n  padding-left: 6; }\n\n.py-1 {\n  padding-top: 6;\n  padding-bottom: 6; }\n\n.m-2 {\n  margin: 12; }\n\n.mt-2 {\n  margin-top: 12; }\n\n.mb-2 {\n  margin-bottom: 12; }\n\n.ml-2 {\n  margin-left: 12; }\n\n.mr-2 {\n  margin-right: 12; }\n\n.mx-2 {\n  margin-right: 12;\n  margin-left: 12; }\n\n.my-2 {\n  margin-top: 12;\n  margin-bottom: 12; }\n\n.p-2 {\n  padding: 12; }\n\n.pt-2 {\n  padding-top: 12; }\n\n.pb-2 {\n  padding-bottom: 12; }\n\n.pl-2 {\n  padding-left: 12; }\n\n.pr-2 {\n  padding-right: 12; }\n\n.px-2 {\n  padding-right: 12;\n  padding-left: 12; }\n\n.py-2 {\n  padding-top: 12;\n  padding-bottom: 12; }\n\n.m-3 {\n  margin: 28; }\n\n.mt-3 {\n  margin-top: 28; }\n\n.mb-3 {\n  margin-bottom: 28; }\n\n.ml-3 {\n  margin-left: 28; }\n\n.mr-3 {\n  margin-right: 28; }\n\n.mx-3 {\n  margin-right: 28;\n  margin-left: 28; }\n\n.my-3 {\n  margin-top: 28;\n  margin-bottom: 28; }\n\n.p-3 {\n  padding: 28; }\n\n.pt-3 {\n  padding-top: 28; }\n\n.pb-3 {\n  padding-bottom: 28; }\n\n.pl-3 {\n  padding-left: 28; }\n\n.pr-3 {\n  padding-right: 28; }\n\n.px-3 {\n  padding-right: 28;\n  padding-left: 28; }\n\n.py-3 {\n  padding-top: 28;\n  padding-bottom: 28; }\n\n.m-4 {\n  margin: 36; }\n\n.mt-4 {\n  margin-top: 36; }\n\n.mb-4 {\n  margin-bottom: 36; }\n\n.ml-4 {\n  margin-left: 36; }\n\n.mr-4 {\n  margin-right: 36; }\n\n.mx-4 {\n  margin-right: 36;\n  margin-left: 36; }\n\n.my-4 {\n  margin-top: 36;\n  margin-bottom: 36; }\n\n.p-4 {\n  padding: 36; }\n\n.pt-4 {\n  padding-top: 36; }\n\n.pb-4 {\n  padding-bottom: 36; }\n\n.pl-4 {\n  padding-left: 36; }\n\n.pr-4 {\n  padding-right: 36; }\n\n.px-4 {\n  padding-right: 36;\n  padding-left: 36; }\n\n.py-4 {\n  padding-top: 36;\n  padding-bottom: 36; }\n\n.m-5 {\n  margin: 60; }\n\n.mt-5 {\n  margin-top: 60; }\n\n.mb-5 {\n  margin-bottom: 60; }\n\n.ml-5 {\n  margin-left: 60; }\n\n.mr-5 {\n  margin-right: 60; }\n\n.mx-5 {\n  margin-right: 60;\n  margin-left: 60; }\n\n.my-5 {\n  margin-top: 60;\n  margin-bottom: 60; }\n\n.p-5 {\n  padding: 60; }\n\n.pt-5 {\n  padding-top: 60; }\n\n.pb-5 {\n  padding-bottom: 60; }\n\n.pl-5 {\n  padding-left: 60; }\n\n.pr-5 {\n  padding-right: 60; }\n\n.px-5 {\n  padding-right: 60;\n  padding-left: 60; }\n\n.py-5 {\n  padding-top: 60;\n  padding-bottom: 60; }\n\nhtml {\n  background: white;\n  font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma; }\n\nbody {\n  font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;\n  color: #353531;\n  width: 100%;\n  margin: 0;\n  overflow-x: hidden; }\n\nfigure {\n  margin: 0; }\n\n* {\n  box-sizing: border-box; }\n\n.clearfix {\n  clear: both; }\n\niframe {\n  margin: 10px 0;\n  border: 0;\n  display: block; }\n\n.hidden {\n  display: none; }\n\nul {\n  text-align: left; }\n\n/*\r\n$col-default: rgba(53, 53, 49, 1);\r\n$col-danger: rgba(236, 78, 32, 1);\r\n$col-warning: rgba(255, 149, 5, 1);\r\n$col-primary: rgba(1, 111, 185, 1);\r\n$col-dark: rgba(0, 0, 0, 1);\r\n$col-info: rgba(71, 0, 36, 1);\r\n$col-secondary: rgba(110, 144, 117, 1);\r\n$col-background: rgba(250, 250, 250, 1);\r\n*/\n/* Page */\n#wrapper {\n  min-height: 100vh;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0; }\n\n/* Banner */\n.contentwrapper {\n  user-select: contain;\n  margin: 10px;\n  transition: width 500ms ease;\n  min-height: 100vh;\n  min-height: calc(100vh - 232px);\n  margin-bottom: 200px; }\n\n#masthead {\n  text-align: center;\n  width: 100vw;\n  background-color: rgba(255, 10, 10, 0.2);\n  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 10, 10, 0.2)), to(rgba(10, 10, 255, 0.2)));\n  background-image: -webkit-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  background-image: -moz-linear-gradient(bottom, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  background-image: linear-gradient(to top, rgba(255, 10, 10, 0.2), rgba(10, 10, 255, 0.2));\n  padding: 120px 0; }\n\n#masthead #profilepic {\n  display: block;\n  width: 180px;\n  max-width: 100%;\n  border-radius: 50%;\n  margin: auto; }\n\n#masthead #mastheadtitle {\n  margin-top: 0;\n  font-size: 80px;\n  font-weight: 400;\n  font-family: 'Poiret One', cursive; }\n\na {\n  text-decoration: none;\n  color: #016fb9; }\n\n.mesection {\n  margin-top: 80px;\n  text-align: center; }\n\n.bubble {\n  background: rgba(53, 53, 49, 0.3);\n  border-radius: 50%; }\n\n#techstackbubble {\n  width: 200px;\n  height: 200px;\n  max-width: 200px;\n  max-height: 200px;\n  margin: auto;\n  overflow: hidden; }\n\n#screensizes {\n  max-width: 700px; }\n\n#techstackbubble-inner {\n  overflow: visible;\n  display: inline-block; }\n\n#techstackbubble-content {\n  margin: 40px 0;\n  height: 200px;\n  animation: cycletechnologies 40s 0s linear infinite;\n  white-space: nowrap;\n  overflow: visible;\n  display: block; }\n\n@keyframes cycletechnologies {\n  from {\n    transform: translateX(200px); }\n  to {\n    transform: translateX(calc(-1000px - 100%)); } }\n\n#techstackbubble-content img {\n  display: inline-block;\n  max-height: 120px;\n  max-width: 180px;\n  padding-left: 60px; }\n\n.mesection ul {\n  margin: 20px auto;\n  padding: 20px 40px;\n  width: 300px;\n  max-width: 100%;\n  overflow: visible;\n  background: #eeeeee;\n  border-radius: 20px; }\n\n.mesection .card {\n  margin: 20px auto;\n  padding: 20px;\n  width: 500px;\n  max-width: 100%;\n  overflow: visible;\n  background: #eeeeee;\n  border-radius: 20px; }\n\n#rocket-text {\n  font-size: 160px;\n  position: absolute;\n  top: 40%;\n  top: calc(50% - 160px);\n  left: 0;\n  right: 0;\n  z-index: 200;\n  text-shadow: 0 0 3px black;\n  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7); }\n\n.console {\n  margin-top: 10px; }\n\n@media screen and (max-width: 700px) {\n  #rocket-text {\n    font-size: 100px; } }\n\n@media screen and (max-width: 600px) {\n  #rocket-text {\n    font-size: 60px; } }\n\n#rocket-masthead {\n  width: 100vw;\n  position: relative; }\n  #rocket-masthead img {\n    width: 100vw; }\n\n.project-article {\n  margin-top: 60px;\n  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.14), 0 0 40px 20px rgba(0, 0, 0, 0.05);\n  padding: 20px; }\n  .project-article h1.title {\n    margin-top: 7px; }\n  .project-article .proj-type-colors, .project-article .proj-techs {\n    display: block;\n    float: left; }\n  .project-article .proj-techs {\n    margin-left: 20px; }\n  .project-article .proj-type-colors .proj-type-color, .project-article .proj-techs .proj-tech {\n    margin-left: 5px;\n    width: 30px;\n    height: 30px;\n    border-radius: 50%;\n    float: left; }\n  .project-article .proj-techs .proj-tech {\n    background: rgba(110, 144, 117, 0.5);\n    text-align: center;\n    overflow: hidden;\n    background-position: center center;\n    background-size: 70%;\n    background-repeat: no-repeat; }\n  .project-article .proj-type-colors .proj-type-color.webapp {\n    background-color: #ff9505; }\n  .project-article .proj-type-colors .proj-type-color.desktopapp {\n    background-color: #6e9075; }\n  .project-article .proj-type-colors .proj-type-color.mobileapp {\n    background-color: #ec4e20; }\n  .project-article .proj-type-colors .proj-type-color.util {\n    background-color: #470024; }\n  .project-article .images {\n    float: left;\n    width: 90vw;\n    max-width: 1000px; }\n  .project-article .images img {\n    height: 160px;\n    display: block;\n    float: left;\n    margin: 10px; }\n\nfooter {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  user-select: contain; }\n\nul#footer-links {\n  list-style: none;\n  margin: 3px;\n  text-align: right; }\n\nul#footer-links li {\n  display: inline-block;\n  margin-right: 10px; }\n\nul#footer-links li::before {\n  font-family: Arial, Helvetica, sans-serif;\n  content: \" \\2022   \"; }\n\n.project-article iframe {\n  width: 100%;\n  height: 600px;\n  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); }\n\n#particles-js {\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute; }\n\n#masthead-header {\n  position: relative; }\n\nsvg#teck-stack-svg {\n  display: block;\n  margin: auto;\n  background: rgba(53, 53, 49, 0.3);\n  border-radius: 20px; }\n\n.circle-overlay {\n  font-size: 16px;\n  border-radius: 50%;\n  position: absolute;\n  overflow: hidden;\n  background-color: rgba(255, 255, 255, 0.5); }\n\n.circle-overlay__inner {\n  text-align: center;\n  width: 100%;\n  height: 100%; }\n", ""]);
 
 // exports
 
@@ -989,6 +992,315 @@ window.addEventListener('load', function () {
         });
     }
 });
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+
+window.initD3TechStackBubble = () => {
+    d3.json("./technologies.json", initD3TechStackBubbleWithData);
+}
+
+window.initD3TechStackBubbleWithData = data => {
+    if (document.getElementById('teck-stack-svg') === null)
+        return;
+    let svg = d3.select('#teck-stack-svg');
+    let width = svg.property('clientWidth'); // get width in pixels
+    let height = +svg.attr('height');
+    let centerX = width * 0.5;
+    let centerY = height * 0.5;
+    let strength = 0.05;
+    let focusedNode;
+    console.log('width', width);
+
+    let format = d3.format(',d');
+
+    let scaleColor = d3.scaleOrdinal(d3.schemeCategory20);
+
+    // use pack to calculate radius of the circle
+    let pack = d3.pack()
+        .size([width, height])
+        .padding(1.5);
+
+    let forceCollide = d3.forceCollide(d => d.r + 1);
+
+    // use the force
+    let simulation = d3.forceSimulation()
+        // .force('link', d3.forceLink().id(d => d.id))
+        .force('charge', d3.forceManyBody())
+        .force('collide', forceCollide)
+        // .force('center', d3.forceCenter(centerX, centerY))
+        .force('x', d3.forceX(centerX).strength(strength))
+        .force('y', d3.forceY(centerY).strength(strength));
+
+    // reduce number of circles on mobile screen due to slow computation
+    if ('matchMedia' in window && window.matchMedia('(max-device-width: 767px)').matches) {
+        data = data.filter(el => {
+            return el.value >= 50;
+        });
+    }
+
+    // match image directory 
+    data.forEach(item => {
+        item.icon = './images/techs/' + item.icon;
+    });
+
+    let root = d3.hierarchy({ children: data })
+        .sum(d => d.value);
+
+    // we use pack() to automatically calculate radius conveniently only
+    // and get only the leaves
+    let nodes = pack(root).leaves().map(node => {
+        // console.log('node:', node.x, (node.x - centerX) * 2);
+        const data = node.data;
+        return {
+            x: centerX + (node.x - centerX) * 3, // magnify start position to have transition to center movement
+            y: centerY + (node.y - centerY) * 3,
+            r: 0, // for tweening
+            radius: node.r, //original radius
+            id: data.cat + '.' + (data.name.replace(/\s/g, '-')),
+            cat: data.cat,
+            name: data.name,
+            value: data.value,
+            icon: data.icon,
+            desc: data.desc,
+        };
+    });
+    simulation.nodes(nodes).on('tick', ticked);
+
+    svg.style('background-color', '#eee');
+    let node = svg.selectAll('.node')
+        .data(nodes)
+        .enter().append('g')
+        .attr('class', 'node')
+        .call(d3.drag()
+            .on('start', (d) => {
+                if (!d3.event.active) { simulation.alphaTarget(0.2).restart(); }
+                d.fx = d.x;
+                d.fy = d.y;
+            })
+            .on('drag', (d) => {
+                d.fx = d3.event.x;
+                d.fy = d3.event.y;
+            })
+            .on('end', (d) => {
+                if (!d3.event.active) { simulation.alphaTarget(0); }
+                d.fx = null;
+                d.fy = null;
+            }));
+
+    node.append('circle')
+        .attr('id', d => d.id)
+        .attr('r', 0)
+        .style('fill', d => scaleColor(d.cat))
+        .transition().duration(2000).ease(d3.easeElasticOut)
+        .tween('circleIn', (d) => {
+            let i = d3.interpolateNumber(0, d.radius);
+            return (t) => {
+                d.r = i(t);
+                simulation.force('collide', forceCollide);
+            };
+        });
+
+    node.append('clipPath')
+        .attr('id', d => `clip-${d.id}`)
+        .append('use')
+        .attr('xlink:href', d => `#${d.id}`);
+
+    // display text as circle icon
+    node.filter(d => ! d.icon)
+        .append('text')
+        .classed('node-icon', true)
+        .attr('clip-path', d => `url(#clip-${d.id})`)
+        .selectAll('tspan')
+        .data(d => d.icon.split(';'))
+        .enter()
+        .append('tspan')
+        .attr('x', 0)
+        .attr('y', (d, i, nodes) => (13 + (i - nodes.length / 2 - 0.5) * 10))
+        .text(name => name);
+
+    // display image as circle icon
+    node.filter(d => d.icon)
+        .append('image')
+        .classed('node-icon', true)
+        .attr('clip-path', d => `url(#clip-${d.id})`)
+        .attr('xlink:href', d => d.icon)
+        .attr('x', d => -d.radius * 0.7)
+        .attr('y', d => -d.radius * 0.7)
+        .attr('height', d => d.radius * 2 * 0.7)
+        .attr('width', d => d.radius * 2 * 0.7);
+
+    node.append('title')
+        .text(d => (d.cat + '::' + d.name + '\n' + format(d.value)));
+
+    let legendOrdinal = d3.legendColor()
+        .scale(scaleColor)
+        .shape('circle');
+
+    // legend 1
+    svg.append('g')
+        .classed('legend-color', true)
+        .attr('text-anchor', 'start')
+        .attr('transform', 'translate(20,30)')
+        .style('font-size', '12px')
+        .call(legendOrdinal);
+
+    let sizeScale = d3.scaleOrdinal()
+        .domain(['less skilled', 'more skilled'])
+        .range([5, 10]);
+
+    let legendSize = d3.legendSize()
+        .scale(sizeScale)
+        .shape('circle')
+        .shapePadding(10)
+        .labelAlign('end');
+
+    // legend 2
+    svg.append('g')
+        .classed('legend-size', true)
+        .attr('text-anchor', 'start')
+        .attr('transform', 'translate(150, 25)')
+        .style('font-size', '12px')
+        .call(legendSize);
+
+
+    /*
+    <foreignObject class="circle-overlay" x="10" y="10" width="100" height="150">
+        <div class="circle-overlay__inner">
+            <h2 class="circle-overlay__title">ReactJS</h2>
+            <p class="circle-overlay__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, sunt, aspernatur. Autem repudiandae, laboriosam. Nulla quidem nihil aperiam dolorem repellendus pariatur, quaerat sed eligendi inventore ipsa natus fugiat soluta doloremque!</p>
+        </div>
+    </foreignObject>
+    */
+    let infoBox = node.append('foreignObject')
+        .classed('circle-overlay hidden', true)
+        .attr('x', -350 * 0.5 * 0.8)
+        .attr('y', -350 * 0.5 * 0.8)
+        .attr('height', 350 * 0.8)
+        .attr('width', 350 * 0.8)
+        .append('xhtml:div')
+        .classed('circle-overlay__inner', true);
+
+    infoBox.append('h2')
+        .classed('circle-overlay__title', true)
+        .text(d => d.name);
+
+    infoBox.append('p')
+        .classed('circle-overlay__body', true)
+        .html(d => d.desc);
+
+
+    node.on('click', (currentNode) => {
+        d3.event.stopPropagation();
+        console.log('currentNode', currentNode);
+        let currentTarget = d3.event.currentTarget; // the <g> el
+
+        if (currentNode === focusedNode) {
+            // no focusedNode or same focused node is clicked
+            return;
+        }
+        let lastNode = focusedNode;
+        focusedNode = currentNode;
+
+        simulation.alphaTarget(0.2).restart();
+        // hide all circle-overlay
+        d3.selectAll('.circle-overlay').classed('hidden', true);
+        d3.selectAll('.node-icon').classed('node-icon--faded', false);
+
+        // don't fix last node to center anymore
+        if (lastNode) {
+            lastNode.fx = null;
+            lastNode.fy = null;
+            node.filter((d, i) => i === lastNode.index)
+                .transition().duration(2000).ease(d3.easePolyOut)
+                .tween('circleOut', () => {
+                    let irl = d3.interpolateNumber(lastNode.r, lastNode.radius);
+                    return (t) => {
+                        lastNode.r = irl(t);
+                    };
+                })
+                .on('interrupt', () => {
+                    lastNode.r = lastNode.radius;
+                });
+        }
+
+        // if (!d3.event.active) simulation.alphaTarget(0.5).restart();
+
+        d3.transition().duration(2000).ease(d3.easePolyOut)
+            .tween('moveIn', () => {
+                console.log('tweenMoveIn', currentNode);
+                let ix = d3.interpolateNumber(currentNode.x, centerX);
+                let iy = d3.interpolateNumber(currentNode.y, centerY);
+                let ir = d3.interpolateNumber(currentNode.r, centerY * 0.5);
+                return function (t) {
+                    // console.log('i', ix(t), iy(t));
+                    currentNode.fx = ix(t);
+                    currentNode.fy = iy(t);
+                    currentNode.r = ir(t);
+                    simulation.force('collide', forceCollide);
+                };
+            })
+            .on('end', () => {
+                simulation.alphaTarget(0);
+                let $currentGroup = d3.select(currentTarget);
+                $currentGroup.select('.circle-overlay')
+                    .classed('hidden', false);
+                $currentGroup.select('.node-icon')
+                    .classed('node-icon--faded', true);
+
+            })
+            .on('interrupt', () => {
+                console.log('move interrupt', currentNode);
+                currentNode.fx = null;
+                currentNode.fy = null;
+                simulation.alphaTarget(0);
+            });
+
+    });
+
+    // blur
+    d3.select(document).on('click', () => {
+        let target = d3.event.target;
+        // check if click on document but not on the circle overlay
+        if (!target.closest('#circle-overlay') && focusedNode) {
+            focusedNode.fx = null;
+            focusedNode.fy = null;
+            simulation.alphaTarget(0.2).restart();
+            d3.transition().duration(2000).ease(d3.easePolyOut)
+                .tween('moveOut', function () {
+                    console.log('tweenMoveOut', focusedNode);
+                    let ir = d3.interpolateNumber(focusedNode.r, focusedNode.radius);
+                    return function (t) {
+                        focusedNode.r = ir(t);
+                        simulation.force('collide', forceCollide);
+                    };
+                })
+                .on('end', () => {
+                    focusedNode = null;
+                    simulation.alphaTarget(0);
+                })
+                .on('interrupt', () => {
+                    simulation.alphaTarget(0);
+                });
+
+            // hide all circle-overlay
+            d3.selectAll('.circle-overlay').classed('hidden', true);
+            d3.selectAll('.node-icon').classed('node-icon--faded', false);
+        }
+    });
+
+    function ticked() {
+        node
+            .attr('transform', d => `translate(${d.x},${d.y})`)
+            .select('circle')
+            .attr('r', d => d.r);
+    }
+
+};
+
 
 
 /***/ })
