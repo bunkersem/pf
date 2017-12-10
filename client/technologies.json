@@ -168,13 +168,6 @@
     "desc": "Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud."
   },
   {
-    "cat": "platform",
-    "name": "Wordpress",
-    "value": 10,
-    "icon": "wordpress.png",
-    "desc": "WordPress is a free and open-source content management system (CMS) based on PHP and MySQL."
-  },
-  {
     "cat": "language",
     "name": "Go",
     "value": 5,
