@@ -18,8 +18,7 @@
     "angular-sanitize": "^1.6.5",
     "core-js": "^2.5.2",
     "modernizr": "^3.5.0",
-    "normalize.css": "^7.0.0",
-    "ts-helpers": "^1.1.2"
+    "normalize.css": "^7.0.0"
   },
   "devDependencies": {
     "css-loader": "^0.28.7",
