@@ -7,7 +7,13 @@ import ProjectsService from './services/projects.service';
 import TechnologiesService from './services/technologies.service';
 
 const angular = (<any>window).angular;
-angular.module('portfolio', ['ngSanitize']);
+console.log('once');
+angular.module('portfolio', ['ngSanitize'])
+    .config(['$compileProvider', ($compileProvider: any) => {
+        $compileProvider.debugInfoEnabled(false);
+        $compileProvider.commentDirectivesEnabled(false);
+        $compileProvider.cssClassDirectivesEnabled(false);
+  }]);
 
 ProjectsService(angular);
 TechnologiesService(angular);
