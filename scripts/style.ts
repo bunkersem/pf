@@ -38,7 +38,7 @@ window.addEventListener('load', () => {
             if ((<HTMLElement>e.target).classList.contains('modal-image')) {
                 modal.style.display = "block";
                 modal.setAttribute('aria-expanded', 'true');
-                modalImg.src = (<HTMLImageElement>e.target).src;
+                modalImg.setAttribute('style', `background-image: url(${(<HTMLImageElement>e.target).src})`);
                 captionText.innerHTML = (<HTMLImageElement>e.target).alt;
             }
         });

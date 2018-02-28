@@ -2,13 +2,13 @@
     mobile="{{$ctrl.project.mobileApp}}" util="{{$ctrl.project.util}}">
     <h1 class="title">{{$ctrl.project.title}}</h1>
     <div class="proj-colors-and-techs">
-        <div class="proj-type-colors">
+        <div class="proj-type-colors" data-aos="zoom-in-right">
             <div class="proj-type-color webapp" title="Web App" ng-if="$ctrl.project.webApp"></div>
             <div class="proj-type-color desktopapp" title="Desktop App" ng-if="$ctrl.project.desktopApp"></div>
             <div class="proj-type-color mobileapp" title="Mobile App" ng-if="$ctrl.project.mobileApp"></div>
             <div class="proj-type-color util" title="Utility" ng-if="$ctrl.project.util"></div>
         </div>
-        <div class="proj-techs">
+        <div class="proj-techs" data-aos="zoom-in-left">
             <div class="proj-tech" title="{{tech.name}}" ng-repeat="tech in $ctrl.technologies  track by $index" id="tech-{{$index}}"
             ng-attr-style="background-image: url('./images/techs/{{tech.icon}}');">
                 <!-- <div class="imgbefore"></div>

@@ -35,6 +35,13 @@
     "desc": "\n\t\tThe de-facto Database solution for JavaScript and Node.js applications. It is a light weight,\n\t\thigh performance NoSQL database and can be used for small and large websites.\n\t"
   },
   {
+    "cat": "framework",
+    "name": "Jekyll",
+    "value": 40,
+    "icon": "jekyll.png",
+    "desc": "Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Written in Ruby by Tom Preston-Werner, GitHub's co-founder, it is distributed under an open source license."
+  },
+  {
     "cat": "language",
     "name": "JavaScript",
     "value": 100,

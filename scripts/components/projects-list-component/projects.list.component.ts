@@ -1,4 +1,5 @@
 import { Project } from '../../models';
+declare var AOS: any;
 
 export default function ProjectsListComponent(angular: any) {
     angular.module('portfolio')
@@ -6,6 +7,7 @@ export default function ProjectsListComponent(angular: any) {
             templateUrl: './scripts/components/projects-list-component/projects.list.component.html',
             
             controller: ['projectsService', function (projectsService: any) {
+                let loading = true;
                 const $ctrl = this;
                 $ctrl.filters = {};
                 projectsService.getProjects()
@@ -42,6 +44,24 @@ export default function ProjectsListComponent(angular: any) {
                 $ctrl.removeFilter = function() {
                     $ctrl.filters = {};
                     applyFilter();
+                }
+
+                $ctrl.loaded = function(last: any) {
+                    if (loading && last && $ctrl.projects && $ctrl.projects.length > 0) {
+                        loading = false;
+                        setTimeout(() => {
+                            console.log('ready');
+                            var classes = (document.documentElement.getAttribute('class') || '').split(' ');
+                            for (var i = 0; i < classes.length; i++) {
+                                if (classes[i] === 'dloading')
+                                    classes[i] = '';
+                            }
+                            document.documentElement.setAttribute('class', classes.join(' ').trim());
+                            AOS.init();
+                            document.getElementById('rocket-masthead-svg-image')
+                                .setAttribute('src', './images/rocket.svg');
+                        }, 3000);
+                    }
                 }
             }]  
         });

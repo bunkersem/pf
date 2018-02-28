@@ -15,12 +15,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://bunkersem.github.io/static_files/js/loader.js"></script>
-    <script src="./bundle/modernizr-bundle.js"></script>
     <script src="./bundle/vendor.bundle.js"></script>
     <script src="./bundle/main.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js" integrity="sha256-issEYoOUmTZW2tEfIwKfxq0Tz5DPqh9d+JFQsnJ2hKk=" crossorigin="anonymous"></script>
+
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Poiret+One|Roboto|Ubuntu|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css" integrity="sha256-G2+IcX6XRBcYufvUNrCqZdR1PDbJkBU164G3zkt2C8Q=" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.4/d3.js" integrity="sha256-T9kqMOI1/xyTd99UNzG2DfAhlV2luNGwDJTeCCDLlFs="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.0/d3-legend.min.js" integrity="sha256-H4CXotFkAa5NxP/5qePANSRBCtwIkK21wPLys2/x3xA="
@@ -92,7 +94,7 @@
         </header>
         <main>
             <div class="contentwrapper">
-                <section class="mesection" id="aboutme">
+                <section class="mesection" id="aboutme" data-aos="fade-up">
                     <div class="container">
                         <h2 class="text-primary">Who Are You?</h2>
                         <figure>
@@ -168,7 +170,7 @@
                             </p>
                     </div>
                 </section>
-                <section class="mesection" id="hireme">
+                <section class="mesection" id="hireme" data-aos="fade-up">
                     <div class="container">
                         <h2 class="text-primary">Contact Me?</h2>
                         <p class="text-default">Lorum Ipsum </p>
@@ -217,7 +219,7 @@
             </div>
         </noscript>
     </div>
-    <script>initD3TechStackBubble()</script>
+    <script>initD3TechStackBubble();AOS.init();</script>
 </body>
 
 </html>
