@@ -1,5 +1,4 @@
 const path = require('path');
-const ModernizrWebpackPlugin = require('modernizr-webpack-plugin')
 
 module.exports = {
     entry: {
@@ -16,19 +15,36 @@ module.exports = {
             normalizecss: path.resolve(__dirname, './node_modules/normalize.css/normalize.css')
         }
     },
-    plugins: [
-        new ModernizrWebpackPlugin()
-    ],
+    plugins: [],
     module: {
         loaders: [
             { test: /\.scss$/, loader: ['style-loader', 'css-loader', 'sass-loader'] },
             { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
-            { test: /\.tsx?$/, loader: ['ts-loader'] },
+            // babel-loader: converts javascript (es6) to javascript (es5)
+            {
+                'test': /\.tsx?$/,
+                'loaders': [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['babel-preset-env'],
+                    },
+                }, 'ts-loader'],
+            },
+            // babel-loader for pure javascript (es6) => javascript (es5)
+            {
+                'test': /\.(jsx?)$/,
+                'loaders': [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['babel-preset-env'],
+                    },
+                }]
+            }
         ]
     },
     output: {
         publicPath: '/bundle/',
-        path: path.resolve(__dirname, './client/bundle' ),
+        path: path.resolve(__dirname, './client/bundle'),
         filename: '[name].bundle.js',
         chunkFilename: '[id].chunk.js'
     },

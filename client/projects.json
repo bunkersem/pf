@@ -589,5 +589,68 @@
     "desktopApp": false,
     "util": false,
     "mobileApp": false
+  },
+  {
+    "title": "Design Website",
+    "keywords": [
+      "Design",
+      "Website",
+      "Bootstrap",
+      "Jekyll"
+    ],
+    "technologies": [
+      "Jekyll",
+      "Bootstrap",
+      "JavaScript",
+      "SCSS",
+      "ESLint",
+      "jQuery",
+      "CSS",
+      "HTML5",
+      "Git",
+      "GitHub"
+    ],
+    "content": {
+      "text": "\n                A Simple Design Website\n                <iframe src=\"https://bunkersem.github.io/effie_design/\"></iframe><br />\n                ",
+      "images": [
+        "https://imgur.com/1rQDyfF.jpg",
+        "https://imgur.com/nFajgBl.jpg",
+        "https://imgur.com/ka1NZJr.jpg",
+        "https://imgur.com/z5VWDJU.jpg",
+        "https://imgur.com/ourb0uC.jpg"
+      ]
+    },
+    "webApp": true,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": false
+  },
+  {
+    "title": "Protected Url",
+    "keywords": [
+      "Protected",
+      "Url",
+      "Encrypted",
+      "Secure"
+    ],
+    "technologies": [
+      "ExpressJS",
+      "Bootstrap",
+      "JavaScript",
+      "EJS",
+      "ESLint",
+      "jQuery",
+      "CSS",
+      "HTML5",
+      "Git",
+      "GitHub"
+    ],
+    "content": {
+      "text": "\n                Protect your url by putting it behind a login dialog  🔗🔒🔑\n                <iframe src=\"http://protected-url.herokuapp.com/\"></iframe><br />\n                "
+    },
+    "webApp": true,
+    "desktopApp": false,
+    "util": false,
+    "mobileApp": false
   }
 ]

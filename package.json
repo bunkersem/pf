@@ -6,30 +6,41 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run dev",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --open",
     "deploy": "npm run build && git push origin master && npm run gh-pages",
     "gh-pages": "git subtree push --prefix client origin gh-pages",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.prod.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.6",
     "angular-sanitize": "^1.6.5",
+    "babel-polyfill": "^6.26.0",
     "core-js": "^2.5.2",
     "modernizr": "^3.5.0",
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-minify-webpack-plugin": "^0.3.0",
+    "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.7",
     "exports-loader": "^0.6.4",
     "modernizr-webpack-plugin": "^1.0.6",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
-    "ts-loader": "^2.3.3",
+    "ts-loader": "^3.5.0",
     "typescript": "^2.4.2",
-    "webpack": "^3.8.1",
+    "webpack": "^3.11.0",
     "webpack-dev-server": "^2.9.5"
-  }
+  },
+  "browserslist": [
+    "ie >=8",
+    "ios >=6",
+    ">1%",
+    "Last 2 versions"
+  ]
 }

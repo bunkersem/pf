@@ -463,7 +463,43 @@ const projects =
             util: false,
             mobileApp: false,
         },
-
+        {
+            title: 'Design Website',
+            keywords: ['Design', 'Website', 'Bootstrap', 'Jekyll'],
+            technologies: ['Jekyll', 'Bootstrap', 'Javascript', 'SCSS', 'ESLint', 'JQuery', 'CSS', 'HTML5', 'Git', 'Github'],
+            content: {
+                text: `
+                A Simple Design Website
+                <iframe src="https://bunkersem.github.io/effie_design/"></iframe><br />
+                `,
+                images: [
+                    'https://imgur.com/1rQDyfF.jpg',
+                    'https://imgur.com/nFajgBl.jpg',
+                    'https://imgur.com/ka1NZJr.jpg',
+                    'https://imgur.com/z5VWDJU.jpg',
+                    'https://imgur.com/ourb0uC.jpg',
+                ]
+            },
+            webApp: true,
+            desktopApp: false,
+            util: false,
+            mobileApp: false,
+        },
+        {
+            title: 'Protected Url',
+            keywords: ['Protected', 'Url', 'Encrypted', 'Secure'],
+            technologies: ['ExpressJS', 'Bootstrap', 'Javascript', 'EJS', 'ESLint', 'JQuery', 'CSS', 'HTML5', 'Git', 'Github'],
+            content: {
+                text: `
+                Protect your url by putting it behind a login dialog  🔗🔒🔑
+                <iframe src="http://protected-url.herokuapp.com/"></iframe><br />
+                `,
+            },
+            webApp: true,
+            desktopApp: false,
+            util: false,
+            mobileApp: false,
+        },
     ]
 
 
