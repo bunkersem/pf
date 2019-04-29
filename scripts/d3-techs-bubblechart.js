@@ -134,7 +134,7 @@ window.initD3TechStackBubbleWithData = data => {
         .attr('width', d => d.radius * 2 * 0.7);
 
     node.append('title')
-        .text(d => (d.cat + '::' + d.name + '\n' + format(d.value)));
+        .text(d => d.desc);
 
     let legendOrdinal = d3.legendColor()
         .scale(scaleColor)

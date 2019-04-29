@@ -9,14 +9,14 @@
   {
     "cat": "programming",
     "name": "Bootstrap",
-    "value": 80,
+    "value": 100,
     "icon": "bootstrap.svg",
     "desc": "\n\t\tBootstrap is a free and open-source front-end web framework for designing websites\n\t\tand web applications. It contains HTML-and CSS-based design templates for typography,\n\t\tforms, buttons, navigation and other interfacecomponents, as well as optional JavaScript extensions.\n\t"
   },
   {
     "cat": "framework",
     "name": "ExpressJS",
-    "value": 70,
+    "value": 90,
     "icon": "expressjs.png",
     "desc": "\n\t\tExpress.js, or simply Express, is a JavaScript framework designed for building web applications and APIs.\n\t\tIt is the de facto server framework for Node.js.\n\t"
   },
@@ -37,7 +37,7 @@
   {
     "cat": "framework",
     "name": "Jekyll",
-    "value": 40,
+    "value": 70,
     "icon": "jekyll.png",
     "desc": "Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Written in Ruby by Tom Preston-Werner, GitHub's co-founder, it is distributed under an open source license."
   },
@@ -51,7 +51,7 @@
   {
     "cat": "language",
     "name": "SCSS",
-    "value": 20,
+    "value": 30,
     "icon": "sass.png",
     "desc": "\n\t\tThis is our main CSS preprocessor language helping us lay structured foundation to CSS as well\n\t\tas assisting on writing more convenient BEM anotations.\n\t"
   },
@@ -86,7 +86,7 @@
   {
     "cat": "tool",
     "name": "Webpack",
-    "value": 50,
+    "value": 80,
     "icon": "webpack.svg",
     "desc": "\n\t\tA module bundler library that is becoming de-facto tool to use in ReactJS or SPA apps nowadays.\n\t"
   },
@@ -114,7 +114,7 @@
   {
     "cat": "programming",
     "name": "DOTNETCore",
-    "value": 20,
+    "value": 30,
     "icon": "dotnetcore.svg",
     "desc": ".NET Core is a general purpose development platform maintained by Microsoft and the .NET community on GitHub. It is cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios."
   },
@@ -149,14 +149,14 @@
   {
     "cat": "framework",
     "name": "Electron",
-    "value": 15,
+    "value": 35,
     "icon": "electron.svg",
     "desc": "Electron (formerly known as Atom Shell) is an open-source framework created by Cheng Zhao, and now developed by GitHub."
   },
   {
     "cat": "framework",
     "name": "React",
-    "value": 25,
+    "value": 80,
     "icon": "react.png",
     "desc": "In computing, React (sometimes styled React.js or ReactJS) is a JavaScript library for building user interfaces."
   },
@@ -184,7 +184,7 @@
   {
     "cat": "programming",
     "name": "Angular",
-    "value": 25,
+    "value": 40,
     "icon": "angular.svg",
     "desc": "Angular (commonly referred to as \"Angular2+\" or \"Angular2\") is a TypeScript-based open-source front-end web application platform led by the Angular Team at Google and by a community of individuals and corporations to address all of the parts of the developer's workflow while building complex web applications."
   },
@@ -205,28 +205,28 @@
   {
     "cat": "programming",
     "name": "Cordova",
-    "value": 50,
+    "value": 100,
     "icon": "cordova.svg",
     "desc": "Apache Cordova enables software programmers to build applications for mobile devices using CSS3, HTML5, and JavaScript instead of relying on platform-specific APIs like those in Android, iOS, or Windows Phone."
   },
   {
     "cat": "language",
     "name": "CSS",
-    "value": 80,
+    "value": 100,
     "icon": "css.png",
     "desc": "CSS is a language that describes the style of an HTML document."
   },
   {
     "cat": "language",
     "name": "HTML5",
-    "value": 80,
+    "value": 100,
     "icon": "html5.png",
     "desc": "HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard."
   },
   {
     "cat": "language",
     "name": "EJS",
-    "value": 20,
+    "value": 30,
     "icon": "ejs.png",
     "desc": "EJS is a client-side templating language that was originally part of JavaScriptMVC, which has now been replaced by DoneJS."
   },
@@ -254,7 +254,7 @@
   {
     "cat": "tool",
     "name": "Git",
-    "value": 30,
+    "value": 40,
     "icon": "git.svg",
     "desc": "Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for source code management in software development."
   },
@@ -282,7 +282,7 @@
   {
     "cat": "language",
     "name": "SQL",
-    "value": 20,
+    "value": 30,
     "icon": "sql.png",
     "desc": "SQL is a standard language for storing, manipulating and retrieving data in databases."
   },
@@ -310,7 +310,7 @@
   {
     "cat": "tool",
     "name": "Visual Studio",
-    "value": 50,
+    "value": 60,
     "icon": "vs.png",
     "desc": "Microsoft Visual Studio is an integrated development environment (IDE) from Microsoft. It is used to develop computer programs for Microsoft Windows, as well as web sites, web apps, web services and mobile apps."
   },
@@ -338,7 +338,7 @@
   {
     "cat": "language",
     "name": "XML",
-    "value": 20,
+    "value": 50,
     "icon": "xml.png",
     "desc": "Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. The W3C's XML 1.0 Specification and several other related specifications, all of them free open standards—define XML."
   },
@@ -367,14 +367,14 @@
     "cat": "tool",
     "name": "OnsenUI",
     "icon": "onsenui.png",
-    "value": 20,
+    "value": 70,
     "desc": "The most beautiful and efficient way to develop HTML5 hybrid and mobile web apps."
   },
   {
     "cat": "platform",
     "name": "Firebase",
     "icon": "firebase.svg",
-    "value": 30,
+    "value": 70,
     "desc": "Firebase is Google's mobile platform that helps you quickly develop high-quality apps and grow your business."
   },
   {
@@ -382,7 +382,7 @@
     "name": "RxJs",
     "icon": "rxjs.svg",
     "value": 10,
-    "desc": "Firebase is Google's mobile platform that helps you quickly develop high-quality apps and grow your business."
+    "desc": "RxJS is a library for reactive programming using Observables, to make it easier to compose asynchronous or callback-based code."
   },
   {
     "cat": "language",
@@ -395,7 +395,7 @@
     "cat": "language",
     "name": "PHP",
     "icon": "php.png",
-    "value": 5,
+    "value": 10,
     "desc": "PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language."
   },
   {
@@ -418,6 +418,71 @@
     "icon": "pug.svg",
     "value": 40,
     "desc": "Pug is a high-performance template engine heavily influenced by Haml and implemented with JavaScript for Node.js and browsers."
+  },
+  {
+    "cat": "framework",
+    "name": "Redux",
+    "icon": "redux.svg",
+    "value": 40,
+    "desc": "Redux is a predictable state container for JavaScript apps."
+  },
+  {
+    "cat": "framework",
+    "name": "Preact",
+    "icon": "preact.svg",
+    "value": 70,
+    "desc": "Fast 3kB alternative to React with the same modern API."
+  },
+  {
+    "cat": "tool",
+    "name": "Forestry.io",
+    "icon": "forestry.jpg",
+    "value": 30,
+    "desc": "A content management system for static sites built with Hugo and Jekyll."
+  },
+  {
+    "cat": "tool",
+    "name": "PostCSS",
+    "icon": "postcss.svg",
+    "value": 30,
+    "desc": "Transform CSS with the power of JavaScript. Auto-prefixing, future CSS syntaxes, modules, linting and more are possible with hundreds of PostCSS plugins."
+  },
+  {
+    "cat": "tool",
+    "name": "NPM",
+    "icon": "npm.svg",
+    "value": 100,
+    "desc": "npm is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js."
+  },
+  {
+    "cat": "tool",
+    "name": "CMake",
+    "icon": "cmake.svg",
+    "value": 30,
+    "desc": "CMake is an open-source, cross-platform family of tools designed to build, test and package software."
+  },
+  {
+    "cat": "platform",
+    "name": "Monaca",
+    "icon": "monaca.jpg",
+    "value": 10,
+    "desc": "Give Power to Your Cordova Apps. Monaca supercharges Cordova app development with easy to use tools, services and UI framework."
+  },
+  {
+    "cat": "programming",
+    "name": "Material-UI",
+    "icon": "material-ui.svg",
+    "value": 20,
+    "desc": "React components that implement Google's Material Design."
+  },
+  {
+    "cat": "programming",
+    "name": "PostgreSQL",
+    "icon": "postgres.svg",
+    "value": 20,
+    "desc": "PostgreSQL is an open-source relational database management system (RDBMS) emphasizing extensibility and standards compliance."
   }
+
+  
   
 ]

@@ -9,12 +9,12 @@
     height: $navbar-height;
     z-index: 4000;
     user-select: none;
+    font-weight: 200;
     
     @media screen and (max-width: 600px) {
         height: 124px;
         top: -124px;
     }
-    font-family: 'Poiret One', cursive;    
     font-size: 30px;
     transition: top 100ms ease-out, background-color 800ms ease-in-out;
     background-color: rgba(255, 255, 255, 0);    
