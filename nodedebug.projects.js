@@ -485,21 +485,21 @@ const projects =
             util: false,
             mobileApp: false,
         },
-        {
-            title: 'Protected Url',
-            keywords: ['Protected', 'Url', 'Encrypted', 'Secure'],
-            technologies: ['ExpressJS', 'Bootstrap', 'Javascript', 'EJS', 'ESLint', 'JQuery', 'CSS', 'HTML5', 'Git', 'Github'],
-            content: {
-                text: `
-                Protect your url by putting it behind a login dialog  🔗🔒🔑
-                <iframe src="http://protected-url.herokuapp.com/"></iframe><br />
-                `,
-            },
-            webApp: true,
-            desktopApp: false,
-            util: false,
-            mobileApp: false,
-        },
+        // {
+        //     title: 'Protected Url',
+        //     keywords: ['Protected', 'Url', 'Encrypted', 'Secure'],
+        //     technologies: ['ExpressJS', 'Bootstrap', 'Javascript', 'EJS', 'ESLint', 'JQuery', 'CSS', 'HTML5', 'Git', 'Github'],
+        //     content: {
+        //         text: `
+        //         Protect your url by putting it behind a login dialog  🔗🔒🔑
+        //         <iframe src="http://protected-url.herokuapp.com/"></iframe><br />
+        //         `,
+        //     },
+        //     webApp: true,
+        //     desktopApp: false,
+        //     util: false,
+        //     mobileApp: false,
+        // },
     ]
 
 

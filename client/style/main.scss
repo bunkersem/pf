@@ -24,12 +24,11 @@
 
 html {
     background: $col-background;
-    font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma;
+    font-family: 'Raleway', sans-serif, Verdana, Geneva, Tahoma;
 }
 
 
 body {
-    font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
     color: $col-default;
     width: 100%;
     margin: 0;
@@ -115,11 +114,14 @@ $col-background: rgba(250, 250, 250, 1);
     margin: auto;
 }
 
+a {
+    color: #000;
+}
+
 #masthead #mastheadtitle {
     margin-top: 0;
     font-size: 80px;
-    font-weight: 400;
-    font-family: 'Poiret One', cursive;    
+    font-weight: 200;
 }
 
 
