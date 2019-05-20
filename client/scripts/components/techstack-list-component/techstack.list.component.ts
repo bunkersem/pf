@@ -10,7 +10,7 @@ export default function TechStackListComponent(angular: any) {
                 technologiesService.getTechnologies().then((response: any) => {
                     console.log('response', response)
                     var allTechnologies = <Technology[]>response.data;
-                    $ctrl.technologies = allTechnologies.filter(t => t.value > 0 && t.icon);
+                    $ctrl.technologies = allTechnologies.filter(t => t.value > 0 && t.icon).sort((a, b) => b.value - a.value);
                 });
                 
             }] 

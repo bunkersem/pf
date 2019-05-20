@@ -481,8 +481,34 @@
     "icon": "postgres.svg",
     "value": 20,
     "desc": "PostgreSQL is an open-source relational database management system (RDBMS) emphasizing extensibility and standards compliance."
+  },
+  {
+    "cat": "framework",
+    "name": "GatsbyJS",
+    "icon": "gatsby.svg",
+    "value": 60,
+    "desc": "Blazing fast modern site generator for React. Go beyond static sites: build blogs, ecommerce sites, full-blown apps, and more with Gatsby."
+  },
+  {
+    "cat": "programming",
+    "name": "GraphQL",
+    "icon": "graphql.svg",
+    "value": 40,
+    "desc": "GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data."
+  },
+  {
+    "cat": "platform",
+    "name": "Netlify",
+    "icon": "netlify.svg",
+    "value": 20,
+    "desc": "Netlify builds, deploys and hosts your front-end."
+  },
+  {
+    "cat": "platform",
+    "name": "Cloudflare",
+    "icon": "cloudflare.svg",
+    "value": 60,
+    "desc": "The Web Performance & Security Company."
   }
-
-  
   
 ]

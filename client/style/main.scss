@@ -83,6 +83,10 @@ $col-background: rgba(250, 250, 250, 1);
     right: 0;
 }
 
+.lead {
+    font-size: 1.2em;
+}
+
 
 /* Banner */
 
@@ -93,6 +97,7 @@ $col-background: rgba(250, 250, 250, 1);
     min-height: 100vh;
     min-height: calc(100vh - 232px);
     margin-bottom: 200px;
+    position: relative;
 }
 
 #masthead {
